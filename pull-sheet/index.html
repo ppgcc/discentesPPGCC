@@ -34,7 +34,7 @@ title: Update Spreadsheet
       // Setting a cookie value
       Cookies.set('token', $oAuthToken);
       // Set with expiration
-      // Cookies.set('token', $oAuthToken, { expires: '01/01/2017' });
+      Cookies.set('token', $oAuthToken, { expires: '01/01/2017' });
       }
 
     // Grab the token from cookie
@@ -48,7 +48,6 @@ title: Update Spreadsheet
     })
 
     console.log($resource);
-    console.log(tabletop);
 
     function showInfo(data, tabletop) {
       console.log("Entrou no showInfo");
