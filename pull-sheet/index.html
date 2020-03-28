@@ -48,9 +48,11 @@ title: Update Spreadsheet
     })
 
     console.log($resource);
+	console.log(data)
+	console.log(tabletop)
 
     function showInfo(data, tabletop) {
-
+      console.log("Entrou no showInfo");
       $products = new Array();
 
       $("#table_info").text("We found the tables " + tabletop.model_names.join(", "));
