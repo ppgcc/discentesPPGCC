@@ -1,4 +1,4 @@
-baseurl: ''
+baseurl: '/discentesPPGCC'
 exclude: ['README.md']
 permalink: pretty
 title: 'Discentes PPGCC'
