@@ -1,24 +1,88 @@
 ---
+title: Discentes PPGCC - Programa de Pós-graduação em Ciência da Computação
 layout: default
-title: Google Sheets to Github Website - Links
+bodyClass: page-home
 ---
 
-<!-- Pulls from _data links -->
-{% assign links = site.data.links %}
-{% assign links = links | sort:"Name" %}
+<div class="intro pb-4">
+  <div class="container">
+    <h1>Discentes PPGCC - PUCRS</h1>
+    <p>Programa de Pós-graduação em Ciência da Computação da PUCRS </p>
+  </div>
+</div>
 
-<h3>Links</h3>
-<table width="100%">
-{% for link in links %}
-  <tr>
-    <td><strong>{{ link.name }}</strong></td>
-    <td width="25%">{{ link.url }}</td>
-  </tr>
-{% endfor %}
-</table>
-<p align="center">
-  <a href="https://github.com/contrafabulists-toolbox/google-sheet-to-github-website">Github Repo</a> -
-  <a href="https://github.com/contrafabulists-toolbox/google-sheet-to-github-website/blob/master/_data/links.yaml">YAML</a> -
-  <a href="https://github.com/contrafabulists-toolbox/google-sheet-to-github-website/blob/master/pull-sheet/index.html">Pull Script</a> -
-  <a href="https://docs.google.com/spreadsheets/d/1M_trEXOgzOWVn5YJSWfcXYQ7CXu3F3CS2Y-bKEaDUiE/pubhtml">Google Sheet</a>
-</p>
+<div class="container pt-2">
+  <div class="call">
+    <div class="call-box-top">
+      <div class="call-phone"><strong>Consultar Novo Qualis Ciência da Computação: </strong> {{ site.data.qualis.nome_representante }} </div>
+      <div class="call-email">
+      </div>
+    </div>
+    <div class="call-box-bottom">
+      <a href="{{site.baseurl}}/qualis" class="button">Acessar</a>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-8 pt-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12">
+      <h2 class="title-3 text-dark mb-3">Divulgações</h2>
+    </div>
+    {% for divulgacao in site.divulgacoes %}
+    <div class="col-12 col-md-4 mb-1">
+      <div class="service service-summary">
+        <div class="service-content">
+          <h2 class="service-title">
+            <a href="{{site.baseurl}}{{ divulgacao.url }}">{{ divulgacao.title }}</a>
+          </h2>
+          {{ divulgacao.content | markdownify | strip_html | truncate: 100 }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    <div class="col-12 text-center">
+      <a class="button button-primary mt-2" href="{{site.baseurl}}/divulgacoes">Ver Todas Divulgações</a>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-8 pt-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12">
+      <h2 class="title-3 text-dark mb-3">Serviços</h2>
+    </div>
+    {% for servico in site.servicos %}
+    <div class="col-12 col-md-4 mb-1">
+      <div class="service service-summary">
+        <div class="service-content">
+          <h2 class="service-title">
+            <a href="{{site.baseurl}}{{ servico.url }}">{{ servico.title }}</a>
+          </h2>
+          {{ servico.content | markdownify | strip_html | truncate: 100 }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    <div class="col-12 text-center">
+      <a class="button button-primary mt-2" href="{{site.baseurl}}/servicos">Ver Todos Serviços</a>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-5 pb-5 pt-md-7 pb-md-7">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <h2 class="title-3 text-dark mb-4">Cursos</h2>
+    </div>
+    {% for curso in site.data.cursos %}
+    <div class="col-12 col-md-6 col-lg-4 mb-2">
+      <div class="feature">
+        {% if curso.image %}<div class="feature-image"><img alt="{{ curso.title }} logo" src="{{ curso.image }}" /></div> {% endif %}
+        <h2 class="feature-title">{{ curso.title }}</h2>
+        <div class="feature-content">{{ curso.description }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

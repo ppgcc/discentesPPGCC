@@ -1,0 +1,57 @@
+---
+title: Time
+layout: default
+bodyClass: page-team-list
+---
+
+<div class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>O time</h1>
+        <p>
+          O time de Representantes Discentes do PPGCC
+          buscam auxiliar os alunos em suas necessidades,
+          resolvendo dúvidas e representando o interesse
+          comum dos alunos. A atual gestão possui mandato
+          até Julho de 2020.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-6">
+  <div class="row">
+    {% for time in site.time %}
+    <div class="col-12 col-md-6 mb-1">
+      <div class="team team-summary">
+        {% if time.image %}
+        <div class="team-image">
+          <img
+            alt="{{ time.title }} logo"
+            class="img-fluid mb-2"
+            src="{{site.baseurl}}{{ time.image }}"
+          />
+        </div>
+        {% endif %}
+        <div class="team-meta">
+          <h2 class="team-name">{{ time.title }}</h2>
+          <p class="team-description">{{ time.jobtitle }}</p>
+          <div>
+          {% if time.email %}
+          <a target="_blank" href="{{ time.email }}">E-mail</a>
+          {% endif %}
+          <div>
+          </div>
+          {% if time.lattesurl %}
+          <a target="_blank" href="{{ time.lattesurl }}">Currículo Lattes</a>
+          {% endif %}
+          </div>
+        </div>
+        <div class="time-content">{{ time.content }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
