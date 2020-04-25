@@ -41,7 +41,7 @@ bodyClass: page-qualis
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1>Qualis Ciência da Computação</h1>
+        <h1>Qualis CC</h1>
       </div>
     </div>
   </div>
@@ -59,16 +59,42 @@ bodyClass: page-qualis
       <!-- Aqui - Inicio -->
       <div id="tabs">
         <ul>
-            <li><a href="#aba-1"><strong>Conferências</strong></a></li>
-            <li><a href="#aba-2">Periódicos</a></li>
+            <li><a href="#aba-conferencias"><strong>Conferências</strong></a></li>
+            <li><a href="#aba-periodicos">Periódicos</a></li>
+            <li><a href="#aba-info-conferencias">Infográfico Conferências</a></li>
+            <li><a href="#aba-info-periodicos">Infográfico Periódicos</a></li>
         </ul>
-        <div id="aba-1">
+        <div id="aba-conferencias">
           <div class="col-xs-12">
             <div id="planilha"></div>
           </div>
         </div>
-        <div id="aba-2">
-            <p>Em construção.</p>
+        <div id="aba-periodicos">
+          <p>Em construção.</p>
+        </div>
+        <div id="aba-info-conferencias">
+          <p><strong>Links da imagem:</strong></p>
+          <ul>
+            <li><a target="_blank" href="{{ site.data.qualis.info-conferencias-link_1}}">Google Scholar</a></li>
+            <li><a target="_blank" href="{{ site.data.qualis.info-conferencias-link_2}}">Planilha Auxiliar</a></li>
+            <li><a target="_blank" href="{{ site.data.qualis.info-conferencias-link_3}}">Documento CAPES</a></li>
+          </ul>
+            <img
+              alt="Infográfico com a explicação de como aplicar as regras para calcular o novo qualis das conferências e eventos da Ciência da Computação."
+              src="{{site.baseurl}}{{ site.data.qualis.link-img-info-conferencias }}"
+            />
+        </div>
+        <div id="aba-info-periodicos">
+          <p><strong>Links da imagem:</strong></p>
+          <ul>
+            <li><a target="_blank" href="{{ site.data.qualis.info-periodicos-link_1}}">Scopus</a></li>
+            <li><a target="_blank" href="{{ site.data.qualis.info-periodicos-link_2}}">Web of Science</a></li>
+            <li><a target="_blank" href="{{ site.data.qualis.info-periodicos-link_3}}">Documento CAPES</a></li>
+          </ul>
+            <img
+              alt="Infográfico com a explicação de como aplicar as regras para calcular o novo qualis dos Periódicos de todas as áreas."
+              src="{{site.baseurl}}{{ site.data.qualis.link-img-info-periodicos }}"
+            />
         </div>
     </div>
 
