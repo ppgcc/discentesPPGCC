@@ -4,19 +4,19 @@ permalink: pretty
 title: 'Discentes PPGCC'
 
 collections:
-  divulgacoes:
+  discentes:
     output: true
-    permalink: /divulgacoes/:path/
-  time:
+    permalink: /discentes/:path/
+  equipe:
     output: true
-    permalink: /time/:path/
+    permalink: /equipe/:path/
   servicos:
     output: true
     permalink: /servicos/:path/
 
 defaults:
   - scope:
-      type: divulgacoes
+      type: discentes
     values:
       layout: service
       bodyClass: page-services-single

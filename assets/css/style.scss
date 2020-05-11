@@ -67,16 +67,17 @@
 
 // Pages
 @import 'pages/home';
-@import 'pages/team/team-list';
-@import 'pages/team/team-summary';
-@import 'pages/team/page-team-list';
-@import 'pages/testimonials/testimonials-list';
-@import 'pages/testimonials/testimonials-summary';
-@import 'pages/testimonials/page-testimonials-list';
-@import 'pages/services/page-services-list';
-@import 'pages/services/page-services-single';
-@import 'pages/services/service-single';
-@import 'pages/services/service-summary';
+@import 'pages/linha';
+@import 'pages/equipe/team-list';
+@import 'pages/equipe/team-summary';
+@import 'pages/equipe/page-team-list';
+@import 'pages/servicos/testimonials-list';
+@import 'pages/servicos/testimonials-summary';
+@import 'pages/servicos/page-testimonials-list';
+@import 'pages/discentes/page-services-list';
+@import 'pages/discentes/page-services-single';
+@import 'pages/discentes/service-single';
+@import 'pages/discentes/service-summary';
 
 // Display breakpoints for DEV
 // body:after {

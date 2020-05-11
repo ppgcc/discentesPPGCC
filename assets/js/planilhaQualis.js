@@ -15,8 +15,14 @@ var columns = [{
   "data": "conferencia",
   "title": "Conferências"
 }, {
+  "data": "h5",
+  "title": "H5"
+}, {
   "data": "Qualis_Final",
   "title": "Extrato CAPES"
+}, {
+  "data": "data-atualizacao",
+  "title": "Dt. Atualização"
 }];
 
 $(document).ready(function() {

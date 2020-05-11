@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Alunos(as) de Mestrado",
+    "description": "Alunos(as) ativos(as) de Mestrado",
+    "image": "images/cursos/icon-master.svg",
+    "url": "discentesMestrado",
+    "status": "ativo"
+  },
+  {
+    "title": "Alunos(as) de Doutorado",
+    "description": "Alunos(as) ativos(as) de Doutorado",
+    "image": "images/cursos/icon-phd.svg",
+	  "url": "discentesDoutorado",
+    "status": "ativo"
+  },
+  {
+    "title": "Alumnis de Mestrado",
+    "description": "Ex-alunos(as) de Mestrado do PPGCC",
+    "image": "images/cursos/alumni.svg",
+	  "url": "alumniMestrado",
+    "status": ""
+  },
+  {
+    "title": "Alumni de Doutorado",
+    "description": "Ex-alunos(as) de Doutorado do PPGCC",
+    "image": "images/cursos/alumni.svg",
+	  "url": "alumniDoutorado",
+    "status": ""
+  }
+]

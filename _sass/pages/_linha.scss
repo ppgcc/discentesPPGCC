@@ -1,6 +1,6 @@
-.page-home {
+.page-linha {
   //background-image: url('../images/undraw_taking_notes_tjaf.svg');
-  background-image: url('../images/backgroung_home.png');
+  background-image: url('../images/backgroung_line.png');
   background-repeat: no-repeat;
   background-size: 115%;
   background-position: 49px -40px;
@@ -10,11 +10,11 @@
   }
   @include media-breakpoint-up(md) {
     background-size: 70%;
-    background-position: 100% -50px;
+    background-position: 100% 50px;
   }
   @include media-breakpoint-up(lg) {
-    background-size: 60%;
-    background-position: 100% 50px;
+    background-size: 70%;
+    background-position: 50% 300px;
   }
   .call {
     position: relative;
