@@ -8,7 +8,7 @@ orientador: 'RAFAEL HEITOR BORDINI'
 email:
 ---
 
-Doutoranda em Ciência da Computação
+Mestrando em Ciência da Computação
 
 <img src="{{site.baseurl}}/images/discentes/mateus-silveira-colissi.gif" alt="foto de perfil" width="200"/>
 

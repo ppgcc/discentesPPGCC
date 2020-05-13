@@ -1,18 +1,18 @@
-.page-team-list {
-  background-image: url('../images/backgrounds/fundo-equipe.png');
+.page-discentes-list {
+  background-image: url('../images/background-discentes/image-04.svg');
   background-repeat: no-repeat;
   background-size: 115%;
-  background-position: -50px -10px;
+  background-position: 49px -40px;
   @include media-breakpoint-up(sm) {
     background-size: 90%;
     background-position: 159px -40px;
   }
   @include media-breakpoint-up(md) {
-    background-size: 70%;
-    background-position: 100% -50px;
+    background-size: 85%;
+    background-position: 199px -80px;
   }
   @include media-breakpoint-up(lg) {
     background-size: 60%;
-    background-position: 100% 50px;
+    background-position: 100% -20px;
   }
 }

@@ -1,10 +1,10 @@
 aviso1: 'Os resultados apresentados nesta página, foram baseados no Relatório do Qualis Periódicos e Eventos Científicos da CAPES (área Ciência da Computação) e para as Conferências/Eventos, também foi utilizada a Planilha de Trabalho.'
 aviso2: 'Para a consulta referente às CONFERÊNCIAS, foi realizado uma automatização via script Python, que busca por meio dos links das conferências do Google Scholar, o valor do H5 e aplica a regra conforme descrito no Infográfico Conferências. Este script atualiza uma planilha do Google Sheets, que automaticamente é replicada na consulta que consta na aba Conferências desta página. Nesta planilha consta os links utilizados, as datas das atualizações e os logs referente às tentativas de busca automática. '
 aviso3: 'Essa automatização é dependente do link do Google Scholar Source. Ou seja, caso não haja um link com a informação [Índice h5: 16], por exemplo, para a Conferência, a automatização não se aplica. Os links utilizados para esta automatização foram copiados da Planilha de Trabalho. Exemplos de links com a informação do índice (que funciona a automatização) e sem informação (que não funciona a automatização):  '
-aviso4: 'O código do script Python utilizado para este processo, segue no repositório deste site para consulta pública, como também para receber feedback de melhorias no código. O script está localizado na pasta: _data/scriptPython_github.py. Algumas informações do script referente à credenciais foram omitidas, devido à segurança de acesso à minha conta do Google.'
-aviso5: 'Devido a este processo de automização, poderá haver inconsistências e portanto, é aconselhado conferir aplicando a regra conforme descrito nas abas dos Infográficos abaixo.'
-aviso6: 'Ainda não foi elaborada uma consulta do Novo Qualis para Periódicos. Caso seja liberada uma lista de Periódicos pela CAPES, será trabalhada em uma possível automatização pela busca do percentil na Scopus, pelo menos.'
-aviso7: 'Qualquer inconsistência encontrada ou feedback, envie para o e-mail: '
+aviso4: 'O código do script Python utilizado para este processo está disponibilizado para consulta pública, como também para receber feedback de melhorias no código. Algumas informações do script referente à credenciais foram omitidas, devido à segurança de acesso à minha conta do Google.'
+aviso5: 'Ainda não foi elaborada uma consulta do Novo Qualis para Periódicos. Caso seja liberada uma lista de Periódicos pela CAPES, será trabalhada em uma possível automatização pela busca do percentil na Scopus, pelo menos.'
+aviso6: 'Qualquer inconsistência encontrada ou feedback, envie para o e-mail: '
+aviso7: 'Este página está em construção, portanto, devido a este processo de automização, poderá haver inconsistências e portanto, é aconselhado conferir aplicando a regra conforme descrito nas abas dos Infográficos abaixo.'
 aviso8: ''
 
 exemplo-link-func: 'https://scholar.google.com.br/citations?hl=pt-BR&view_op=list_hcore&venue=ByVfWwCdxQMJ.2019'
@@ -14,6 +14,7 @@ link-planilha-automatizacao: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT
 link-documento-capes: 'https://drive.google.com/file/u/1/d/1PVbt_OzFQkPeEvOjoBbOPRo0DAqR4ezb/view?usp=sharing'
 link-planilha-trabalho: 'https://docs.google.com/spreadsheets/d/1vYzEllNS-OjmRQFvdnTUR4-y2Pq0BE9QjK5FH5eVA3M/edit#gid=1081842114'
 link-repositorio: 'https://github.com/ppgcc/discentesPPGCC'
+link-script: 'https://drive.google.com/drive/folders/1yGZZkfNWZtQ1C1g03QSnBf5Mz3PDey1K?usp=sharing'
 
 info-conferencias-link_1: 'https://scholar.google.com.br/citations?view_op=top_venues&hl=pt-BR&vq=en'
 info-conferencias-link_2: 'https://docs.google.com/spreadsheets/d/1PeOvZI_TZCUtsqtlR3GVopAJBWO-NeOHekkd0_euMAE/edit?usp=sharing'

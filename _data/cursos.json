@@ -4,13 +4,15 @@
     "description": "O programa realiza processos de inscrição e de seleção de novos alunos para Mestrado e Doutorado duas vezes por ano.",
     "image": "images/cursos/icon-computer.svg",
     "creditos": "24 créditos",
-    "defesa": "mínimo de 12 e máximo de 30 meses"
+    "defesa": "mínimo de 12 e máximo de 30 meses",
+    "url": "pages/fluxoMestrado"
   },
   {
     "title": "Doutorado em Ciência da Computação",
     "description": "Para a seleção de candidatos a Doutorado, o PPGCC tem interesse em candidatos com: Dedicação mínima de 20hs semanais em contato presencial com grupo de pesquisa e orientador; Candidato com plano de trabalho contemplando doutorado-sanduíche; Candidato com publicações internacionais qualificadas.",
     "image": "images/cursos/icon-computer-phd.svg",
     "creditos": "36 créditos",
-    "defesa": "mínimo de 24 e máximo de 54 meses"
+    "defesa": "mínimo de 24 e máximo de 54 meses",
+    "url": "pages/fluxoDoutorado"
   }
 ]

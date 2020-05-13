@@ -1,30 +1,37 @@
 [
   {
-    "title": "Alunos(as) de Mestrado",
-    "description": "Alunos(as) ativos(as) de Mestrado",
-    "image": "images/cursos/icon-master.svg",
-    "url": "discentesMestrado",
-    "status": "ativo"
+    "title": "Mestrado",
+    "description": "Perfis dos Alunos(as) de Mestrado",
+    "image": "images/cursos/icon-master-curso.svg",
+    "url": "pages/discentesMestrado",
+    "type": "M"
   },
   {
-    "title": "Alunos(as) de Doutorado",
-    "description": "Alunos(as) ativos(as) de Doutorado",
-    "image": "images/cursos/icon-phd.svg",
-	  "url": "discentesDoutorado",
-    "status": "ativo"
+    "title": "Doutorado",
+    "description": "Perfis dos Alunos(as) de Doutorado",
+    "image": "images/cursos/icon-phd-curso.svg",
+	  "url": "pages/discentesDoutorado",
+    "type": "D"
   },
   {
     "title": "Alumnis de Mestrado",
-    "description": "Ex-alunos(as) de Mestrado do PPGCC",
+    "description": "Perfis dos Alumnis de Mestrado",
     "image": "images/cursos/alumni.svg",
-	  "url": "alumniMestrado",
-    "status": ""
+	  "url": "pages/alumniMestrado",
+    "type": "AM"
   },
   {
-    "title": "Alumni de Doutorado",
-    "description": "Ex-alunos(as) de Doutorado do PPGCC",
+    "title": "Alumnis de Doutorado",
+    "description": "Perfis dos Alumnis de Doutorado",
     "image": "images/cursos/alumni.svg",
-	  "url": "alumniDoutorado",
-    "status": ""
+	  "url": "pages/alumniDoutorado",
+    "type": "AD"
+  },
+  {
+    "title": "Planilha Discentes (2020/1)",
+    "description": "Apresenta em formato de planilha os discentes de Mestrado e Doutorado, seus respecitvos orientadores e grupos/laboratórios de pesquisa.",
+    "image": "images/cursos/icon-sheets.svg",
+	  "url": "pages/planilhaDiscentes",
+    "type": "PD"
   }
 ]

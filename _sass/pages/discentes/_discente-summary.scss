@@ -1,0 +1,7 @@
+.discente-summary { display: flex; flex-direction: column; border: 1px solid #dcdcdc; border-radius: 3px; box-shadow: 0 1px 18px rgba(0, 0, 0, 0.2); background: #fff; padding: 10px; padding: 50px; border: none; height: 100%; }
+.discente-summary .discente-image { width: 60px; margin-bottom: 10px; }
+.discente-summary .discente-image img { max-width: 100%; height: auto; }
+.discente-summary .discente-title { font-family: "Palanquin Dark", Arial, sans-serif, -apple-system; font-size: 1.8rem; font-weight: 400; }
+.discente-summary .discente-description { font-size: 1.3rem; }
+.discente-summary .discente-link { flex: 0; margin-top: auto; }
+.discente-summary a.discente-read-more { font-weight: 400; font-family: "Palanquin Dark", Arial, sans-serif, -apple-system; }

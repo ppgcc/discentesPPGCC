@@ -4,7 +4,8 @@
 ---
 
 // Font
-@import url('https://fonts.googleapis.com/css?family=Lora:400|Open+Sans:400,700');
+//@import url('https://fonts.googleapis.com/css?family=Lora:400|Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400|Open+Sans:400,700');
 
 // Bootstrap
 @import 'bootstrap/functions';
@@ -67,17 +68,21 @@
 
 // Pages
 @import 'pages/home';
-@import 'pages/linha';
+@import 'pages/qualis/page-qualis';
 @import 'pages/equipe/team-list';
 @import 'pages/equipe/team-summary';
 @import 'pages/equipe/page-team-list';
 @import 'pages/servicos/testimonials-list';
 @import 'pages/servicos/testimonials-summary';
 @import 'pages/servicos/page-testimonials-list';
-@import 'pages/discentes/page-services-list';
-@import 'pages/discentes/page-services-single';
-@import 'pages/discentes/service-single';
-@import 'pages/discentes/service-summary';
+@import 'pages/discentes/page-discentes-list';
+@import 'pages/discentes/page-discentes-single';
+@import 'pages/discentes/discente-single';
+@import 'pages/discentes/discente-summary';
+@import 'pages/cursos/page-cursos-list';
+
+
+
 
 // Display breakpoints for DEV
 // body:after {

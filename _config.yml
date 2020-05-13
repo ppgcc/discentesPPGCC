@@ -1,7 +1,7 @@
 baseurl: '/discentesPPGCC'
 exclude: ['README.md']
 permalink: pretty
-title: 'Discentes PPGCC'
+title: 'Discentes PPGCC/PUCRS'
 
 collections:
   discentes:
@@ -19,7 +19,7 @@ defaults:
       type: discentes
     values:
       layout: service
-      bodyClass: page-services-single
+      bodyClass: page-discentes-single
   - scope:
       path: 'images'
     values:

@@ -1,0 +1,58 @@
+---
+title: Discentes PPGCC - Programa de Pós-graduação em Ciência da Computação
+layout: default
+bodyClass: page-linha
+---
+
+<div class="container pt-5 pb-5 pt-md-7 pb-md-7">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6 col-lg-6 mb-4">
+      <div class="feature">
+        <div class="feature-image"><img alt="{{ categoria.title }} logo" src="..//{{ categoria.image }}" /></div>
+        <h2 class="feature-title">Mestrado</h2>
+        <div class="feature-content">Iniciando o curso...</div>
+        <a href="{{site.baseurl}}/{{ categoria.url }}" class="button">Acessar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-5 pb-5 pt-md-7 pb-md-7">
+  <div class="row justify-content-center">
+    {% for linha in site.data.linha-mestrado %}
+      {% if linha.position-image == 'esquerda' %}
+      <div class="col-12 col-md-6 col-lg-6 mb-4">
+        <div class="feature">
+          <div class="feature-image"><img alt="{{ categoria.title }} logo" src="" /></div>
+          <h2 class="feature-title">Aqui é um título...</h2>
+          <div class="feature-content">Aqui é um texto...</div>
+          <a href="{{site.baseurl}}/{{ categoria.url }}" class="button">Acessar</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-1">
+        <div class="discente discente-summary">
+          <div class="discente-content">
+            <h2 class="discente-title">Aqui é um título... Aqui é um título... Aqui é um título... Aqui é um título...Aqui é um título... Aqui é um título... Aqui é um título...</h2>
+          </div>
+        </div>
+      </div>
+      {% elsif linha.position-image == 'direita' %}
+      <div class="col-12 col-md-4 mb-1">
+        <div class="discente discente-summary">
+          <div class="discente-content">
+            <h2 class="discente-title">Aqui é um título... Aqui é um título... Aqui é um título... Aqui é um título...Aqui é um título... Aqui é um título... Aqui é um título...</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6 mb-4">
+        <div class="feature">
+          <div class="feature-image"><img alt="{{ categoria.title }} logo" src="" /></div>
+          <h2 class="feature-title">Aqui é um título...</h2>
+          <div class="feature-content">Aqui é um texto...</div>
+          <a href="{{site.baseurl}}/{{ categoria.url }}" class="button">Acessar</a>
+        </div>
+      </div>
+     {% endif %}
+    {% endfor %}
+  </div>
+</div>

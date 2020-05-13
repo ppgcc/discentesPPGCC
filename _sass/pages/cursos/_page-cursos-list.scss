@@ -1,0 +1,56 @@
+.page-cursos-list {
+  background-image: url('../images/backgrounds/fundo-cursos.png');
+  background-repeat: no-repeat;
+  background-size: 115%;
+  background-position: 49px -40px;
+    @include media-breakpoint-up(sm) {
+    background-size: 90%;
+    background-position: 159px -40px;
+  }
+  @include media-breakpoint-up(md) {
+    background-size: 70%;
+    background-position: 100% -50px;
+  }
+  @include media-breakpoint-up(lg) {
+    background-size: 60%;
+    background-position: 100% 50px;
+  }
+}
+
+.subpage-cursos-mestrado-list {
+  background-image: url('../images/backgrounds/fundo-fluxos.png');
+   background-repeat: no-repeat;
+  background-size: 115%;
+  background-position: 49px -40px;
+  @include media-breakpoint-up(sm) {
+    background-size: 90%;
+    background-position: 159px -40px;
+  }
+  @include media-breakpoint-up(md) {
+    background-size: 70%;
+    background-position: 100% -50px;
+  }
+  @include media-breakpoint-up(lg) {
+    background-size: 60%;
+    background-position: 100% 80px;
+  }
+}
+
+.subpage-cursos-doutorado-list {
+  background-image: url('../images/backgrounds/fundo-fluxos.png');
+  background-repeat: no-repeat;
+  background-size: 115%;
+  background-position: 49px -40px;
+  @include media-breakpoint-up(sm) {
+    background-size: 90%;
+    background-position: 159px -40px;
+  }
+  @include media-breakpoint-up(md) {
+    background-size: 70%;
+    background-position: 100% -50px;
+  }
+  @include media-breakpoint-up(lg) {
+    background-size: 60%;
+    background-position: 100% 0px;
+  }
+}

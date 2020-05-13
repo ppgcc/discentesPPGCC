@@ -6,7 +6,7 @@ bodyClass: page-home
 
 <div class="intro pb-4">
   <div class="container">
-    <h1>Discentes PPGCC - PUCRS</h1>
+    <h1>Discentes PPGCC/PUCRS</h1>
     <p>Programa de Pós-graduação em Ciência da Computação da PUCRS </p>
   </div>
 </div>
@@ -19,21 +19,26 @@ bodyClass: page-home
       </div>
     </div>
     <div class="call-box-bottom">
-      <a href="{{site.baseurl}}/qualis" class="button">Acessar</a>
+      <a href="{{site.baseurl}}/pages/qualis" class="button">Acessar</a>
     </div>
   </div>
 </div>
 
+<div class="page-home-box">
 <div class="container pt-8 pt-md-10">
   <div class="row justify-content-center">
     <div class="col-12">
       <h2 class="title-3 text-dark mb-4">Discentes</h2>
     </div>
     {% for categoria in site.data.categoria-discentes %}
-    {% if categoria.status == 'ativo' %}
-    <div class="col-12 col-md-6 col-lg-6 mb-4">
+    {% if categoria.type == 'M' or categoria.type == 'D' %}
+    <div class="col-12 col-md-4 mb-1">
       <div class="feature">
-        {% if categoria.image %}<div class="feature-image"><img alt="{{ categoria.title }} logo" src="{{ categoria.image }}" /></div> {% endif %}
+        {% if categoria.image %}
+        <div class="feature-image">
+          <img alt="{{ categoria.title }} logo" src="{{ categoria.image }}" />
+        </div>
+        {% endif %}
         <h2 class="feature-title">{{ categoria.title }}</h2>
         <div class="feature-content">{{ categoria.description }}</div>
         <a href="{{site.baseurl}}/{{ categoria.url }}" class="button">Acessar</a>
@@ -42,81 +47,88 @@ bodyClass: page-home
     {% endif %}
     {% endfor %}
     <div class="col-12 text-center">
-      <a class="button button-primary mt-2" href="{{site.baseurl}}/discentes">Ver Todos Discentes</a>
+      <a class="button button-primary mt-2" href="{{site.baseurl}}/pages/discentes">Ver Todos Discentes</a>
     </div>
   </div>
 </div>
+</div>
 
-
-
-
+<div class="page-home-box">
+  <div class="container pt-8 pt-md-10">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h2 class="title-3 text-dark mb-4">Serviços & Divulgações</h2>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6 mb-4">
+        <div class="feature">
+          <div class="feature-image"><img alt="imagem linktree logo" src="images/servicos/linktree.png"/></div>
+          <h2 class="feature-title">Acesse o nosso Linktree!</h2>
+          <div class="feature-content">Aqui estão relacionados os links mais úteis para você!</div>
+          <a target="_blank" href="https://linktr.ee/alunosppgcc" class="button">Acessar Linktree</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!--
+<div class="page-home-box">
 <div class="container pt-8 pt-md-10">
-  <div class="row justify-content-start">
-    <div class="col-12">
-      <h2 class="title-3 text-dark mb-3">Divulgações</h2>
-    </div>
-    {% for discente in site.discentes %}
-    <div class="col-12 col-md-4 mb-1">
-      <div class="service service-summary">
-        <div class="service-content">
-          <h2 class="service-title">
-            <a href="{{site.baseurl}}{{ discente.url }}">{{ discente.title }}</a>
-          </h2>
-          {{ discente.content | markdownify | strip_html | truncate: 100 }}
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-    <div class="col-12 text-center">
-      <a class="button button-primary mt-2" href="{{site.baseurl}}/discentes">Ver Todas Divulgações</a>
-    </div>
-  </div>
-</div>
--->
-<div class="container pt-8 pt-md-10">
-  <div class="row justify-content-start">
-    <div class="col-12">
-      <h2 class="title-3 text-dark mb-3">Serviços</h2>
-    </div>
-    {% for servico in site.servicos %}
-    <div class="col-12 col-md-4 mb-1">
-      <div class="service service-summary">
-        <div class="service-content">
-          <h2 class="service-title">
-            <a href="{{site.baseurl}}{{ servico.url }}">{{ servico.title }}</a>
-          </h2>
-          {{ servico.content | markdownify | strip_html | truncate: 100 }}
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-    <div class="col-12 text-center">
-      <a class="button button-primary mt-2" href="{{site.baseurl}}/servicos">Ver Todos Serviços</a>
-    </div>
-  </div>
-</div>
-
-
-<div class="container pt-5 pb-5 pt-md-7 pb-md-7">
   <div class="row justify-content-center">
     <div class="col-12">
-      <h2 class="title-3 text-dark mb-4">Cursos</h2>
+      <h2 class="title-3 text-dark mb-4">Fluxos</h2>
     </div>
-    {% for curso in site.data.cursos %}
+    {% for fluxo in site.data.fluxos-cursos %}
     <div class="col-12 col-md-6 col-lg-6 mb-4">
       <div class="feature">
-        {% if curso.image %}<div class="feature-image"><img alt="{{ curso.title }} logo" src="{{ curso.image }}" /></div> {% endif %}
-        <h2 class="feature-title">{{ curso.title }}</h2>
-        <div class="feature-content">{{ curso.description }}</div>
-        <div class="feature-content"><strong>Créditos: </strong>{{ curso.creditos }}</div>
-        <div class="feature-content"><strong>Prazo para defesa: </strong>{{ curso.defesa }}</div>
-        <div class="feature-content">
-          <a href="{{site.data.contact.link-inscricao-ppgcc}}" class="button">Inscrições</a>
+        {% if fluxo.image %}
+        <div class="feature-image">
+          <img alt="{{ fluxo.title }} logo" src="{{ fluxo.image }}" />
         </div>
+        {% endif %}
+        <h2 class="feature-title">{{ fluxo.title }}</h2>
+        <div class="feature-content">{{ fluxo.description }}</div>
+        <a href="{{site.baseurl}}/{{ fluxo.url }}" class="button">Ver Fluxo</a>
       </div>
     </div>
     {% endfor %}
+  </div>
+</div>
+</div>
+-->
+<div class="page-home-box">
+  <div class="container pt-5 pb-5 pt-md-7 pb-md-7">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h2 class="title-3 text-dark mb-4">Cursos</h2>
+      </div>
+      {% for curso in site.data.cursos %}
+      <div class="col-12 col-md-6 col-lg-6 mb-4">
+        <div class="feature">
+          {% if curso.image %}
+            <div class="feature-image">
+              <img alt="{{ curso.title }} logo" src="{{ curso.image }}" />
+            </div>
+          {% endif %}
+          <h2 class="feature-title">{{ curso.title }}</h2>
+          <div class="feature-content">{{ curso.description }}</div>
+          <div class="feature-content"><strong>Créditos: </strong>{{ curso.creditos }}</div>
+          <div class="feature-content"><strong>Prazo para defesa: </strong>{{ curso.defesa }}</div>
+          <div class="feature-content">
+            <a target="_blank" href="{{site.data.contact.link-inscricao-ppgcc}}" class="button">Inscrições</a>
+            <a href="{{site.baseurl}}/{{ curso.url }}" class="button">Ver Fluxo</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
 
+      <div class="col-12 col-md-6 col-lg-10 mb-8">
+        <div class="feature">
+          <div class="feature-content">
+            <img alt="Banner da CAPES com a informação de que o curso de Ciência da Computação é nível 6" src="images/cursos/cc-banner-capes.jpg" />
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>

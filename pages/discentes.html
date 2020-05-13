@@ -1,0 +1,59 @@
+---
+title: Discentes
+layout: default
+bodyClass: page-discentes-list
+---
+
+<div class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Discentes de Mestrado e Doutorado do PPGCC</h1>
+        <p>
+          Conheça o perfil, as pesquisas e as contribuições dos Discentes do nosso Programa de Pós-graduação em Ciência da Computação da PUCRS!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-5 pb-5 pt-md-7 pb-md-7">
+  <div class="row justify-content-center">
+    <!--<div class="col-12">
+      <h2 class="title-3 text-dark mb-4">Discentes PPGCC</h2>
+    </div>
+    -->
+    {% for categoria in site.data.categoria-discentes %}
+    <div class="col-12 col-md-3 mb-1">
+      <div class="feature">
+        {% if categoria.image %}
+        <div class="feature-image">
+          <img alt="{{ categoria.title }} logo" src="{{site.baseurl}}/{{ categoria.image }}" />
+        </div>
+        {% endif %}
+        <h2 class="feature-title"><strong>{{ categoria.title }}</strong></h2>
+        <div class="feature-content">{{ categoria.description }}</div>
+        <a href="{{site.baseurl}}/{{ categoria.url }}" class="button">Acessar</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<!--
+<div class="container pb-6">
+  <div class="row">
+    {% for discente in site.discentes %}
+    <div class="col-12 col-md-4 mb-1">
+      <div class="discente discente-summary">
+        <div class="discente-content">
+          <h2 class="discente-title">
+            <a href="{{site.baseurl}}{{ discente.url }}">{{ discente.title }}</a>
+          </h2>
+          {{ discente.content | markdownify | strip_html | truncate: 100 }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+-->

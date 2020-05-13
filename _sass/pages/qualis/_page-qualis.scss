@@ -1,0 +1,75 @@
+.page-qualis {
+  background-image: url('../images/backgrounds/fundo-qualis.png');
+  background-repeat: no-repeat;
+  background-size: 115%;
+  background-position: 49px -40px;
+  @include media-breakpoint-up(sm) {
+    background-size: 90%;
+   background-position: 159px -40px;
+  }
+  @include media-breakpoint-up(md) {
+    background-size: 85%;
+    background-position: 199px -80px;
+  }
+  @include media-breakpoint-up(lg) {
+    background-size: 60%;
+    background-position: 100% 20px;
+  }
+}
+
+.qualis-summary { 
+	display: flex; 
+	flex-direction: column; 
+	border: 1px solid #dcdcdc; 
+	border-radius: 3px; 
+	box-shadow: 0 1px 18px rgba(0, 0, 0, 0.2); 
+	background: #fff; 
+	padding: 10px; 
+	padding: 10px; 
+	border: none; 
+	height: 100%; 
+}
+.qualis-summary 
+.qualis-image { 
+	width: 60px; 
+	margin-bottom: 10px; 
+}
+.qualis-summary 
+.qualis-image img { 
+	max-width: 100%; 
+	height: auto; 
+}
+.qualis-summary 
+.qualis-title { 
+	font-family: "Palanquin Dark", Arial, sans-serif, -apple-system; font-size: 1.8rem; 
+	font-weight: 400; 
+}
+
+.qualis-summary 
+.qualis-description { 
+	font-size: 1.0rem; 
+}
+.qualis-summary
+.qualis-link { 
+	flex: 0; margin-top: auto; 
+}
+.qualis-summary a.qualis-read-more { 
+	font-weight: 400; 
+	font-family: "Palanquin Dark", Arial, sans-serif, -apple-system; 
+}
+
+.color-description-alert { 
+	display: flex; 
+	flex-direction: column; 
+	border: 1px solid #dcdcdc; 
+	border-radius: 3px; 
+	box-shadow: 0 1px 18px rgba(0, 0, 0, 0.2); 
+	background: #ff4d4d;
+	padding: 10px; 
+	padding: 10px; 
+	border: none; 
+	height: 100%;
+	font-size: 1.0rem; 
+}
+
+

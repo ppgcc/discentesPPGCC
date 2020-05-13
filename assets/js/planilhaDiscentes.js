@@ -1,27 +1,19 @@
 //Edit 'key' and 'columns' to connect your spreadsheet
 
-//enter google sheets key here
-//var key =
-  //"https://docs.google.com/spreadsheets/d/113QZOTS9JQ1WGfwjwQrOpErUBJTAnaBmdjP0_OjA53c/pubhtml?gid=489792061&single=true";
-var key = "1yvuCa__L7r0EJy6v6Jb17fvu-VdV80PbfAReR9Gy52I";
-//"data" refers to the column name with no spaces and no capitals
-//punctuation or numbers in your column name
-//"title" is the column name you want to appear in the published table
+var key = "1_dgUcS3U7U56oRvKCfAk5Pfdq5UpK6cxhlOQDyhatVU";
+
 var columns = [{
-  "data": "sigla",
-  "title": "Siglas"
+  "data": "aluno",
+  "title": "Discente"
 }, {
-  "data": "conferencia",
-  "title": "Conferências"
+  "data": "curso",
+  "title": "Curso"
 }, {
-  "data": "h5",
-  "title": "H5"
+  "data": "orientador",
+  "title": "Orientador(a)"
 }, {
-  "data": "Qualis_Final",
-  "title": "Extrato CAPES"
-}, {
-  "data": "data-atualizacao",
-  "title": "Dt. Atualização"
+  "data": "grupo",
+  "title": "Grupo/Laboratório de Pesquisa"
 }];
 
 $(document).ready(function() {
