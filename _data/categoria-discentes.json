@@ -2,6 +2,7 @@
   {
     "title": "Mestrado",
     "description": "Perfis dos Alunos(as) de Mestrado",
+    "description-fluxo": "Iniciando o curso...",
     "image": "images/cursos/icon-master-curso.svg",
     "url": "pages/discentesMestrado",
     "type": "M"
@@ -9,6 +10,7 @@
   {
     "title": "Doutorado",
     "description": "Perfis dos Alunos(as) de Doutorado",
+    "description-fluxo": "Iniciando o curso...",
     "image": "images/cursos/icon-phd-curso.svg",
 	  "url": "pages/discentesDoutorado",
     "type": "D"

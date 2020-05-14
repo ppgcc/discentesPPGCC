@@ -14,6 +14,18 @@ var columns = [{
   "data": "conferencia",
   "title": "Conferências"
 }, {
+  "data": "categoria",
+  "title": "Categoria Infográfico"
+}, {
+  "data": "CE_Indicou",
+  "title": "Comissão Especial Indicou",
+  "render": function (data, type, full, meta) {
+    if (data === 'nulo'){
+      data = "";
+    }
+    return data;
+  }
+},{
   "data": "h5",
   "title": "H5"
 }, {
@@ -21,7 +33,25 @@ var columns = [{
   "title": "Extrato CAPES"
 }, {
   "data": "data-atualizacao",
-  "title": "Dt. Atualização"
+  "title": "Última Atualização Automática",
+  "render": function (data, type, full, meta) {
+    if (data === 'nulo'){
+      data = "";
+    }
+    return data;
+  }
+}, {
+  "data": "link",
+  "data2": "h5",
+  "title": "Google Scholar",
+  "render": function (data, type, full, meta) {
+    if (data === 'nulo'){
+      data = 'Sem Link'
+    } else{
+      data = '<a target="_blank" href="' + data + ' "class="button">Link</a>';
+    }
+      return data;
+  }
 }];
 
 $(document).ready(function() {

@@ -5,8 +5,6 @@ bodyClass: page-qualis
 ---
 
 <!--These are JavaScript Libraries-->
-
-
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 <link href="{{site.baseurl}}/assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
 <link href="{{site.baseurl}}/assets/css/style.css" rel="stylesheet">
@@ -99,80 +97,58 @@ bodyClass: page-qualis
     </div>
   </div>
 </div>
-<!--
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <ul>
-        <li><strong>Aviso 01: </strong>{{ site.data.qualis.aviso1 }}
-          (<a target="_blank" href="{{ site.data.qualis.link-documento-capes}}">Documento CAPES</a>,
-          <a target="_blank" href="{{ site.data.qualis.link-planilha-trabalho}}">Planilha de Trabalho</a>)
-        </li>
-        <li><strong>Aviso 02: </strong>{{ site.data.qualis.aviso2 }}
-          (<a target="_blank" href="{{ site.data.qualis.link-planilha-automatizacao}}">Planilha Automatização</a>)
-        </li>
-        <li><strong>Aviso 03: </strong>{{ site.data.qualis.aviso3 }}
-          (<a target="_blank" href="{{ site.data.qualis.exemplo-link-func}}">Funciona</a>,
-          <a target="_blank" href="{{ site.data.qualis.exemplo-link-nao-func}}">Não funciona</a>)
-        </li>
-        <li><strong>Aviso 04: </strong>{{ site.data.qualis.aviso4 }}
-          (<a target="_blank" href="{{ site.data.qualis.link-repositorio}}">Repositório Site GitHub</a>)
-        </li>
 
-        <li><strong>Aviso 05: </strong>{{ site.data.qualis.aviso5 }}</li>
-        <li><strong>Aviso 06: </strong>{{ site.data.qualis.aviso6 }}</li>
-        <li><strong>Aviso 07: </strong>{{ site.data.qualis.aviso7 }}(<a target="_blank" href="mailto:{{site.data.contact.email_representante}}">E-mail contato</a>)</li>
-        {% if site.data.qualis.aviso8 %}
-          <li><strong>Aviso 07: </strong>{{ site.data.qualis.aviso6 }}</li>
-        {% endif %}
-      </ul>
--->
-      <!-- Aqui - Inicio -->
-      <div id="tabs">
-        <ul>
-            <li><a href="#aba-conferencias"><strong>Conferências</strong></a></li>
-            <li><a href="#aba-periodicos">Periódicos</a></li>
-            <li><a href="#aba-info-conferencias">Infográfico Conferências</a></li>
-            <li><a href="#aba-info-periodicos">Infográfico Periódicos</a></li>
-        </ul>
-        <div id="aba-conferencias">
-          <div class="col-xs-12">
-            <div id="planilha"></div>
-          </div>
-        </div>
-        <div id="aba-periodicos">
-          <p>Em construção.</p>
-        </div>
-        <div id="aba-info-conferencias">
-          <p><strong>Links da imagem:</strong></p>
-          <ul>
-            <li><a target="_blank" href="{{ site.data.qualis.info-conferencias-link_1}}">Google Scholar</a></li>
-            <li><a target="_blank" href="{{ site.data.qualis.info-conferencias-link_2}}">Planilha Auxiliar</a></li>
-            <li><a target="_blank" href="{{ site.data.qualis.info-conferencias-link_3}}">Documento CAPES</a></li>
-          </ul>
-            <img
-              alt="Infográfico com a explicação de como aplicar as regras para calcular o novo qualis das conferências e eventos da Ciência da Computação."
-              src="{{site.baseurl}}{{ site.data.qualis.link-img-info-conferencias }}"
-            />
-        </div>
-        <div id="aba-info-periodicos">
-          <p><strong>Links da imagem:</strong></p>
-          <ul>
-            <li><a target="_blank" href="{{ site.data.qualis.info-periodicos-link_1}}">Scopus</a></li>
-            <li><a target="_blank" href="{{ site.data.qualis.info-periodicos-link_2}}">Web of Science</a></li>
-            <li><a target="_blank" href="{{ site.data.qualis.info-periodicos-link_3}}">Documento CAPES</a></li>
-          </ul>
-            <img
-              alt="Infográfico com a explicação de como aplicar as regras para calcular o novo qualis dos Periódicos de todas as áreas."
-              src="{{site.baseurl}}{{ site.data.qualis.link-img-info-periodicos }}"
-            />
-        </div>
+<div id="tabs">
+  <ul>
+      <li><a href="#aba-conferencias"><strong>Conferências</strong></a></li>
+      <li><a href="#aba-periodicos">Periódicos</a></li>
+      <li><a href="#aba-info-conferencias">Infográfico Conferências</a></li>
+      <li><a href="#aba-info-periodicos">Infográfico Periódicos</a></li>
+  </ul>
+  <div id="aba-conferencias">
+    <div class="col-xs-12">
+      <div id="planilha"></div>
     </div>
-
-
-      <!-- <table id="graphic" class="display" style="width:100%"></table> -->
-
-      <!-- Aqui - Fim -->
+  </div>
+  <div id="aba-periodicos">
+    <p>Em construção.</p>
+  </div>
+  <div id="aba-info-conferencias">
+    <div class="col-2 mb-1">
+      <a target="_blank" href="{{ site.data.qualis.info-conferencias-link_1}}" class="button">Google Scholar</a>
+    </div>
+    <div class="col-2 mb-1">
+      <a target="_blank" href="{{ site.data.qualis.info-conferencias-link_2}}" class="button">Planilha Auxiliar</a>
+    </div>
+    <div class="col-2 mb-1">
+      <a target="_blank" href="{{ site.data.qualis.info-conferencias-link_3}}" class="button">Documento CAPES</a>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 text-center text-center">
+        <img
+        alt="Infográfico com a explicação de como aplicar as regras para calcular o novo qualis das conferências e eventos da Ciência da Computação."
+        src="{{site.baseurl}}/{{ site.data.qualis.link-img-info-conferencias }}"
+        />
+      </div>
+    </div>
+  </div>
+  <div id="aba-info-periodicos">
+    <div class="col-2 mb-1">
+      <a target="_blank" href="{{ site.data.qualis.info-periodicos-link_1}}" class="button">Scopus</a>
+    </div>
+    <div class="col-2 mb-1">
+      <a target="_blank" href="{{ site.data.qualis.info-periodicos-link_2}}" class="button">Web of Science</a>
+    </div>
+    <div class="col-2 mb-1">
+      <a target="_blank" href="{{ site.data.qualis.info-periodicos-link_3}}" class="button">Documento CAPES</a></li>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 text-center text-center">
+        <img
+        alt="Infográfico com a explicação de como aplicar as regras para calcular o novo qualis dos Periódicos de todas as áreas."
+        src="{{site.baseurl}}/{{ site.data.qualis.link-img-info-periodicos }}"
+      />
+      </div>
     </div>
   </div>
 </div>

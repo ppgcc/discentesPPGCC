@@ -14,7 +14,7 @@ bodyClass: page-team-list
           buscam auxiliar os(as) alunos(as) em suas necessidades,
           resolvendo dúvidas e representando o interesse
           comum dos alunos(as). A atual gestão possui mandato
-          até Julho de 2020.
+          até o final do mês de Julho de 2020.
         </p>
       </div>
     </div>
@@ -38,14 +38,14 @@ bodyClass: page-team-list
         <div class="team-meta">
           <h2 class="team-name">{{ equipe.title }}</h2>
           <p class="team-description">{{ equipe.jobtitle }}</p>
-          <div>
+          <div class="col-2 mb-1 text-center">
           {% if equipe.email %}
-          <a target="_blank" href="{{ equipe.email }}">E-mail</a>
+          <a target="_blank" href="{{ equipe.email }}" class="button">E-mail</a>
           {% endif %}
-          <div>
           </div>
+          <div class="col-2 mb-1 text-center">
           {% if equipe.lattesurl %}
-          <a target="_blank" href="{{ equipe.lattesurl }}">Currículo Lattes</a>
+          <a target="_blank" href="{{ equipe.lattesurl }} " class="button">Currículo Lattes</a>
           {% endif %}
           </div>
         </div>

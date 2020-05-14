@@ -25,37 +25,37 @@ bodyClass: subpage-discentes-alumni-doutorado-list
   <div class="row justify-content-center">
     {% for discente in site.discentes %}
     {% if discente.categoria == 'alumni-doutorado'%}
-    <div class="col-12 col-md-6 col-lg-4 mb-2">
-      <div class="team team-summary">
-        {% if discente.image-perfil %}
-        <div class="team-image">
-          <img
-            alt="{{ discente.title }} logo"
-            class="img-fluid mb-2"
-            src="{{site.baseurl}}{{ discente.image-perfil }}"
-          />
-        </div>
-        {% endif %}
-        <h2 class="feature-title">
-          <a href="{{site.baseurl}}{{ discente.url }}">{{ discente.title }}</a>
-        </h2>
-        {% if discente.linha-de-pesquisa %}
-        <div class="feature-content"><strong>Linha de Pesquisa: </strong>{{ discente.linha-de-pesquisa }}</div>
-        {% endif %}
-        {% if discente.grupo-de-pesquisa %}
-        <div class="feature-content"><strong>Grupo de Pesquisa: </strong>{{ discente.grupo-de-pesquisa }}</div>
-        {% endif %}
-        {% if discente.orientador %}
-        <div class="feature-content"><strong>Orientador(a): </strong>{{ discente.orientador }}</div>
-        {% endif %}
-        {% if discente.email %}
-        <div class="feature-content"><strong>Contato: </strong>
-        <a target="_blank" href="mailto:{{ discente.email }}">{{ discente.email }}</a>
-        </div>
-        {% endif %}
+      <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <div class="team team-summary">
+          {% if discente.image-perfil %}
+            <div class="team-image">
+              <img
+                alt="{{ discente.title }} logo"
+                class="img-fluid mb-2"
+                src="{{site.baseurl}}{{ discente.image-perfil }}"
+              />
+            </div>
+          {% endif %}
+          <h2 class="feature-title">
+            <a href="{{site.baseurl}}{{ discente.url }}">{{ discente.title }}</a>
+          </h2>
+          {% if discente.linha-de-pesquisa %}
+            <div class="feature-content"><strong>Linha de Pesquisa: </strong>{{ discente.linha-de-pesquisa }}</div>
+          {% endif %}
+          {% if discente.grupo-de-pesquisa %}
+            <div class="feature-content"><strong>Grupo de Pesquisa: </strong>{{ discente.grupo-de-pesquisa }}</div>
+          {% endif %}
+          {% if discente.orientador %}
+            <div class="feature-content"><strong>Orientador(a): </strong>{{ discente.orientador }}</div>
+          {% endif %}
+          {% if discente.email %}
+            <div class="feature-content"><strong>Contato: </strong>
+            <a target="_blank" href="mailto:{{ discente.email }}" class="button">E-mail</a>
+            </div>
+          {% endif %}
 
+        </div>
       </div>
-    </div>
     {% endif %}
     {% endfor %}
   </div>

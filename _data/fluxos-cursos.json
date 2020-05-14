@@ -1,13 +1,13 @@
 [
   {
     "title": "Mestrado",
-    "description": "Fluxo necessário para o Mestrado",
+    "description": "Entenda o Fluxo necessário para concluir o Mestrado",
     "image": "images/cursos/icon-master-fluxo.svg",
     "url": "pages/fluxoMestrado"
   },
   {
     "title": "Doutorado",
-    "description": "Fluxo necessário para o Doutorado",
+    "description": "Entenda o Fluxo necessário para concluir o Doutorado",
     "image": "images/cursos/icon-phd-fluxo.svg",
 	  "url": "pages/fluxoDoutorado"
   }

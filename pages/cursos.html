@@ -24,7 +24,7 @@ bodyClass: page-cursos-list
     </div>
     -->
     {% for fluxo in site.data.fluxos-cursos %}
-    <div class="col-12 col-md-6 col-lg-6 mb-4">
+    <div class="col-12 col-md-4 mb-1">
       <div class="feature">
         {% if fluxo.image %}
         <div class="feature-image">
@@ -32,7 +32,7 @@ bodyClass: page-cursos-list
         </div>
         {% endif %}
         <h2 class="feature-title"><strong>{{ fluxo.title }}</strong></h2>
-        <div class="feature-content">{{ fluxo.description }}</div>
+        <div class="feature-content mb-1">{{ fluxo.description }}</div>
         <a href="{{site.baseurl}}/{{ fluxo.url }}" class="button">Ver Fluxo</a>
       </div>
     </div>
