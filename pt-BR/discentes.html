@@ -24,6 +24,7 @@ bodyClass: page-discentes-list
     </div>
     -->
     {% for categoria in site.data.categoria-discentes %}
+    {% if categoria.language == "pt-BR"%}
     <div class="col-12 col-md-6 col-lg-6 mb-4">
       <div class="feature">
         {% if categoria.image %}
@@ -36,6 +37,7 @@ bodyClass: page-discentes-list
         <a href="{{site.baseurl}}/{{ categoria.url }}" class="button">Acessar</a>
       </div>
     </div>
+    {% endif %}
     {% endfor %}
   </div>
 </div>

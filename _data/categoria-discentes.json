@@ -1,7 +1,7 @@
 [
   {
     "title": "Planilha Discentes (2020/1)",
-    "description": "Apresenta os discentes de Mestrado e Doutorado, seus respecitvos orientadores e grupos/laboratórios de pesquisa.",
+    "description": "Apresenta os discentes de Mestrado e Doutorado, como também alguns Alumnis, seus respecitvos orientadores e grupos/laboratórios de pesquisa.",
     "image": "images/cursos/icon-sheets.svg",
 	  "url": "pt-BR/planilhaDiscentes",
     "type": "PD",
@@ -16,7 +16,7 @@
   },
   {
     "title": "Students Worksheet (2020/1)",
-    "description": "It presents Master and PhD students, their respective supervisors and research groups/laboratories.",
+    "description": "It presents Master and PhD students, as well as some Alumnis, their respective supervisors and research groups/laboratories.",
     "image": "images/cursos/icon-sheets.svg",
 	  "url": "en/studentsWorksheet",
     "type": "PD",
