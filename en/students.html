@@ -1,0 +1,43 @@
+---
+title: Students
+layout: default-en
+bodyClass: page-discentes-list
+---
+
+<div class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Students & Teachers PPGCC/PUCRS</h1>
+        <p>
+          Get to know the profile, research and contributions of the Students and Professors of the Graduate Program in Computer Science at PUCRS!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-5 pb-5 pt-md-7 pb-md-7">
+  <div class="row justify-content-center">
+    <!--<div class="col-12">
+      <h2 class="title-3 text-dark mb-4">Discentes PPGCC</h2>
+    </div>
+    -->
+    {% for categoria in site.data.categoria-discentes %}
+    {% if categoria.language == "en"%}
+    <div class="col-12 col-md-6 col-lg-6 mb-4">
+      <div class="feature">
+        {% if categoria.image %}
+        <div class="feature-image">
+          <img alt="{{ categoria.title }} logo" src="{{site.baseurl}}/{{ categoria.image }}" />
+        </div>
+        {% endif %}
+        <h2 class="feature-title"><strong>{{ categoria.title }}</strong></h2>
+        <div class="feature-content mb-1">{{ categoria.description }}</div>
+        <a href="{{site.baseurl}}/{{ categoria.url }}" class="button">ACESS</a>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>

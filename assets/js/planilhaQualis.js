@@ -54,6 +54,10 @@ var columns = [{
   }
 }];
 
+var language = document.querySelector('#tabs')
+
+console.log('language: '+ language)
+
 $(document).ready(function() {
 
   function initializeTabletopObject() {

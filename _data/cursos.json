@@ -5,7 +5,8 @@
     "image": "images/cursos/icon-computer.svg",
     "creditos": "24 créditos",
     "defesa": "mínimo de 12 e máximo de 30 meses",
-    "url": "pages/fluxoMestrado"
+    "url": "pt-BR/fluxoMestrado",
+    "language" : "pt-BR"
   },
   {
     "title": "Doutorado em Ciência da Computação",
@@ -13,6 +14,25 @@
     "image": "images/cursos/icon-computer-phd.svg",
     "creditos": "36 créditos",
     "defesa": "mínimo de 24 e máximo de 54 meses",
-    "url": "pages/fluxoDoutorado"
+    "url": "pt-BR/fluxoDoutorado",
+    "language" : "pt-BR"
+  },
+  {
+    "title": "Master in Computer Science",
+    "description": "The program performs registration and selection processes for new students for Master and Doctorate twice a year.",
+    "image": "../images/cursos/icon-computer.svg",
+    "creditos": "24 credits",
+    "defesa": "minimum 12 and maximum 30 months",
+    "url": "en/masterFlow",
+    "language" : "en"
+  },
+  {
+    "title": "PhD in Computer Science",
+    "description": "For the selection of PhD candidates, the PPGCC is interested in candidates with: Minimum dedication of 20 hours a week in face-to-face contact with a research group and advisor; Candidate with work plan including sandwich doctorate; Candidate with qualified international publications.",
+    "image": "../images/cursos/icon-computer-phd.svg",
+    "creditos": "36 credits",
+    "defesa": "minimum of 24 and maximum of 54 months",
+    "url": "en/phdFlow",
+    "language" : "en"
   }
 ]

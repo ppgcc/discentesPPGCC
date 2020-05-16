@@ -15,15 +15,15 @@
     > li {
       height: inherit;
       margin: 0;
-      padding: 0;
+      padding: 0 2px;
       list-style: none;
       &:last-of-type {
         margin: 0;
       }
       > a {
+		border-radius: 4px;
         height: inherit;
         display: inline-block;
-        padding: 0;
         font-size: 0.9rem;
         font-weight: 400;
         text-transform: uppercase;
@@ -66,3 +66,23 @@
     }
   }
 }
+
+.flags img.img_flag_hover{
+	display: none;
+	max-width: 50%
+}
+
+.flags img.img_flag_inherit{
+	max-width: 50%
+}
+
+.flags:hover img.img_flag_inherit{
+	display: none;
+	max-width: 50%
+}
+
+.flags:hover img.img_flag_hover{
+	display: inherit;
+	max-width: 50%
+}
+

@@ -1,9 +1,27 @@
 <div id="main-menu-mobile" class="main-menu-mobile">
   <ul>
     <li><a href="{{site.baseurl}}/" class="{% if page.url == '/' %}current{% endif %}">Home</a></li>
-    <li><a href="{{site.baseurl}}/pages/discentes/" class="{% if page.url contains 'discentes' %}current{% endif %}">Discentes</a></li>
-    <li><a href="{{site.baseurl}}/pages/cursos/" class="{% if page.url contains 'cursos' %}current{% endif %}">Cursos</a></li>
-    <li><a href="{{site.baseurl}}/pages/qualis/" class="{% if page.url contains 'qualis' %}current{% endif %}">Qualis</a></li>
-    <li><a href="{{site.baseurl}}/pages/equipe/" class="{% if page.url contains 'equipe' %}current{% endif %}">Equipe</a></li>
+    <li><a href="{{site.baseurl}}/pt-BR/discentes/" class="{% if page.url contains 'discentes' %}current{% endif %}">Discentes & Docentes</a></li>
+    <li><a href="{{site.baseurl}}/pt-BR/cursos/" class="{% if page.url contains 'cursos' %}current{% endif %}">Cursos</a></li>
+    <li><a href="{{site.baseurl}}/pt-BR/qualis/" class="{% if page.url contains 'qualis' %}current{% endif %}">Qualis</a></li>
+    <li><a href="{{site.baseurl}}/pt-BR/equipe/" class="{% if page.url contains 'equipe' %}current{% endif %}">Equipe</a></li>
+    <li>
+      <div class="flags">
+        <a href="
+        {% if page.url contains 'cursos' %}{{site.baseurl}}/en/courses/{% endif %}
+        {% if page.url contains 'discentes' %}{{site.baseurl}}/en/students/{% endif %}
+        {% if page.url contains 'docentesPPGCC' %}{{site.baseurl}}/en/teachersPPGCC/{% endif %}
+        {% if page.url contains 'equipe' %}{{site.baseurl}}/en/team/{% endif %}
+        {% if page.url contains 'fluxoDoutorado' %}{{site.baseurl}}/en/phdFlow/{% endif %}
+        {% if page.url contains 'fluxoMestrado' %}{{site.baseurl}}/en/masterFlow/{% endif %}
+        {% if page.url contains 'planilhaDiscentes' %}{{site.baseurl}}/en/studentsWorksheet/{% endif %}
+        {% if page.url contains 'qualis' %}{{site.baseurl}}/en/qualis/{% endif %}
+        {% if page.url == '/' %}{{site.baseurl}}/en/{% endif %}
+        ">
+          <img class="img_flag_inherit" src="{{site.baseurl}}/assets/images/bandeiras/usa-pb.png">
+          <img class="img_flag_hover" src="{{site.baseurl}}/assets/images/bandeiras/usa.png">
+        </a>
+      </div>
+    </li>
   </ul>
 </div>

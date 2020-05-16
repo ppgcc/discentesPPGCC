@@ -1,0 +1,76 @@
+---
+title: Docentes
+layout: default
+bodyClass: subpage-docentes-list
+---
+<div class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Perfis Docentes Permanentes PPGCC/PUCRS:</h1>
+      </div>
+    </div>
+    {% for categoria in site.data.categoria-discentes %}
+    {% if categoria.type != 'D'%}
+    <div class="col-12 col-md-3 mb-1">
+      <a href="{{site.baseurl}}/{{ categoria.url }}" class="button">{{ categoria.title }}</a>
+    </div>
+    {% endif %}
+    {% endfor %}
+    <div class="col-12 col-md-3 mb-1">
+      <a target="_blank" href="http://www.pucrs.br/politecnica/programa-de-pos-graduacao-em-ciencia-da-computacao/corpo-docente/" class="button">Lista Base Docentes</a>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-5 pb-5 pt-md-7 pb-md-7">
+  <div class="row justify-content-center">
+    {% for docente in site.data.docentes %}
+      <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <div class="team team-summary">
+          {% if docente.image-profile %}
+            <div class="team-image">
+              <img
+                alt="{{ docente.title }} logo"
+                class="img-fluid mb-2"
+                src="{{site.baseurl}}{{ docente.image-profile }}"
+              />
+            </div>
+          {% endif %}
+          <h2 class="feature-title">
+            <a target="_blank" href="{{ docente.url-profile }}">{{ docente.title }}</a>
+          </h2>
+          {% if docente.linha-de-pesquisa %}
+            <div class="feature-content"><strong>Linha de Pesquisa: </strong>{{ docente.linha-de-pesquisa }}</div>
+          {% endif %}
+          {% if docente.linha-de-pesquisa-2 %}
+            <div class="feature-content"><strong>Linha de Pesquisa: </strong>{{ docente.linha-de-pesquisa-2 }}</div>
+          {% endif %}
+          {% if docente.grupo-de-pesquisa %}
+            <div class="feature-content"><strong>Grupo de Pesquisa: </strong>{{ docente.grupo-de-pesquisa }}</div>
+          {% endif %}
+          {% if docente.grupo-de-pesquisa-2 %}
+            <div class="feature-content"><strong>Grupo de Pesquisa: </strong>{{ docente.grupo-de-pesquisa-2 }}</div>
+          {% endif %}
+          {% if docente.lab-de-pesquisa %}
+            <div class="feature-content"><strong>Laboratório de Pesquisa: </strong>{{ docente.lab-de-pesquisa }}</div>
+          {% endif %}
+          {% if docente.lab-de-pesquisa-2 %}
+            <div class="feature-content"><strong>Laboratório de Pesquisa: </strong>{{ docente.lab-de-pesquisa-2 }}</div>
+          {% endif %}
+          {% if docente.nucleo-de-pesquisa %}
+            <div class="feature-content"><strong>Núcleo de Pesquisa: </strong>{{ docente.nucleo-de-pesquisa }}</div>
+          {% endif %}
+          {% if docente.centro-de-pesquisa %}
+          <div class="feature-content"><strong>Centro de Pesquisa: </strong>{{ docente.centro-de-pesquisa }}</div>
+          {% endif %}
+          {% if docente.email %}
+            <div class="feature-content"><strong>Contato: </strong>
+            <a target="_blank" href="mailto:{{ docente.email }}" class="button">{{ docente.email }}</a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,59 @@
+---
+title: Team
+layout: default-en
+bodyClass: page-team-list
+---
+
+<div class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>The team</h1>
+        <p>
+          The PPGCC Student Representatives group
+          seeks to assist students in their needs,
+          resolving doubts and representing the common
+          interest of students. The current management
+          has a mandate until the end of July 2020.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-6">
+  <div class="row">
+    {% for team in site.equipe %}
+    {% if team.language == 'en' %}
+    <div class="col-12 col-md-6 mb-1">
+      <div class="team team-summary">
+        {% if team.image %}
+        <div class="team-image">
+          <img
+            alt="{{ team.title }} logo"
+            class="img-fluid mb-2"
+            src="{{site.baseurl}}{{ team.image }}"
+          />
+        </div>
+        {% endif %}
+        <div class="team-meta">
+          <h2 class="team-name">{{ team.title }}</h2>
+          <p class="team-description">{{ team.jobtitle }}</p>
+          <div class="col-2 mb-1 text-center">
+          {% if team.email %}
+          <a target="_blank" href="{{ team.email }}" class="button">E-mail</a>
+          {% endif %}
+          </div>
+          <div class="col-2 mb-1 text-center">
+          {% if team.lattesurl %}
+          <a target="_blank" href="{{ team.lattesurl }} " class="button">CURRICULUM LATTES</a>
+          {% endif %}
+          </div>
+        </div>
+        <div class="time-content">{{ team.content }}</div>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>

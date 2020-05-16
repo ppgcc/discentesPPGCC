@@ -1,0 +1,59 @@
+---
+title: Equipe
+layout: default
+bodyClass: page-team-list
+---
+
+<div class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>A Equipe</h1>
+        <p>
+          O grupo de Representantes Discentes do PPGCC
+          buscam auxiliar os(as) alunos(as) em suas necessidades,
+          resolvendo dúvidas e representando o interesse
+          comum dos alunos(as). A atual gestão possui mandato
+          até o final do mês de Julho de 2020.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-6">
+  <div class="row">
+    {% for equipe in site.equipe %}
+    {% if equipe.language == 'pt-BR' %}
+    <div class="col-12 col-md-6 mb-1">
+      <div class="team team-summary">
+        {% if equipe.image %}
+        <div class="team-image">
+          <img
+            alt="{{ equipe.title }} logo"
+            class="img-fluid mb-2"
+            src="{{site.baseurl}}{{ equipe.image }}"
+          />
+        </div>
+        {% endif %}
+        <div class="team-meta">
+          <h2 class="team-name">{{ equipe.title }}</h2>
+          <p class="team-description">{{ equipe.jobtitle }}</p>
+          <div class="col-2 mb-1 text-center">
+          {% if equipe.email %}
+          <a target="_blank" href="{{ equipe.email }}" class="button">E-mail</a>
+          {% endif %}
+          </div>
+          <div class="col-2 mb-1 text-center">
+          {% if equipe.lattesurl %}
+          <a target="_blank" href="{{ equipe.lattesurl }} " class="button">Currículo Lattes</a>
+          {% endif %}
+          </div>
+        </div>
+        <div class="time-content">{{ equipe.content }}</div>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>

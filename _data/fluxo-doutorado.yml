@@ -1,13 +1,16 @@
-title: "Doutorado"
-description: "Iniciando o curso..."
+title: "Doutorado em Ciência da Computação"
+title-en: "PhD in Computer Science"
+
 image-icon: "images/cursos/icon-phd-curso.svg"
 image-fluxo: "images/cursos/fluxos/FLUXO-DOUTORADO.png"
+image-fluxo-en: "images/cursos/fluxos/PHD-FLOW.png"
 
 link-instrucoes-normativas: "http://www.pucrs.br/politecnica/programa-de-pos-graduacao-em-ciencia-da-computacao/informacoes-adicionais/informacoes-academicas/#instrucoes-normativas"
 link-template-latex-ppgcc: "https://github.com/ppgcc/PP-LaTeX"
 link-documento-auxiliar-referencias: "https://github.com/ppgcc/DocumentosPPGCC/blob/master/Documentos/Modelo-Referencias-LaTeX-complementar-PPGCC_NUM-ALPHA-APA.pdf"
 
-link-fluxo-mestrado: "pages/fluxoMestrado"
+link-fluxo-mestrado: "pt-BR/fluxoMestrado"
+link-fluxo-mestrado-en: "en/masterFlow"
 
 link-documento-regulamento-PPGCC: "http://www.pucrs.br/politecnica-prov/wp-content/uploads/sites/166/2018/10/Ci%C3%AAncia-da-Computa%C3%A7%C3%A3o-Regulamento-PPG-aprovado-CPPG-24.10.2018.pdf"
 

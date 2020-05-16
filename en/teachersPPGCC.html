@@ -1,0 +1,76 @@
+---
+title: Teachers
+layout: default-en
+bodyClass: subpage-docentes-list
+---
+<div class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Permanent Teaching Profiles PPGCC/PUCRS:</h1>
+      </div>
+    </div>
+    {% for category in site.data.categoria-discentes %}
+    {% if category.type != 'D' and category.language == 'en' %}
+    <div class="col-12 col-md-3 mb-1">
+      <a href="{{site.baseurl}}/{{ category.url }}" class="button">{{ category.title }}</a>
+    </div>
+    {% endif %}
+    {% endfor %}
+    <div class="col-12 col-md-3 mb-1">
+      <a target="_blank" href="http://www.pucrs.br/politecnica/programa-de-pos-graduacao-em-ciencia-da-computacao/corpo-docente/" class="button">BASE LIST TEACHERS</a>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-5 pb-5 pt-md-7 pb-md-7">
+  <div class="row justify-content-center">
+    {% for teacher in site.data.docentes-en %}
+      <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <div class="team team-summary">
+          {% if teacher.image-profile %}
+            <div class="team-image">
+              <img
+                alt="{{ teacher.title }} logo"
+                class="img-fluid mb-2"
+                src="{{site.baseurl}}{{ teacher.image-profile }}"
+              />
+            </div>
+          {% endif %}
+          <h2 class="feature-title">
+            <a target="_blank" href="{{ teacher.url-profile }}">{{ teacher.title }}</a>
+          </h2>
+          {% if teacher.linha-de-pesquisa %}
+            <div class="feature-content"><strong>Research Line: </strong>{{ teacher.linha-de-pesquisa }}</div>
+          {% endif %}
+          {% if teacher.linha-de-pesquisa-2 %}
+            <div class="feature-content"><strong>Research Line: </strong>{{ teacher.linha-de-pesquisa-2 }}</div>
+          {% endif %}
+          {% if teacher.grupo-de-pesquisa %}
+            <div class="feature-content"><strong>Research Group: </strong>{{ teacher.grupo-de-pesquisa }}</div>
+          {% endif %}
+          {% if teacher.grupo-de-pesquisa-2 %}
+            <div class="feature-content"><strong>Research Group: </strong>{{ teacher.grupo-de-pesquisa-2 }}</div>
+          {% endif %}
+          {% if teacher.lab-de-pesquisa %}
+            <div class="feature-content"><strong>Research Laboratory: </strong>{{ teacher.lab-de-pesquisa }}</div>
+          {% endif %}
+          {% if teacher.lab-de-pesquisa-2 %}
+            <div class="feature-content"><strong>Research Laboratory: </strong>{{ teacher.lab-de-pesquisa-2 }}</div>
+          {% endif %}
+          {% if teacher.nucleo-de-pesquisa %}
+            <div class="feature-content"><strong>Research Nucleus: </strong>{{ teacher.nucleo-de-pesquisa }}</div>
+          {% endif %}
+          {% if teacher.centro-de-pesquisa %}
+          <div class="feature-content"><strong>Research Center: </strong>{{ teacher.centro-de-pesquisa }}</div>
+          {% endif %}
+          {% if teacher.email %}
+            <div class="feature-content"><strong>Contact: </strong>
+            <a target="_blank" href="mailto:{{ teacher.email }}" class="button">{{ teacher.email }}</a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

@@ -150,3 +150,23 @@ $button-width: 35px;
 .lock-scroll {
   overflow: hidden;
 }
+
+.flags img.img_flag_hover{
+	display: none;
+	max-width: 50%
+}
+
+.flags img.img_flag_inherit{
+	max-width: 50%
+}
+
+.flags:hover img.img_flag_inherit{
+	display: none;
+	max-width: 50%
+}
+
+.flags:hover img.img_flag_hover{
+	display: inherit;
+	max-width: 50%
+}
+

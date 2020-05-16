@@ -58,13 +58,17 @@
 	font-family: "Palanquin Dark", Arial, sans-serif, -apple-system; 
 }
 
+.ui-widget-content a {
+    color: #fff;
+}
+
 .color-description-alert { 
 	display: flex; 
 	flex-direction: column; 
 	border: 1px solid #dcdcdc; 
 	border-radius: 3px; 
 	box-shadow: 0 1px 18px rgba(0, 0, 0, 0.2); 
-	background: #ff4d4d;
+	background: #5c9ccc;
 	padding: 10px; 
 	padding: 10px; 
 	border: none; 

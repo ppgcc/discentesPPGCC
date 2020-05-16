@@ -3,12 +3,28 @@
     "title": "Mestrado",
     "description": "Entenda o Fluxo necessário para concluir o Mestrado",
     "image": "images/cursos/icon-master-fluxo.svg",
-    "url": "pages/fluxoMestrado"
+    "url": "pt-BR/fluxoMestrado",
+    "language": "pt-BR"
   },
   {
     "title": "Doutorado",
     "description": "Entenda o Fluxo necessário para concluir o Doutorado",
     "image": "images/cursos/icon-phd-fluxo.svg",
-	  "url": "pages/fluxoDoutorado"
+    "url": "pt-BR/fluxoDoutorado",
+    "language": "pt-BR"
+  },
+  {
+    "title": "Master's",
+    "description": "Understand the Flow needed to complete the Master",
+    "image": "images/cursos/icon-master-fluxo.svg",
+    "url": "en/masterFlow",
+    "language": "en"
+  },
+  {
+    "title": "Doctorate degree",
+    "description": "Understand the Flow needed to complete the Doctorate",
+    "image": "images/cursos/icon-phd-fluxo.svg",
+    "url": "en/masterFlow",
+    "language": "en"
   }
 ]

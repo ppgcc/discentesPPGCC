@@ -1,0 +1,109 @@
+---
+title: PPGCC/PUCRS Students - Graduate Program in Computer Science
+layout: default-en
+bodyClass: page-home
+---
+
+<div class="intro pb-4">
+  <div class="container">
+    <h1>PPGCC/PUCRS Students</h1>
+    <p>PUCRS Computer Science Graduate Program</p>
+  </div>
+</div>
+
+<div class="container pt-2">
+  <div class="call">
+    <div class="call-box-top">
+      <div class="call-phone"><strong>Consult New Qualis Computer Science: </strong></div>
+      <div class="call-email">
+      </div>
+    </div>
+    <div class="call-box-bottom">
+      <a href="{{site.baseurl}}/en/qualis" class="button">ACESS</a>
+    </div>
+  </div>
+</div>
+
+<div class="page-home-box">
+<div class="container pt-8 pt-md-10">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <h2 class="title-3 text-dark mb-4">Students & Teachers (S&T)</h2>
+    </div>
+    {% for category in site.data.categoria-discentes %}
+    {% if category.language == 'en' %}
+    <div class="col-12 col-md-4 mb-1">
+      <div class="feature">
+        {% if category.image %}
+        <div class="feature-image">
+          <img alt="{{ category.title }} logo" src="{{site.baseurl}}/{{ category.image }}" />
+        </div>
+        {% endif %}
+        <h2 class="feature-title">{{ category.title }}</h2>
+        <div class="feature-content mb-1">{{ category.description }}</div>
+        <a href="{{site.baseurl}}/{{ category.url }}" class="button">ACESS</a>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+</div>
+
+<div class="page-home-box">
+  <div class="container pt-8 pt-md-10">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h2 class="title-3 text-dark mb-4">Services & Disclosures</h2>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6 mb-4">
+        <div class="feature">
+          <div class="feature-image"><img alt="imagem linktree logo" src="../images/servicos/linktree.png"/></div>
+          <h2 class="feature-title">Access our Linktree!</h2>
+          <div class="feature-content mb-1">Here are the most useful links for you!</div>
+          <a target="_blank" href="https://linktr.ee/alunosppgcc" class="button">ACCESS LINKTREE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-home-box">
+  <div class="container pt-5 pb-5 pt-md-7 pb-md-7">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h2 class="title-3 text-dark mb-4">Courses</h2>
+      </div>
+      {% for course in site.data.cursos %}
+      {% if course.language == 'en' %}
+      <div class="col-12 col-md-6 col-lg-6 mb-4">
+        <div class="feature">
+          {% if course.image %}
+            <div class="feature-image">
+              <img alt="{{ course.title }} logo" src="{{ course.image }}" />
+            </div>
+          {% endif %}
+          <h2 class="feature-title">{{ course.title }}</h2>
+          <div class="feature-content">{{ course.description }}</div>
+          <div class="feature-content"><strong>Credits: </strong>{{ course.creditos }}</div>
+          <div class="feature-content"><strong>Defense term: </strong>{{ course.defesa }}</div>
+          <div class="feature-content mb-1">
+            <a target="_blank" href="{{site.data.contact.link-inscricao-ppgcc}}" class="button">REGISTRATIONS</a>
+            <a href="{{site.baseurl}}/{{ course.url }}" class="button">View Flow</a>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+
+      <div class="col-12 col-md-6 col-lg-10 mb-8">
+        <div class="feature">
+          <div class="feature-content mb-1">
+            <img alt="CAPES banner with the information that the Computer Science course is level 6." src="../images/cursos/cc-banner-capes.jpg" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

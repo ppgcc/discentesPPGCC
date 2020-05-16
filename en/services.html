@@ -1,0 +1,32 @@
+---
+title: Services
+layout: default-en
+bodyClass: page-testimonials-list
+---
+
+<div class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Services</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-6">
+  <div class="row">
+    {% for services in site.services %}
+    <div class="col-12 col-md-6 mb-2 ">
+      <div class="testimonials testimonials-summary">
+        <div class="testimonials-meta">
+          <h2 class="testimonials-title">{{ services.title }}</h2>
+          <p class="testimonials-name">{{ services.name }}</p>
+          <p class="testimonials-jobtitle">{{ services.jobtitle }}</p>
+        </div>
+        <div class="testimonials-content">{{ services.content }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

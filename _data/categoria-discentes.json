@@ -1,39 +1,32 @@
 [
   {
-    "title": "Mestrado",
-    "description": "Perfis dos Alunos(as) de Mestrado",
-    "description-fluxo": "Iniciando o curso...",
-    "image": "images/cursos/icon-master-curso.svg",
-    "url": "pages/discentesMestrado",
-    "type": "M"
-  },
-  {
-    "title": "Doutorado",
-    "description": "Perfis dos Alunos(as) de Doutorado",
-    "description-fluxo": "Iniciando o curso...",
-    "image": "images/cursos/icon-phd-curso.svg",
-	  "url": "pages/discentesDoutorado",
-    "type": "D"
-  },
-  {
-    "title": "Alumnis de Mestrado",
-    "description": "Perfis dos Alumnis de Mestrado",
-    "image": "images/cursos/alumni.svg",
-	  "url": "pages/alumniMestrado",
-    "type": "AM"
-  },
-  {
-    "title": "Alumnis de Doutorado",
-    "description": "Perfis dos Alumnis de Doutorado",
-    "image": "images/cursos/alumni.svg",
-	  "url": "pages/alumniDoutorado",
-    "type": "AD"
-  },
-  {
     "title": "Planilha Discentes (2020/1)",
-    "description": "Apresenta em formato de planilha os discentes de Mestrado e Doutorado, seus respecitvos orientadores e grupos/laboratórios de pesquisa.",
+    "description": "Apresenta os discentes de Mestrado e Doutorado, seus respecitvos orientadores e grupos/laboratórios de pesquisa.",
     "image": "images/cursos/icon-sheets.svg",
-	  "url": "pages/planilhaDiscentes",
-    "type": "PD"
+	  "url": "pt-BR/planilhaDiscentes",
+    "type": "PD",
+    "language" : "pt-BR"
+  }, {
+    "title": "Docentes Permanentes PPGCC/PUCRS",
+    "description": "Apresenta os perfis dos Docentes Permanentes do PPGCC/PUCRS, grupo e linha de pesquisa e e-mail para contato.",
+    "image": "images/cursos/icon-phd-curso.svg",
+	  "url": "pt-BR/docentesPPGCC",
+    "type": "D",
+    "language" : "pt-BR"
+  },
+  {
+    "title": "Students Worksheet (2020/1)",
+    "description": "It presents Master and PhD students, their respective supervisors and research groups/laboratories.",
+    "image": "images/cursos/icon-sheets.svg",
+	  "url": "en/studentsWorksheet",
+    "type": "PD",
+    "language" : "en"
+  }, {
+    "title": "Permanent Teachers PPGCC/PUCRS",
+    "description": "It presents the profiles of the Permanent Professors of the PPGCC/PUCRS, group and research line and e-mail for contact.",
+    "image": "images/cursos/icon-phd-curso.svg",
+	  "url": "en/teachersPPGCC",
+    "type": "D",
+    "language" : "en"
   }
 ]

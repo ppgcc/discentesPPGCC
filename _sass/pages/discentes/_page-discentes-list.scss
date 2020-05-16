@@ -17,82 +17,6 @@
   }
 }
 
-.subpage-discentes-mestrado-list {
-  background-image: url('../images/backgrounds/fundo-perfis-mestrado-flat.png');
-   background-repeat: no-repeat;
-  background-size: 115%;
-  background-position: 49px -40px;
-  @include media-breakpoint-up(sm) {
-    background-size: 90%;
-    background-position: 159px -40px;
-  }
-  @include media-breakpoint-up(md) {
-    background-size: 70%;
-    background-position: 100% -50px;
-  }
-  @include media-breakpoint-up(lg) {
-    background-size: 60%;
-    background-position: 100% 80px;
-  }
-}
-
-.subpage-discentes-doutorado-list {
-  background-image: url('../images/backgrounds/fundo-perfis-doutorado-flat.png');
-  background-repeat: no-repeat;
-  background-size: 115%;
-  background-position: 49px -40px;
-  @include media-breakpoint-up(sm) {
-    background-size: 90%;
-    background-position: 159px -40px;
-  }
-  @include media-breakpoint-up(md) {
-    background-size: 70%;
-    background-position: 100% -50px;
-  }
-  @include media-breakpoint-up(lg) {
-    background-size: 60%;
-    background-position: 100% 0px;
-  }
-}
-
-.subpage-discentes-alumni-mestrado-list {
-  background-image: url('../images/backgrounds/fundo-perfis-alumni-mestrado-flat.png');
-  background-repeat: no-repeat;
-  background-size: 115%;
-  background-position: 49px -40px;
-  @include media-breakpoint-up(sm) {
-    background-size: 90%;
-    background-position: 159px -40px;
-  }
-  @include media-breakpoint-up(md) {
-    background-size: 70%;
-    background-position: 100% -50px;
-  }
-  @include media-breakpoint-up(lg) {
-    background-size: 60%;
-    background-position: 100% -10px;
-  }
-}
-
-.subpage-discentes-alumni-doutorado-list {
-  background-image: url('../images/backgrounds/fundo-perfis-alumni-doutorado-flat.png');
-  background-repeat: no-repeat;
-  background-size: 115%;
-  background-position: 49px -40px;
-  @include media-breakpoint-up(sm) {
-    background-size: 90%;
-    background-position: 159px -40px;
-  }
-  @include media-breakpoint-up(md) {
-    background-size: 70%;
-    background-position: 100% -50px;
-  }
-  @include media-breakpoint-up(lg) {
-    background-size: 60%;
-    background-position: 100% 50px;
-  }
-}
-
 .subpage-discentes-planilha-list {
   background-image: url('../images/backgrounds/fundo-perfis-planilha-flat.png');
   background-repeat: no-repeat;
@@ -109,5 +33,24 @@
   @include media-breakpoint-up(lg) {
     background-size: 60%;
     background-position: 100% 50px;
+  }
+}
+
+.subpage-docentes-list {
+  background-image: url('../images/backgrounds/fundo-perfis-docentes-flat.png');
+   background-repeat: no-repeat;
+  background-size: 115%;
+  background-position: 49px -40px;
+  @include media-breakpoint-up(sm) {
+    background-size: 90%;
+    background-position: 159px -40px;
+  }
+  @include media-breakpoint-up(md) {
+    background-size: 70%;
+    background-position: 100% -50px;
+  }
+  @include media-breakpoint-up(lg) {
+    background-size: 60%;
+    background-position: 100% 80px;
   }
 }

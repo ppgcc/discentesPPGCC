@@ -1,0 +1,27 @@
+<div id="main-menu" class="main-menu">
+  <ul>
+    <li><a href="{{site.baseurl}}/en/" class="{% if page.url == '/' %}current{% endif %}">Home</a></li>
+    <li><a href="{{site.baseurl}}/en/students/" class="{% if page.url contains 'students' %}current{% endif %}">Students & Teachers</a></li>
+    <li><a href="{{site.baseurl}}/en/courses/" class="{% if page.url contains 'courses' %}current{% endif %}">Courses</a></li>
+    <li><a href="{{site.baseurl}}/en/qualis/" class="{% if page.url contains 'qualis' %}current{% endif %}">Qualis</a></li>
+    <li><a href="{{site.baseurl}}/en/team/" class="{% if page.url contains 'team' %}current{% endif %}">Team</a></li>
+    <li>
+      <div class="flags">
+        <a href="
+        {% if page.url contains 'courses' %}{{site.baseurl}}/pt-BR/cursos/{% endif %}
+        {% if page.url contains 'students' %}{{site.baseurl}}/pt-BR/discentes/{% endif %}
+        {% if page.url contains 'teachersPPGCC' %}{{site.baseurl}}/pt-BR/docentesPPGCC/{% endif %}
+        {% if page.url contains 'team' %}{{site.baseurl}}/pt-BR/equipe/{% endif %}
+        {% if page.url contains 'phdFlow' %}{{site.baseurl}}/pt-BR/fluxoDoutorado/{% endif %}
+        {% if page.url contains 'masterFlow' %}{{site.baseurl}}/pt-BR/fluxoMestrado/{% endif %}
+        {% if page.url contains 'studentsWorksheet' %}{{site.baseurl}}/pt-BR/planilhaDiscentes/{% endif %}
+        {% if page.url contains 'qualis' %}{{site.baseurl}}/pt-BR/qualis/{% endif %}
+        {% if page.url == '/en/' %}{{site.baseurl}}/{% endif %}
+        ">
+          <img class="img_flag_inherit" src="{{site.baseurl}}/assets/images/bandeiras/bra-pb.png">
+          <img class="img_flag_hover" src="{{site.baseurl}}/assets/images/bandeiras/bra.png">
+        </a>
+      </div>
+    </li>
+  </ul>
+</div>

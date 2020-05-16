@@ -14,6 +14,28 @@ var columns = [{
 }, {
   "data": "grupo",
   "title": "Grupo/Laboratório de Pesquisa"
+}, {
+  "data": "email",
+  "title": "Contato",
+  "render": function (data, type, full, meta) {
+    if (data === ''){
+      data = ''
+    } else{
+      data = '<a target="_blank" href="mailto:' + data + ' "class="button">Email</a>';
+    }
+    return data;
+  }
+}, {
+  "data": "lattes",
+  "title": "Lattes",
+  "render": function (data, type, full, meta) {
+    if (data === ''){
+      data = ''
+    } else{
+      data = '<a target="_blank" href="' + data + ' "class="button">Lattes</a>';
+    }
+    return data;
+  }
 }];
 
 $(document).ready(function() {

@@ -14,12 +14,12 @@ bodyClass: page-home
 <div class="container pt-2">
   <div class="call">
     <div class="call-box-top">
-      <div class="call-phone"><strong>Consultar Novo Qualis Ciência da Computação: </strong> {{ site.data.qualis.nome_representante }} </div>
+      <div class="call-phone"><strong>Consultar Novo Qualis Ciência da Computação: </strong></div>
       <div class="call-email">
       </div>
     </div>
     <div class="call-box-bottom">
-      <a href="{{site.baseurl}}/pages/qualis" class="button">Acessar</a>
+      <a href="{{site.baseurl}}/pt-BR/qualis" class="button">Acessar</a>
     </div>
   </div>
 </div>
@@ -28,10 +28,10 @@ bodyClass: page-home
 <div class="container pt-8 pt-md-10">
   <div class="row justify-content-center">
     <div class="col-12">
-      <h2 class="title-3 text-dark mb-4">Discentes</h2>
+      <h2 class="title-3 text-dark mb-4">Discentes & Docentes (D&D)</h2>
     </div>
     {% for categoria in site.data.categoria-discentes %}
-    {% if categoria.type == 'M' or categoria.type == 'D' %}
+    {% if categoria.language == 'pt-BR'%}
     <div class="col-12 col-md-4 mb-1">
       <div class="feature">
         {% if categoria.image %}
@@ -46,9 +46,11 @@ bodyClass: page-home
     </div>
     {% endif %}
     {% endfor %}
+    <!--
     <div class="col-12 text-center">
-      <a class="button button-primary mt-2" href="{{site.baseurl}}/pages/discentes">Ver Todos Discentes</a>
+      <a class="button button-primary mt-2" href="{{site.baseurl}}/pt/discentes">Ver Todos Discentes</a>
     </div>
+    -->
   </div>
 </div>
 </div>
@@ -102,6 +104,7 @@ bodyClass: page-home
         <h2 class="title-3 text-dark mb-4">Cursos</h2>
       </div>
       {% for curso in site.data.cursos %}
+      {% if curso.language == 'pt-BR' %}
       <div class="col-12 col-md-6 col-lg-6 mb-4">
         <div class="feature">
           {% if curso.image %}
@@ -119,6 +122,7 @@ bodyClass: page-home
           </div>
         </div>
       </div>
+      {% endif %}
       {% endfor %}
 
       <div class="col-12 col-md-6 col-lg-10 mb-8">

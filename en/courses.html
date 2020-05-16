@@ -1,0 +1,40 @@
+---
+title: Students
+layout: default-en
+bodyClass: page-cursos-list
+---
+
+<div class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Flows for the Master and PhD in Computer Science</h1>
+        <p>
+          Understand the necessary flow, with the prerequisites,
+          to complete the Masters and PhD courses at PPGCC/PUCRS!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-5 pb-5 pt-md-7 pb-md-7">
+  <div class="row justify-content-center">
+    {% for flow in site.data.fluxos-cursos %}
+    {% if flow.language == 'en' %}
+    <div class="col-12 col-md-4 mb-1">
+      <div class="feature">
+        {% if flow.image %}
+        <div class="feature-image">
+          <img alt="{{ flow.title }} logo" src="{{site.baseurl}}/{{ flow.image }}" />
+        </div>
+        {% endif %}
+        <h2 class="feature-title"><strong>{{ flow.title }}</strong></h2>
+        <div class="feature-content mb-1">{{ flow.description }}</div>
+        <a href="{{site.baseurl}}/{{ flow.url }}" class="button">View Flow</a>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,167 @@
+---
+title: New Qualis CC
+layout: default-en
+bodyClass: page-qualis
+---
+
+<!--These are JavaScript Libraries-->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<link href="{{site.baseurl}}/assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="{{site.baseurl}}/assets/css/style.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+<!-- DATATABLES BOOTSTRAP INTEGRATION CSS -->
+<link rel="stylesheet" href="//cdn.datatables.net/plug-ins/a5734b29083/integration/bootstrap/3/dataTables.bootstrap.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+
+<!-- DATATABLES -->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/datatables/1.10.11/js/jquery.dataTables.min.js"></script>
+
+<!-- CONVERT DATA-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+
+<!-- TableTop -->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.4.3/tabletop.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/qualisWorksheet.js"></script>
+<script>
+  $(function() {
+      $( "#tabs" ).tabs();
+  });
+</script>
+
+<style>
+.ui-tabs .ui-widget-header {
+    background: #5c9ccc;
+}
+</style>
+
+<div class="intro intro-small">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Qualis Computer Science</h1>
+      </div>
+    </div>
+    <div class="col-12 col-md-3 mb-1">
+      <a target="_blank" href="{{ site.data.qualis.link-documento-capes}}" class="button">CAPES DOCUMENT</a>
+    </div>
+    <div class="col-12 col-md-3 mb-1">
+      <a target="_blank" href="{{ site.data.qualis.link-planilha-trabalho}}" class="button">WORKSHEET</a>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-8 pt-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-12 mb-1">
+      <div class="qualis qualis-summary">
+        <div class="qualis-description"><strong>Warning 01: </strong>{{ site.data.qualis.warning1 }}</div>
+      </div>
+    </div>
+    <div class="col-12 col-md-12 mb-1">
+      <div class="qualis qualis-summary">
+        <div class="qualis-description"><strong>Warning 02: </strong>{{ site.data.qualis.warning2 }}
+          <a target="_blank" href="{{ site.data.qualis.link-planilha-automatizacao}}" class="button">AUTOMATION WORKSHEET</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-12 mb-1">
+      <div class="qualis qualis-summary">
+        <div class="qualis-description"><strong>Warning 03: </strong>{{ site.data.qualis.warning3 }}
+          <a target="_blank" href="{{ site.data.qualis.exemplo-link-func}}"class="button" >IT WORKS</a>
+          <a target="_blank" href="{{ site.data.qualis.exemplo-link-nao-func}}" class="button">DOES NOT WORK</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-12 mb-1">
+      <div class="qualis qualis-summary">
+        <div class="qualis-description"><strong>Warning 04: </strong>{{ site.data.qualis.warning4 }}
+          <a target="_blank" href="{{ site.data.qualis.link-script}}" class="button">SCRIPT REPOSITORY</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-12 mb-1">
+      <div class="qualis qualis-summary">
+        <div class="qualis-description"><strong>Warning 05: </strong>{{ site.data.qualis.warning5 }}</div>
+      </div>
+    </div>
+    <div class="col-12 col-md-12 mb-1">
+      <div class="qualis qualis-summary">
+        <div class="qualis-description"><strong>Warning 06: </strong>{{ site.data.qualis.warning6 }}
+          <a target="_blank" href="mailto:{{site.data.contact.email_representante}}" class="button">E-MAIL CONTACT</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-12 mb-1">
+      <div class="color-description-alert"><strong>Warning 07: </strong>{{ site.data.qualis.warning7 }}</div>
+    </div>
+  </div>
+</div>
+
+<div id="tabs">
+  <ul>
+      <li><a href="#aba-conferencias"><strong>Conferences</strong></a></li>
+      <li><a href="#aba-periodicos">Journals</a></li>
+      <li><a href="#aba-info-conferencias">Infographic Conferences</a></li>
+      <li><a href="#aba-info-periodicos">Infographic Journals</a></li>
+  </ul>
+  <div id="aba-conferencias">
+    <div class="col-xs-12">
+      <div id="planilha"></div>
+    </div>
+  </div>
+  <div id="aba-periodicos">
+    <div class="col-2 mb-1">
+      <div class="qualis qualis-summary">
+        <div class="qualis-description"><strong>UNDER CONSTRUCTION</strong></div>
+      </div>
+    </div>
+    <div class="col-2 mb-1">
+      <a target="_blank" href="{{ site.data.qualis.info-periodicos-link_1}}" class="button">Scopus</a>
+    </div>
+    <div class="col-2 mb-1">
+      <a target="_blank" href="{{ site.data.qualis.info-periodicos-link_2}}" class="button">Web of Science</a>
+    </div>
+  </div>
+  <div id="aba-info-conferencias">
+    <div class="col-2 mb-1">
+      <a target="_blank" href="{{ site.data.qualis.info-conferencias-link_1}}" class="button">Google Scholar</a>
+    </div>
+    <div class="col-2 mb-1">
+      <a target="_blank" href="{{ site.data.qualis.info-conferencias-link_2}}" class="button">AUXILIARY WORKSHEET</a>
+    </div>
+    <div class="col-2 mb-1">
+      <a target="_blank" href="{{ site.data.qualis.info-conferencias-link_3}}" class="button">CAPES DOCUMENT</a>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 text-center text-center">
+        <img
+        alt="Infographic with the explanation of how to apply the rules to calculate the new qualifications of Computer Science conferences and events."
+        src="{{site.baseurl}}/{{ site.data.qualis.link-img-info-conferencias-en }}"
+        />
+      </div>
+    </div>
+  </div>
+  <div id="aba-info-periodicos">
+    <div class="col-2 mb-1">
+      <a target="_blank" href="{{ site.data.qualis.info-periodicos-link_1}}" class="button">Scopus</a>
+    </div>
+    <div class="col-2 mb-1">
+      <a target="_blank" href="{{ site.data.qualis.info-periodicos-link_2}}" class="button">Web of Science</a>
+    </div>
+    <div class="col-2 mb-1">
+      <a target="_blank" href="{{ site.data.qualis.info-periodicos-link_3}}" class="button">CAPES DOCUMENT</a></li>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 text-center text-center">
+        <img
+        alt="Infographic with the explanation of how to apply the rules to calculate the new Qualis of Journals from all areas."
+        src="{{site.baseurl}}/{{ site.data.qualis.link-img-info-periodicos-en }}"
+      />
+      </div>
+    </div>
+  </div>
+</div>
