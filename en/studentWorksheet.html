@@ -4,6 +4,7 @@ layout: default-en
 bodyClass: subpage-discentes-planilha-list
 ---
 
+<!--These are JavaScript Libraries-->
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 <link href="{{site.baseurl}}/assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
 <link href="{{site.baseurl}}/assets/css/style.css" rel="stylesheet">
@@ -21,7 +22,7 @@ bodyClass: subpage-discentes-planilha-list
 <!-- TableTop -->
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.4.3/tabletop.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/assets/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/studentsWorksheet.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/studentWorksheet.js"></script>
 <script>
   $(function() {
       $( "#tabs" ).tabs();
@@ -51,6 +52,33 @@ bodyClass: subpage-discentes-planilha-list
     <div class="col-12 col-md-3 mb-1">
       <a target="_blank" href="https://www.pucrs.br/politecnica/programa-de-pos-graduacao-em-ciencia-da-computacao/informacoes-adicionais/alunos/" class="button">BASE LIST STUDENTS</a>
     </div>
+  </div>
+</div>
+
+<div class="container pt-8 pt-md-10">
+  <div class="row justify-content-start">
+    {% for categoria in site.data.categoria-discentes %}
+    {% if categoria.type == 'PD' and categoria.language == 'en' %}
+    <div class="col-12 col-md-12 mb-1">
+      <div class="qualis qualis-summary">
+        <div class="qualis-description"><strong>Warning 01: </strong>{{ categoria.warning1 }}</div>
+      </div>
+    </div>
+    <div class="col-12 col-md-12 mb-1">
+      <div class="qualis qualis-summary">
+        <div class="qualis-description"><strong>Warning 02: </strong>{{ categoria.warning2 }}</div>
+      </div>
+    </div>
+    <div class="col-12 col-md-12 mb-1">
+      <div class="qualis qualis-summary">
+        <div class="qualis-description">
+          <strong>Warning 03: </strong>{{ categoria.warning3 }}
+          <a target="_blank" href="mailto:{{site.data.contact.email_representante}}" class="button">E-mail contato</a>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
   </div>
 </div>
 

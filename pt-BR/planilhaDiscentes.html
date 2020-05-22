@@ -54,6 +54,33 @@ bodyClass: subpage-discentes-planilha-list
   </div>
 </div>
 
+<div class="container pt-8 pt-md-10">
+  <div class="row justify-content-start">
+    {% for categoria in site.data.categoria-discentes %}
+    {% if categoria.type == 'PD' and categoria.language == 'pt-BR' %}
+    <div class="col-12 col-md-12 mb-1">
+      <div class="qualis qualis-summary">
+        <div class="qualis-description"><strong>Aviso 01: </strong>{{ categoria.warning1 }}</div>
+      </div>
+    </div>
+    <div class="col-12 col-md-12 mb-1">
+      <div class="qualis qualis-summary">
+        <div class="qualis-description"><strong>Aviso 02: </strong>{{ categoria.warning2 }}</div>
+      </div>
+    </div>
+    <div class="col-12 col-md-12 mb-1">
+      <div class="qualis qualis-summary">
+        <div class="qualis-description">
+          <strong>Aviso 03: </strong>{{ categoria.warning3 }}
+          <a target="_blank" href="mailto:{{site.data.contact.email_representante}}" class="button">E-mail contato</a>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
 <div id="tabs">
   <ul>
       <li><a href="#aba-discentes"><strong>Discentes</strong></a></li>

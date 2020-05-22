@@ -5,28 +5,40 @@
     "image": "images/cursos/icon-sheets.svg",
 	  "url": "pt-BR/planilhaDiscentes",
     "type": "PD",
-    "language" : "pt-BR"
+    "language" : "pt-BR",
+    "warning1" : "Seu nome já está na lista? Então envie suas informações de contato (E-mail e Link Lattes), para que as pessoas possam conhecer melhor sua pesquisa!",
+    "warning2" : "É Alumni do programa? Então envie suas informações de contato (Nome Completo, Curso Realizado, Nome do Orientador(a), Grupo/Laborátio de Pesquisa, E-mail e Link Lattes), para que as pessoas possam entrar em contato com você!",
+    "warning3" : "Envie estas informações para: "
   }, {
     "title": "Docentes Permanentes PPGCC/PUCRS",
     "description": "Apresenta os perfis dos Docentes Permanentes do PPGCC/PUCRS, grupo e linha de pesquisa e e-mail para contato.",
     "image": "images/cursos/icon-phd-curso.svg",
 	  "url": "pt-BR/docentesPPGCC",
     "type": "D",
-    "language" : "pt-BR"
+    "language" : "pt-BR",
+    "warning1" : "",
+    "warning2" : "",
+    "warning3" : ""
   },
   {
     "title": "Students Worksheet (2020/1)",
     "description": "It presents Master and PhD students, as well as some Alumnis, their respective supervisors and research groups/laboratories.",
     "image": "images/cursos/icon-sheets.svg",
-	  "url": "en/studentsWorksheet",
+	  "url": "en/studentWorksheet",
     "type": "PD",
-    "language" : "en"
+    "language" : "en",
+    "warning1": "Is your name already on the list? Then send your contact information (E-mail and Link Lattes), so people can get to know your search better!",
+    "warning2": "Are you an Alumni of the program? Then send your contact information (Full Name, Course Taken, Name of Advisor (a), Group / Research Lab, E-mail, and Link Lattes) so that people can get in touch with you!",
+    "warning3": "Send this information to: "
   }, {
     "title": "Permanent Teachers PPGCC/PUCRS",
     "description": "It presents the profiles of the Permanent Professors of the PPGCC/PUCRS, group and research line and e-mail for contact.",
     "image": "images/cursos/icon-phd-curso.svg",
 	  "url": "en/teachersPPGCC",
     "type": "D",
-    "language" : "en"
+    "language" : "en",
+    "warning1" : "",
+    "warning2" : "",
+    "warning3" : ""
   }
 ]
