@@ -10,7 +10,7 @@ O principal objetivo deste site é informar os discentes do PPGCC, como também,
 
 - O site também possui o Google Analytics configurado, para que seja possível verificar as páginas e links mais acessados. Esta funcionalidade servirá para entender a utilização do site e para futuras manutenções.
 
-## Estrutura de Conteúdo
+## Estrutura do Conteúdo
 
 - **HOME**: Página incial do site.
 - **DISCENTES & DOCENTES**: Página com o direcionamento para as informações dos discentes e docentes.
@@ -24,7 +24,7 @@ O site é composto por algumas funcionalidades de interesse discente. Estas info
 
 - **HOME**: Página incial do site, com algumas das informações principais para acesso rápido, como principais links de interesse e informações dos cursos.
 
-![tela-principal](screenshots/screenshot.PNG)
+![tela-principal](screenshots/screenshot.png)
 
 - **DISCENTES & DOCENTES**: Página com o direcionamento para as informações dos discentes e docentes. É nesta página que as informações de discentes vs. docentes estão relcionadas. Aqui você poderá encontrar os discentes do PPGCC, seus e-mails para contato, currículo lattes, seus grupos de pesquisas e seus respectivos orientadores. Além disso, esta página também será importante para as pessoas que quiserem entrar em alguns dos cursos, paara que possam conhecer o corpo discente e docente do programa.
 
