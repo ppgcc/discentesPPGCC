@@ -1,34 +1,71 @@
-# Jekyll Serif Theme
+# Discentes PPGCC/PUCRS
 
-Serif is a beautiful small business theme for Jekyll. It contains content types for the archetypical small business website. The theme is fully responsive, blazing fast and artfully illustrated.
+Este projeto é uma iniciativa da gestão do atual Representante Discente do Programa de Pós-graduação em Ciência da Computação (PPGCC/PUCRS) **[Olimar Teixeira Borges](https://github.com/olimarborges)**, que visa organizar e centralizar algumas das principais informações relacionadas ao programa, seus cursos, docentes e discentes.
 
-[Live Demo](https://jekyll-serif-theme.netlify.com/) |
-[Installation](#installation) |
-[Zerostatic Themes](https://www.zerostatic.io/theme/hugo-hero/)
+O principal objetivo deste site é informar os discentes do PPGCC, como também, pessoas que estejam interssadas em entrar em algum dos cursos do programa. Aqui serão apresentadas as informações mínimas dos docentes do programa, para que os alunos possam fazer contato com os professores e também conhecer os integrantes de cada grupo de pesquisa.
 
-![Hugo Serif Theme screenshot](https://github.com/JugglerX/jekyll-serif-theme/blob/master/screenshots/screenshot-with-border.png)
+- O site possui uma versão com as mesmas funcionalidades, no idioma inglês, basta selecionar o botão da bandeira america para fazer a troca de idioma. Essa funcionalidade serve, principalmente, para que pessoas estrangeiras que queiram conhecer melhor o programa ou até mesmo ingressar, também possam entender o seu funcionamento.
 
-## Theme features
+- O site também está acessível para pessoas com deficiência visual, que façam uso de interpretadores de tela. Todas as imagens possuem uma breve descrição sobre o seu significado, para um melhor entendimento do seu contexto.
 
-- Divulgações (Collection)
-- Time (Collection)
-- Serviços (Collection)
-- Cursos (Data)
-- SCSS
-- Responsive design
-- Bootstrap 4 grid and media queries only
-- Responsive menu
-- 100/100 Google Lighthouse speed score
-- Under 30KB without images or 80KB with images and illustrations ⚡
-- Robust example content included
-- Royalty free illustrations included
+- O site também possui o Google Analytics configurado, para que seja possível verificar as páginas e links mais acessados. Esta funcionalidade servirá para entender a utilização do site e para futuras manutenções.
 
-# Installation
+## Estrutura de Conteúdo
 
-To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` or `bundle exec jekyll serve` to start the Jekyll server.
+- **HOME**: Página incial do site.
+- **DISCENTES & DOCENTES**: Página com o direcionamento para as informações dos discentes e docentes.
+- **CURSOS**: Página com o direcionamento para os fluxos necessários, com os pré-requisitos, para concluir os cursos de Mestrado e Doutorado do PPGCC/PUCRS!
+- **QUALIS CC**: Página criada para a consulta do novo qualis da CAPES.
+- **EQUIPE**: Página com as informações da atual gestão de representantes discentes.
 
-I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
+## Principais Funcionalidades
 
-# License
+O site é composto por algumas funcionalidades de interesse discente. Estas informações foram interamente baseadas nos conteúdos públicos disponibilizados, tanto no site do [PPGCC](http://www.pucrs.br/politecnica/programa-de-pos-graduacao-em-ciencia-da-computacao/), quando no site dos [Pesquisadores PUCRS](http://www.pucrs.br/pesquisadores/). Este site organiza e relaciona estas informações, objetivando uma maior compreensão por parte dos discentes. Nas páginas deste site você irá encontrar:
 
-If you fork or copy this theme the LICENSE file and the copyright notice on line 3 (where I am listed as the author) must not be changed. You cannot just replace the copyright line with your own name. Attribution in your README.md or on your site is also welcome but not required.
+- **HOME**: Página incial do site, com algumas das informações principais para acesso rápido, como principais links de interesse e informações dos cursos.
+
+![tela-principal](screenshots/screenshot.PNG)
+
+- **DISCENTES & DOCENTES**: Página com o direcionamento para as informações dos discentes e docentes. É nesta página que as informações de discentes vs. docentes estão relcionadas. Aqui você poderá encontrar os discentes do PPGCC, seus e-mails para contato, currículo lattes, seus grupos de pesquisas e seus respectivos orientadores. Além disso, esta página também será importante para as pessoas que quiserem entrar em alguns dos cursos, paara que possam conhecer o corpo discente e docente do programa.
+
+  ![tela-principal](screenshots/discentes_docentes.PNG)
+
+  - _Planilha Discentes a partir de (2020/1)_: Apresenta os discentes de Mestrado e Doutorado, como também alguns Alumnis, seus respecitvos orientadores e grupos/laboratórios de pesquisa.
+
+  ![tela-principal](screenshots/planilha_discentes.PNG)
+
+  - _Docentes Permanentes PPGCC/PUCRS_: Apresenta os perfis dos Docentes Permanentes do PPGCC/PUCRS, grupo e linha de pesquisa e e-mail para contato.
+
+  ![tela-principal](screenshots/docentes.PNG)
+
+- **CURSOS**: Página com o direcionamento para os fluxos necessários, com os pré-requisitos, para concluir os cursos de Mestrado e Doutorado do PPGCC/PUCRS. Por meio de 'linhas do tempo', os discentes poderão entender como funciona os fluxos de Mestrado e Doutorado, com informações das principais entregas e pré-requisitos para poder concluir o curso.
+
+![tela-principal](screenshots/cursos.PNG)
+
+  - _Mestrado_: Entenda o Fluxo necessário para concluir o Mestrado.
+
+  ![tela-principal](screenshots/fluxo_mestrado.PNG)
+
+  - _Doutorado_: Entenda o Fluxo necessário para concluir o Doutorado.
+
+  ![tela-principal](screenshots/fluxo_doutorado.PNG)
+
+- **QUALIS CC**: Página criada para a consulta do novo qualis da CAPES. Ela ainda está em construção, mas já pode ser utilizada para a consulta dos Qualis das Conferências da área. Leia com atenção os `AVISOS` que constam listados no topo da página. Eles possuem informações e direcionamentos importantes para o uso da planilha de consulta. Aqui há uma divisão de quatro abas, com as seguintes informações
+  - _Conferências_: Consulta dos qualis das Conferências da área.
+  - _Periódicos_: Em construção.
+  - _Infográfico Conferências_: É apresntado o Infográfico com o detalhamento de como aplicar o cálculo do novo qualis para as Conferências, com seus respectivos links que constam mencionados na imagem.
+  - _Infográfico Periódicos_: É apresntado o Infográfico com o detalhamento de como aplicar o cálculo do novo qualis para os Periódicos, com seus respectivos links que constam mencionados na imagem.
+
+![tela-principal](screenshots/qualis.PNG)
+
+- **EQUIPE**: Página com as informações da atual gestão de representantes discentes, para que seja possível quando necessário, entrar em contato com algum dos integrantes da representação.
+
+![tela-principal](screenshots/equipe.PNG)
+
+# Aviso Legal
+
+Como já mencionado anteriormente, este site é uma iniciativa discente e não é o site oficial do PPGCC. Qualquer dúvida que surja em relação ao conteúdo publicado aqui ou sugestões de alterações, devem ser encaminhadas ao representante discente atual. As informações do(a) atual representante discente constam na página da Equipe.
+
+# Licença
+
+A base inicial deste template foi utilizada de outro autor e no arquivo LICENSE possui a informação dos direitos autorais (na linha 3) com suas respectivas informações.

@@ -42,7 +42,7 @@ bodyClass: subpage-discentes-planilha-list
       </div>
     </div>
     {% for categoria in site.data.categoria-discentes %}
-    {% if categoria.type != 'PD'%}
+    {% if categoria.type != 'PD' and categoria.language != 'en'%}
     <div class="col-12 col-md-3 mb-1">
       <a href="{{site.baseurl}}/{{ categoria.url }}" class="button">{{ categoria.title }}</a>
     </div>
