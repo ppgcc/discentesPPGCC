@@ -13,3 +13,5 @@ link-fluxo-doutorado: "pt-BR/fluxoDoutorado"
 link-fluxo-doutorado-en: "en/phdFlow"
 
 link-documento-regulamento-PPGCC: "http://www.pucrs.br/politecnica-prov/wp-content/uploads/sites/166/2018/10/Ci%C3%AAncia-da-Computa%C3%A7%C3%A3o-Regulamento-PPG-aprovado-CPPG-24.10.2018.pdf"
+
+link-repo-GRB: "https://github.com/ppgcc/GenerateReportBib"

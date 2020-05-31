@@ -23,6 +23,20 @@ bodyClass: subpage-docentes-list
   </div>
 </div>
 
+<div class="container pt-8 pt-md-10">
+  <div class="row justify-content-start">
+    {% for categoria in site.data.categoria-discentes %}
+    {% if categoria.type == 'D' and categoria.language == 'pt-BR' %}
+    <div class="col-12 col-md-12 mb-1">
+      <div class="qualis qualis-summary">
+        <div class="qualis-description"><strong>Aviso: </strong>{{ categoria.warning1 }}</div>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
 <div class="container pt-5 pb-5 pt-md-7 pb-md-7">
   <div class="row justify-content-center">
     {% for docente in site.data.docentes %}
