@@ -16,11 +16,10 @@
 	  "url": "pt-BR/docentesPPGCC",
     "type": "D",
     "language" : "pt-BR",
-    "warning1" : "",
+    "warning1" : "Para mais informações sobre os docentes, cliquem em seus nomes que vocês serão redirecionados à página de Pesquisadores PUCRS.",
     "warning2" : "",
     "warning3" : ""
-  },
-  {
+  },  {
     "title": "Students Worksheet (2020/1)",
     "description": "It presents Master and PhD students, as well as some Alumnis, their respective supervisors and research groups/laboratories.",
     "image": "images/cursos/icon-sheets.svg",
@@ -37,7 +36,7 @@
 	  "url": "en/teachersPPGCC",
     "type": "D",
     "language" : "en",
-    "warning1" : "",
+    "warning1" : "For more information about teachers, click on their names and you will be redirected to the PUCRS Researchers page.",
     "warning2" : "",
     "warning3" : ""
   }
