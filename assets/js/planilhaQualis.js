@@ -35,8 +35,10 @@ var columns = [{
   "data": "data-atualizacao",
   "title": "Última Atualização Automática",
   "render": function (data, type, full, meta) {
-    if (data === 'nulo'){
-      data = "";
+    if (data === 'link sem info h5'){
+      data = "link sem info h5";
+    } else if (data === 'não se aplica'){
+        data = "não se aplica";
     }
     return data;
   }

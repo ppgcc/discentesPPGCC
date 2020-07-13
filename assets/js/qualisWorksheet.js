@@ -37,8 +37,10 @@ var columns = [{
   "data": "data-atualizacao",
   "title": "Last Automatic Update",
   "render": function (data, type, full, meta) {
-    if (data === 'nulo'){
-      data = "";
+    if (data === 'link sem info h5'){
+      data = "link without info h5";
+    } else if (data === 'não se aplica'){
+        data = "not applicable";
     } else {
       dt = moment(data, "DD/MM/YYYY");
       data = dt.format("YYYY-MM-DD");
@@ -51,7 +53,7 @@ var columns = [{
   "title": "Google Scholar",
   "render": function (data, type, full, meta) {
     if (data === 'nulo'){
-      data = 'Sem Link'
+      data = 'No Link'
     } else{
       data = '<a target="_blank" href="' + data + ' "class="button">Link</a>';
     }
