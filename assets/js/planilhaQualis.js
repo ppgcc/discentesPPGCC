@@ -30,7 +30,7 @@ var columns = [{
   "title": "H5"
 }, {
   "data": "Qualis_Final",
-  "title": "Extrato CAPES"
+  "title": "Estrato CAPES (calculado)"
 }, {
   "data": "data-atualizacao",
   "title": "Última Atualização Automática",

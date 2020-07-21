@@ -32,7 +32,7 @@ var columns = [{
   "title": "H5"
 }, {
   "data": "Qualis_Final",
-  "title": "CAPES Extract"
+  "title": "CAPES Stratum (calculated)"
 }, {
   "data": "data-atualizacao",
   "title": "Last Automatic Update",
