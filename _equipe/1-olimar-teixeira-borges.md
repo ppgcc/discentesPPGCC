@@ -2,7 +2,7 @@
 title: 'Olimar Teixeira Borges'
 image: '/images/equipe/olimarfoto.gif'
 jobtitle: 'Representante Discente PPGCC'
-email: 'olimar.borges@edu.pucrs.br'
+email: 'mailto:olimar.borges@edu.pucrs.br'
 lattesurl: 'http://lattes.cnpq.br/1453803389754404'
 language: 'pt-BR'
 ---

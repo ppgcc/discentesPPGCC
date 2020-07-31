@@ -2,7 +2,7 @@
 title: 'Juliana Damasio Oliveira'
 image: '/images/equipe/julianafoto.jpeg'
 jobtitle: 'Representante Discente na Comissão de Gestão CAPES/PROEX'
-email: 'juliana.oliveira@edu.pucrs.br'
+email: 'mailto:juliana.oliveira@edu.pucrs.br'
 lattesurl: 'http://lattes.cnpq.br/8969323487877188'
 language: 'pt-BR'
 ---
