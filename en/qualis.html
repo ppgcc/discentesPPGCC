@@ -25,7 +25,7 @@ bodyClass: page-qualis
 <!-- TableTop -->
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.4.3/tabletop.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/assets/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/qualisWorksheet.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/qualisWorksheets.js"></script>
 <script>
   $(function() {
       $( "#tabs" ).tabs();
@@ -64,7 +64,7 @@ bodyClass: page-qualis
     <div class="col-12 col-md-12 mb-1">
       <div class="qualis qualis-summary">
         <div class="qualis-description"><strong>Warning 02: </strong>{{ site.data.qualis.warning2 }}
-          <a target="_blank" href="{{ site.data.qualis.link-planilha-automatizacao}}" class="button">AUTOMATION WORKSHEET</a>
+          <a target="_blank" href="{{ site.data.qualis.link-planilha-automatizacao}}" class="button">CONFERENCES WORKSHEET</a>
         </div>
       </div>
     </div>
@@ -85,7 +85,9 @@ bodyClass: page-qualis
     </div>
     <div class="col-12 col-md-12 mb-1">
       <div class="qualis qualis-summary">
-        <div class="qualis-description"><strong>Warning 05: </strong>{{ site.data.qualis.warning5 }}</div>
+        <div class="qualis-description"><strong>Warning 05: </strong>{{ site.data.qualis.warning5 }}
+          <a target="_blank" href="{{ site.data.qualis.link-planilha-automatizacao-periodicos}}" class="button">JOURNALS WORKSHEET</a>
+        </div>
       </div>
     </div>
     <div class="col-12 col-md-12 mb-1">
@@ -104,26 +106,25 @@ bodyClass: page-qualis
 <div id="tabs">
   <ul>
       <li><a href="#aba-conferencias"><strong>Conferences</strong></a></li>
-      <li><a href="#aba-periodicos">Journals</a></li>
+      <li><a href="#aba-periodicos"><strong>Journals</strong></a></li>
       <li><a href="#aba-info-conferencias">Infographic Conferences</a></li>
       <li><a href="#aba-info-periodicos">Infographic Journals</a></li>
   </ul>
   <div id="aba-conferencias">
     <div class="col-xs-12">
-      <div id="planilha"></div>
+      <div id="planilha-conferencias"></div>
     </div>
   </div>
   <div id="aba-periodicos">
-    <div class="col-2 mb-1">
+    <div class="col-12 col-md-12 mb-1">
       <div class="qualis qualis-summary">
-        <div class="qualis-description"><strong>UNDER CONSTRUCTION</strong></div>
+        <div class="qualis-description"><strong>Didn't find any Journal? Fill the form with the information of the Journal that we will add it: </strong>
+          <a target="_blank" href="{{ site.data.qualis.link-formulario-novos-periodicos}}" class="button">FORM</a>
+        </div>
       </div>
     </div>
-    <div class="col-2 mb-1">
-      <a target="_blank" href="{{ site.data.qualis.info-periodicos-link_1}}" class="button">Scopus</a>
-    </div>
-    <div class="col-2 mb-1">
-      <a target="_blank" href="{{ site.data.qualis.info-periodicos-link_2}}" class="button">Web of Science</a>
+    <div class="col-xs-12">
+      <div id="planilha-periodicos"></div>
     </div>
   </div>
   <div id="aba-info-conferencias">
