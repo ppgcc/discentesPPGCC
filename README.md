@@ -30,7 +30,7 @@ O site é composto por algumas funcionalidades de interesse discente. Estas info
 
   ![tela-principal](screenshots/discentes_docentes.PNG)
 
-  - **_Planilha Discentes a partir de (2020/1)_**: Apresenta os discentes de Mestrado e Doutorado, como também alguns Alumnis, seus(as) respectivos(as) orientadores(as) e grupos/laboratórios de pesquisa.
+  - **_Planilha Discentes a partir de (2020/2)_**: Apresenta os discentes de Mestrado e Doutorado, como também alguns Alumnis, seus(as) respectivos(as) orientadores(as) e grupos/laboratórios de pesquisa.
 
   ![tela-principal](screenshots/planilha_discentes.PNG)
 
