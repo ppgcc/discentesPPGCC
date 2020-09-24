@@ -8,14 +8,6 @@
 	"url-profile" : "http://www.pucrs.br/pesquisadores/afonso-henrique-correa-de-sales/",
 	"email" : "afonso.sales@pucrs.br"
   }, {
-	"title" : "ALEXANDRE DE MORAIS AMORY",
-	"image-profile" : "/images/docentes/sem-foto.png",
-	"categoria" : "docente",
-	"linha-de-pesquisa" : "Sistemas Embarcados e Sistemas Digitais",
-	"lab-de-pesquisa" : "Laboratório de Sistemas Autônomos (LSA) - Robótica",
-	"url-profile" : "http://www.pucrs.br/pesquisadores/alexandre-de-morais-amory/",
-	"email" : "alexandre.amory@pucrs.br"
-  }, {
 	"title" : "AVELINO FRANCISCO ZORZO",
 	"image-profile" : "/images/docentes/avelino_zorzo_.jpg",
 	"categoria" : "docente",
@@ -128,16 +120,6 @@
 	"url-profile" : "http://www.pucrs.br/pesquisadores/ney-laert-vilar-calazans/",
 	"email" : "ney.calazans@pucrs.br"
   }, {
-	"title" : "OSMAR NORBERTO DE SOUZA",
-	"image-profile" : "/images/docentes/sem-foto.png",
-	"categoria" : "docente",
-	"linha-de-pesquisa" : "Bioinformática e Computação Bioinspirada",
-	"grupo-de-pesquisa" : "Grupo de Biofísica Molecular Computacional - Modelagem e Simulação de Biossistemas (GBMC)",
-	"lab-de-pesquisa" : "Laboratório de Bioinformática, Modelagem e Simulação de Biossistemas (LABIO)",
-	"nucleo-de-pesquisa" : "Núcleo de Bioinformática (NuBio) - Pesquisa e Aplicações",
-	"url-profile" : "http://www.pucrs.br/pesquisadores/osmar-norberto-de-souza/",
-	"email" : "osmar.norberto@pucrs.br"
-  }, {
 	"title" : "RAFAEL HEITOR BORDINI",
 	"image-profile" : "/images/docentes/rafael_bordini.jpg",
 	"categoria" : "docente",
@@ -146,7 +128,7 @@
 	"grupo-de-pesquisa-2" : "Grupo de Inteligência Artificial na Saúde",
 	"lab-de-pesquisa" : "Laboratório do Grupo de Pesquisa SMART",
 	"url-profile" : "http://www.pucrs.br/pesquisadores/rafael-heitor-bordini/",
-	"email" : "	rafael.bordini@pucrs.br"
+	"email" : "rafael.bordini@pucrs.br"
   }, {
 	"title" : "RAFAEL PRIKLADNICKI",
 	"image-profile" : "/images/docentes/rafael_prikladnicki.jpg",
@@ -182,7 +164,7 @@
 	"grupo-de-pesquisa" : "Grupo de Pesquisa em Desenvolvimento Distribuído de Software (MuNDDoS)",
 	"centro-de-pesquisa" : "Centro de Pesquisa em Engenharia de Software (CePES)",
 	"url-profile" : "http://www.pucrs.br/pesquisadores/sabrina-dos-santos-marczak/",
-	"email" : "	sabrina.marczak@pucrs.br"
+	"email" : "sabrina.marczak@pucrs.br"
   }, {
 	"title" : "SORAIA RAUPP MUSSE",
 	"image-profile" : "/images/docentes/soraia_musse.jpg",
