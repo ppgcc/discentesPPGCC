@@ -8,14 +8,6 @@
 	"url-profile" : "http://www.pucrs.br/pesquisadores/afonso-henrique-correa-de-sales/",
 	"email" : "afonso.sales@pucrs.br"
   }, {
-	"title" : "ALEXANDRE DE MORAIS AMORY",
-	"image-profile" : "/images/docentes/sem-foto.png",
-	"categoria" : "docente",
-	"linha-de-pesquisa" : "Embedded Systems and Digital Systems",
-	"lab-de-pesquisa" : "Autonomous Systems Laboratory (LSA) - Robotics",
-	"url-profile" : "http://www.pucrs.br/pesquisadores/alexandre-de-morais-amory/",
-	"email" : "alexandre.amory@pucrs.br"
-  }, {
 	"title" : "AVELINO FRANCISCO ZORZO",
 	"image-profile" : "/images/docentes/avelino_zorzo_.jpg",
 	"categoria" : "docente",
@@ -127,16 +119,6 @@
 	"nucleo-de-pesquisa" : "Embedded Systems and Digital Systems Core (SESD)",
 	"url-profile" : "http://www.pucrs.br/pesquisadores/ney-laert-vilar-calazans/",
 	"email" : "ney.calazans@pucrs.br"
-  }, {
-	"title" : "OSMAR NORBERTO DE SOUZA",
-	"image-profile" : "/images/docentes/sem-foto.png",
-	"categoria" : "docente",
-	"linha-de-pesquisa" : "Bioinformatics and Bioinspired Computing",
-	"grupo-de-pesquisa" : "Computational Molecular Biophysics Group - Modeling and Simulation of Biosystems (GBMC)",
-	"lab-de-pesquisa" : "Laboratory of Bioinformatics, Modeling and Simulation of Biosystems (LABIO)",
-	"nucleo-de-pesquisa" : "Nucleus of Bioinformatics (NuBio) - Research and Applications",
-	"url-profile" : "http://www.pucrs.br/pesquisadores/osmar-norberto-de-souza/",
-	"email" : "osmar.norberto@pucrs.br"
   }, {
 	"title" : "RAFAEL HEITOR BORDINI",
 	"image-profile" : "/images/docentes/rafael_bordini.jpg",
