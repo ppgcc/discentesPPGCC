@@ -153,6 +153,14 @@ console.log('language: '+ language)
 
 $(document).ready(function() {
 
+  var myVar;
+  function myFunction() {
+    myVar = setTimeout(showPage, 4000);
+  }
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+  }
+
   function initializeTabletopObjectConf() {
     Tabletop.init({
       key: key_conf,
@@ -175,6 +183,7 @@ $(document).ready(function() {
     });
   }
 
+  myFunction();
   initializeTabletopObjectConf();
   initializeTabletopObjectPeri();
 

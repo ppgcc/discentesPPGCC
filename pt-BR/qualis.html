@@ -32,75 +32,30 @@ bodyClass: page-qualis
 </script>
 
 <style>
-.ui-tabs .ui-widget-header {
+  .ui-tabs .ui-widget-header {
     background: #5c9ccc;
-}
+  }
+  .ui-tabs {
+    margin-bottom: 25px;
+  }
 </style>
 
-<div class="intro intro-small">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h1>Qualis Ciência da Computação</h1>
-      </div>
-    </div>
-    <div class="col-12 col-md-3 mb-1">
-      <a target="_blank" href="{{ site.data.qualis.link-documento-capes}}" class="button">Documento CAPES</a>
-    </div>
-    <div class="col-12 col-md-3 mb-1">
-      <a target="_blank" href="{{ site.data.qualis.link-planilha-trabalho}}" class="button">Planilha de Trabalho</a>
-    </div>
+<div class="intro intro-normal">
+  <div class="col-12">
+    <h1>Qualis Ciência da Computação</h1>
   </div>
 </div>
 
-<div class="container pt-8 pt-md-10">
-  <div class="row justify-content-start">
-    <div class="col-12 col-md-12 mb-1">
-      <div class="qualis qualis-summary">
-        <div class="qualis-description"><strong>Aviso 01: </strong>{{ site.data.qualis.aviso1 }}</div>
-      </div>
-    </div>
-    <div class="col-12 col-md-12 mb-1">
-      <div class="qualis qualis-summary">
-        <div class="qualis-description"><strong>Aviso 02: </strong>{{ site.data.qualis.aviso2 }}
-          <a target="_blank" href="{{ site.data.qualis.link-planilha-automatizacao}}" class="button">Planilha Conferências</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-md-12 mb-1">
-      <div class="qualis qualis-summary">
-        <div class="qualis-description"><strong>Aviso 03: </strong>{{ site.data.qualis.aviso3 }}
-          <a target="_blank" href="{{ site.data.qualis.exemplo-link-func}}"class="button" >Funciona</a>
-          <a target="_blank" href="{{ site.data.qualis.exemplo-link-nao-func}}" class="button">Não funciona</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-md-12 mb-1">
-      <div class="qualis qualis-summary">
-        <div class="qualis-description"><strong>Aviso 04: </strong>{{ site.data.qualis.aviso4 }}
-          <a target="_blank" href="{{ site.data.qualis.link-script}}" class="button">Repositório Script</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-md-12 mb-1">
-      <div class="qualis qualis-summary">
-        <div class="qualis-description"><strong>Aviso 05: </strong>{{ site.data.qualis.aviso5 }}
-          <a target="_blank" href="{{ site.data.qualis.link-planilha-automatizacao-periodicos}}" class="button">Planilha Periódicos</a>
-          <a target="_blank" href="{{ site.data.qualis.link-api-scopus}}" class="button">SCOPUS API</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-md-12 mb-1">
-      <div class="qualis qualis-summary">
-        <div class="qualis-description"><strong>Aviso 06: </strong>{{ site.data.qualis.aviso6 }}
-          <a target="_blank" href="mailto:{{site.data.contact.email_representante}}" class="button">E-mail contato</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-md-12 mb-1">
-      <div class="color-description-alert"><strong>Aviso 07: </strong>{{ site.data.qualis.aviso7 }}</div>
-    </div>
-  </div>
+<div class="col-12 col-md-3 mb-1">
+  <a target="_blank" href="{{ site.data.qualis.link-documento-capes}}" class="button">Documento CAPES</a>
+</div>
+<div class="col-12 col-md-3 mb-1">
+  <a target="_blank" href="{{ site.data.qualis.link-planilha-trabalho}}" class="button">Planilha de Trabalho</a>
+</div>
+
+
+<div class="col-12 col-md-12 mb-1">
+  <div class="color-description-alert">{{ site.data.qualis.aviso7 }}</div>
 </div>
 
 <div id="tabs">
@@ -110,6 +65,16 @@ bodyClass: page-qualis
       <li><a href="#aba-info-conferencias">Infográfico Conferências</a></li>
       <li><a href="#aba-info-periodicos">Infográfico Periódicos</a></li>
   </ul>
+
+  <div id="loader" class="sk-chase">
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+    <div class="sk-chase-dot"></div>
+  </div>
+
   <div id="aba-conferencias">
     <div class="col-xs-12">
       <div id="planilha-conferencias"></div>
@@ -141,9 +106,8 @@ bodyClass: page-qualis
       <a target="_blank" href="{{ site.data.qualis.link-pdf-info-conferencias}}" class="button">Infográfico.PDF</a>
     </div>
     <div class="row justify-content-center">
-      <div class="col-12 text-center text-center">
-        <img
-        alt="Infográfico com a explicação de como aplicar as regras para calcular o novo qualis das conferências e eventos da Ciência da Computação."
+      <div class="qualis-image">
+        <img alt="Infográfico com a explicação de como aplicar as regras para calcular o novo qualis das conferências e eventos da Ciência da Computação."
         src="{{site.baseurl}}/{{ site.data.qualis.link-img-info-conferencias }}"
         />
       </div>
@@ -163,12 +127,62 @@ bodyClass: page-qualis
       <a target="_blank" href="{{ site.data.qualis.link-pdf-info-periodicos}}" class="button">Infográfico.PDF</a>
     </div>
     <div class="row justify-content-center">
-      <div class="col-12 text-center text-center">
+      <div class="qualis-image">
         <img
         alt="Infográfico com a explicação de como aplicar as regras para calcular o novo qualis dos Periódicos de todas as áreas."
         src="{{site.baseurl}}/{{ site.data.qualis.link-img-info-periodicos }}"
-      />
+        />
       </div>
     </div>
   </div>
+</div>
+
+
+<div class="col-12 col-md-12 mb-1">
+  <div class="color-description-alert"><strong>AVISOS GERAIS</strong></div>
+</div>
+<div class="row justify-content-start">
+  <div class="col-12 col-md-12 mb-1">
+    <div class="qualis qualis-summary">
+      <div class="qualis-description"><strong>Aviso 01: </strong>{{ site.data.qualis.aviso1 }}</div>
+    </div>
+  </div>
+  <div class="col-12 col-md-12 mb-1">
+    <div class="qualis qualis-summary">
+      <div class="qualis-description"><strong>Aviso 02: </strong>{{ site.data.qualis.aviso2 }}
+        <a target="_blank" href="{{ site.data.qualis.link-planilha-automatizacao}}" class="button">Planilha Conferências</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-12 mb-1">
+    <div class="qualis qualis-summary">
+      <div class="qualis-description"><strong>Aviso 03: </strong>{{ site.data.qualis.aviso3 }}
+        <a target="_blank" href="{{ site.data.qualis.exemplo-link-func}}"class="button" >Funciona</a>
+        <a target="_blank" href="{{ site.data.qualis.exemplo-link-nao-func}}" class="button">Não funciona</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-12 mb-1">
+    <div class="qualis qualis-summary">
+      <div class="qualis-description"><strong>Aviso 04: </strong>{{ site.data.qualis.aviso4 }}
+        <a target="_blank" href="{{ site.data.qualis.link-script}}" class="button">Repositório Script</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-12 mb-1">
+    <div class="qualis qualis-summary">
+      <div class="qualis-description"><strong>Aviso 05: </strong>{{ site.data.qualis.aviso5 }}
+        <a target="_blank" href="{{ site.data.qualis.link-planilha-automatizacao-periodicos}}" class="button">Planilha Periódicos</a>
+        <a target="_blank" href="{{ site.data.qualis.link-api-scopus}}" class="button">SCOPUS API</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-12 mb-1">
+    <div class="qualis qualis-summary">
+      <div class="qualis-description"><strong>Aviso 06: </strong>{{ site.data.qualis.aviso6 }}
+        <a target="_blank" href="mailto:{{site.data.contact.email_representante}}" class="button">E-mail contato</a>
+      </div>
+    </div>
+  </div>
+
 </div>

@@ -36,4 +36,14 @@
   }
 }
 
-
+.course-image img {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #dcdcdc;
+	border-radius: 3px;
+	box-shadow: 0 1px 18px rgba(0, 0, 0, 0.2);
+	max-width:100%;
+	height:auto;
+	text-align: center !important;
+	padding: 10px;
+}
