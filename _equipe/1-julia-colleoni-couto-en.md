@@ -1,9 +1,9 @@
 ---
-title: 'Olimar Teixeira Borges'
-image: '/images/equipe/olimarfoto.gif'
+title: 'Julia Colleoni Couto'
+image: '/images/equipe/juliafoto.gif'
 jobtitle: 'PPGCC Student Representative'
-email: 'mailto:olimar.borges@edu.pucrs.br'
-lattesurl: 'http://lattes.cnpq.br/1453803389754404'
+email: 'julia.couto@edu.pucrs.br'
+lattesurl: 'http://lattes.cnpq.br/0619802843633726'
 language: 'en'
 ---
 

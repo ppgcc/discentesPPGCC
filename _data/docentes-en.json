@@ -128,7 +128,7 @@
 	"grupo-de-pesquisa-2" : "Artificial Intelligence in Health Group",
 	"lab-de-pesquisa" : "SMART Research Group Laboratory",
 	"url-profile" : "http://www.pucrs.br/pesquisadores/rafael-heitor-bordini/",
-	"email" : "	rafael.bordini@pucrs.br"
+	"email" : "rafael.bordini@pucrs.br"
   }, {
 	"title" : "RAFAEL PRIKLADNICKI",
 	"image-profile" : "/images/docentes/rafael_prikladnicki.jpg",
@@ -136,17 +136,7 @@
 	"linha-de-pesquisa" : "Software Engineering and Databases",
 	"grupo-de-pesquisa" : "Research Group on Distributed Software Development (MuNDDoS)",
 	"url-profile" : "http://www.pucrs.br/pesquisadores/rafael-prikladnicki/",
-	"email" : "	rafael.prikladnicki@pucrs.br"
-  }, {
-	"title" : "RENATA VIEIRA",
-	"image-profile" : "/images/docentes/renata_vieira.jpg",
-	"categoria" : "docente",
-	"linha-de-pesquisa" : "Computational Intelligence",
-	"grupo-de-pesquisa" : "Natural Language Processing (PLN)",
-	"lab-de-pesquisa" : "Natural Language Processing Laboratory",
-	"nucleo-de-pesquisa" : "Artificial Intelligence Nucleus",
-	"url-profile" : "http://www.pucrs.br/pesquisadores/renata-vieira/",
-	"email" : "renata.vieira@pucrs.br"
+	"email" : "rafael.prikladnicki@pucrs.br"
   }, {
 	"title" : "RODRIGO COELHO BARROS",
 	"image-profile" : "/images/docentes/rodrigo_coelho_barros.jpg",
@@ -164,7 +154,7 @@
 	"grupo-de-pesquisa" : "Research Group on Distributed Software Development (MuNDDoS)",
 	"centro-de-pesquisa" : "Software Engineering Research Center (CePES)",
 	"url-profile" : "http://www.pucrs.br/pesquisadores/sabrina-dos-santos-marczak/",
-	"email" : "	sabrina.marczak@pucrs.br"
+	"email" : "sabrina.marczak@pucrs.br"
   }, {
 	"title" : "SORAIA RAUPP MUSSE",
 	"image-profile" : "/images/docentes/soraia_musse.jpg",

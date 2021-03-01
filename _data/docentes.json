@@ -136,17 +136,7 @@
 	"linha-de-pesquisa" : "Engenharia de Software e Banco de Dados",
 	"grupo-de-pesquisa" : "Grupo de Pesquisa em Desenvolvimento Distribuído de Software (MuNDDoS)",
 	"url-profile" : "http://www.pucrs.br/pesquisadores/rafael-prikladnicki/",
-	"email" : "	rafael.prikladnicki@pucrs.br"
-  }, {
-	"title" : "RENATA VIEIRA",
-	"image-profile" : "/images/docentes/renata_vieira.jpg",
-	"categoria" : "docente",
-	"linha-de-pesquisa" : "Inteligência Computacional",
-	"grupo-de-pesquisa" : "Processamento da Linguagem Natural (PLN)",
-	"lab-de-pesquisa" : "Laboratório de Processamento de Linguagem Natural",
-	"nucleo-de-pesquisa" : "Núcleo de Inteligência Artificial",
-	"url-profile" : "http://www.pucrs.br/pesquisadores/renata-vieira/",
-	"email" : "renata.vieira@pucrs.br"
+	"email" : "rafael.prikladnicki@pucrs.br"
   }, {
 	"title" : "RODRIGO COELHO BARROS",
 	"image-profile" : "/images/docentes/rodrigo_coelho_barros.jpg",

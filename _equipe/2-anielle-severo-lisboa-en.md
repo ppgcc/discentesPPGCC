@@ -1,9 +1,9 @@
 ---
-title: 'Julia Colleoni Couto'
-image: '/images/equipe/juliafoto.gif'
+title: 'Anielle Severo Lisboa'
+image: '/images/equipe/aniellefoto.jpg'
 jobtitle: '1st PPGCC Alternate Student Representative'
-email: 'julia.couto@edu.pucrs.br'
-lattesurl: 'http://lattes.cnpq.br/0619802843633726'
+email: 'mailto:anielle.lisboa@edu.pucrs.br'
+lattesurl: 'http://lattes.cnpq.br/5211269100587746'
 language: 'en'
 ---
 
