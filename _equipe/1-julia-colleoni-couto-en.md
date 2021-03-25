@@ -4,6 +4,7 @@ image: '/images/equipe/juliafoto.gif'
 jobtitle: 'PPGCC Student Representative'
 email: 'julia.couto@edu.pucrs.br'
 lattesurl: 'http://lattes.cnpq.br/0619802843633726'
+linkedin: 'https://www.linkedin.com/in/juliacolleoni/'
 language: 'en'
 ---
 

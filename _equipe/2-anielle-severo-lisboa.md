@@ -4,6 +4,7 @@ image: '/images/equipe/aniellefoto.jpg'
 jobtitle: '1ª Representante Discente Suplente PPGCC'
 email: 'mailto:anielle.lisboa@edu.pucrs.br'
 lattesurl: 'http://lattes.cnpq.br/5211269100587746'
+linkedin: 'https://www.linkedin.com/in/aniellelisboa/'
 language: 'pt-BR'
 ---
 

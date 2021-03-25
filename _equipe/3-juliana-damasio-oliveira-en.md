@@ -4,6 +4,7 @@ image: '/images/equipe/julianafoto.jpeg'
 jobtitle: 'Student Representative in the CAPES/PROEX Management Committee'
 email: 'mailto:juliana.oliveira@edu.pucrs.br'
 lattesurl: 'http://lattes.cnpq.br/8969323487877188'
+linkedin: 'https://www.linkedin.com/in/juliana-damasio-4916ba39/'
 language: 'en'
 ---
 
