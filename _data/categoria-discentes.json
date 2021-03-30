@@ -16,7 +16,7 @@
 	  "url": "pt-BR/docentesPPGCC",
     "type": "D",
     "language" : "pt-BR",
-    "warning1" : "Para mais informações sobre os docentes, cliquem em seus nomes que vocês serão redirecionados à página de Pesquisadores PUCRS.",
+    "warning1" : "Clique no nome do docente para obter mais informações.",
     "warning2" : "",
     "warning3" : ""
   },  {
@@ -36,7 +36,7 @@
 	  "url": "en/teachersPPGCC",
     "type": "D",
     "language" : "en",
-    "warning1" : "For more information about teachers, click on their names and you will be redirected to the PUCRS Researchers page.",
+    "warning1" : "Click on the professor's name for more information.",
     "warning2" : "",
     "warning3" : ""
   }
