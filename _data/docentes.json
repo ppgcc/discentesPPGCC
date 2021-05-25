@@ -31,6 +31,15 @@
 	"url-profile" : "http://www.pucrs.br/pesquisadores/cesar-augusto-missio-marcon/",
 	"email" : "cesar.marcon@pucrs.br"
   }, {
+	"title" : "DALVAN JAIR GRIEBLER",
+	"image-profile" : "/images/docentes/sem-foto.png",
+	"categoria" : "docente",
+	"linha-de-pesquisa" : "Processamento Paralelo e Distribuído",
+	"grupo-de-pesquisa" : "Grupo de Modelagem de Aplicações Paralelas (GMAP)",
+	"lab-de-pesquisa" : "Laboratório GMAP - Modelagem de Aplicações Paralelas",
+	"url-profile" : "http://lattes.cnpq.br/1989039890812573",
+	"email" : "dalvan.griebler@pucrs.br"
+  }, {
 	"title" : "DUNCAN DUBUGRAS ALCOBA RUIZ",
 	"image-profile" : "/images/docentes/duncan_dubugras.jpg",
 	"categoria" : "docente",

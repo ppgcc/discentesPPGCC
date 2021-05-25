@@ -30,7 +30,16 @@
 	"linha-de-pesquisa" : "Embedded Systems and Digital Systems",
 	"url-profile" : "http://www.pucrs.br/pesquisadores/cesar-augusto-missio-marcon/",
 	"email" : "cesar.marcon@pucrs.br"
-  }, {
+}, {
+	"title" : "DALVAN JAIR GRIEBLER",
+	"image-profile" : "/images/docentes/sem-foto.png",
+	"categoria" : "docente",
+	"linha-de-pesquisa" : "Parallel and Distributed Processing",
+	"grupo-de-pesquisa" : "Parallel Application Modeling Group (GMAP)",
+	"lab-de-pesquisa" : "GMAP Laboratory - Parallel Applications Modeling",
+	"url-profile" : "http://lattes.cnpq.br/1989039890812573",
+	"email" : "dalvan.griebler@pucrs.br"
+}, {
 	"title" : "DUNCAN DUBUGRAS ALCOBA RUIZ",
 	"image-profile" : "/images/docentes/duncan_dubugras.jpg",
 	"categoria" : "docente",
