@@ -1,10 +1,10 @@
 ---
-title: 'Anielle Severo Lisboa'
-image: '/images/equipe/aniellefoto.jpg'
+title: 'Olimar Teixeira Borges'
+image: '/images/equipe/olimarfoto.gif'
 jobtitle: '1st PPGCC Alternate Student Representative'
-email: 'mailto:anielle.lisboa@edu.pucrs.br'
-lattesurl: 'http://lattes.cnpq.br/5211269100587746'
-linkedin: 'https://www.linkedin.com/in/aniellelisboa/'
+email: 'mailto:olimar.borges@edu.pucrs.br'
+lattesurl: 'http://lattes.cnpq.br/1453803389754404'
+linkedin: 'https://www.linkedin.com/in/olimarteixeiraborges/'
 language: 'en'
 ---
 

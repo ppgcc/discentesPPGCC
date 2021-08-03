@@ -1,7 +1,7 @@
 ---
 title: 'Olimar Teixeira Borges'
 image: '/images/equipe/olimarfoto.gif'
-jobtitle: 'Support from the PPGCC Student Representation'
+jobtitle: 'Technical Support from the PPGCC Student Representation'
 email: 'mailto:olimar.borges@edu.pucrs.br'
 lattesurl: 'http://lattes.cnpq.br/1453803389754404'
 linkedin: 'https://www.linkedin.com/in/olimarteixeiraborges/'

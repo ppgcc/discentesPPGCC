@@ -1,7 +1,7 @@
 ---
 title: 'Olimar Teixeira Borges'
 image: '/images/equipe/olimarfoto.gif'
-jobtitle: 'Apoio da Representação Discente do PPGCC'
+jobtitle: 'Apoio Técnico da Representação Discente do PPGCC'
 email: 'mailto:olimar.borges@edu.pucrs.br'
 lattesurl: 'http://lattes.cnpq.br/1453803389754404'
 linkedin: 'https://www.linkedin.com/in/olimarteixeiraborges/'

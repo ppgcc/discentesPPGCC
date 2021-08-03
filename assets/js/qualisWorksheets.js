@@ -161,6 +161,14 @@
 
   $(document).ready(function() {
 
+    var myVar;
+    function myFunction() {
+      myVar = setTimeout(showPage, 4000);
+    }
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+    }
+
     function initializeTabletopObjectConf() {
       Tabletop.init({
         key: key_conf,
@@ -182,7 +190,8 @@
         debug: false
       });
     }
-
+    
+    myFunction();
     initializeTabletopObjectConf();
     initializeTabletopObjectPeri();
 
