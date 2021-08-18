@@ -28,6 +28,7 @@ bodyClass: page-qualis
 <script>
   $(function() {
       $( "#tabs" ).tabs();
+      alert("Olá Pessoal! Estamos com as consultas fora do ar, devido a uma atualização da Google Sheets API v3 para v4, que eu não tinha previsto. Pretendo corrigir o problema o mais breve possível. Por enquanto, vocês podem fazer as suas consultas diretamente nas planilhas que eu coloquei abaixo. Desculpem pelo transtorno! Olimar T. Borges.")
   });
 </script>
 
@@ -58,7 +59,9 @@ bodyClass: page-qualis
   <div class="color-description-alert">{{ site.data.qualis.aviso7 }}</div>
 </div>
 
-<div id="tabs">
+
+
+<!-- <div id="tabs">
   <ul>
       <li><a href="#aba-conferencias"><strong>Conferências</strong></a></li>
       <li><a href="#aba-periodicos"><strong>Periódicos</strong></a></li>
@@ -135,6 +138,22 @@ bodyClass: page-qualis
       </div>
     </div>
   </div>
+</div>
+-->
+
+
+
+<div class="col-12 col-md-12 mb-1">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-12 mb-1">
+      <div class="color-description-alert">
+        <div class="qualis-description"><a target="_blank" href="{{ site.data.qualis.link-planilha-automatizacao}}" class="button">Planilha Conferências</a>
+        <div class="qualis-description"><a target="_blank" href="{{ site.data.qualis.link-planilha-automatizacao-periodicos}}" class="button">Planilha Periódicos</a>
+        </div>
+    </div>
+  </div>
+  </div>
+</div>
 </div>
 
 
