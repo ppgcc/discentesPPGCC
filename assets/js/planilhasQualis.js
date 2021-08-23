@@ -2,7 +2,7 @@
 
 //enter google sheets key here
 //var key =
-  //"https://docs.google.com/spreadsheets/d/113QZOTS9JQ1WGfwjwQrOpErUBJTAnaBmdjP0_OjA53c/pubhtml?gid=489792061&single=true";
+//"https://docs.google.com/spreadsheets/d/113QZOTS9JQ1WGfwjwQrOpErUBJTAnaBmdjP0_OjA53c/pubhtml?gid=489792061&single=true";
 var key_conf = "1yvuCa__L7r0EJy6v6Jb17fvu-VdV80PbfAReR9Gy52I";
 var key_peri = "1EBJ8OXGPHU58ukZAUfF9N7Cy8A8mbl-jjUjZL5Cg9xM";
 
@@ -25,8 +25,8 @@ var columns_conf = [{
   "title": "Comissão Especial Indicou",
   "className": "text-center",
   "render": function (data, type, full, meta) {
-    if (data === 'nulo'){
-      data = '-';
+    if (data === 'nulo' || data === undefined){
+        data = '-';
     }
     return data;
   }
@@ -36,7 +36,7 @@ var columns_conf = [{
   "className": "text-center",
   "type": "html-num",
   "render": function (data, type, full, meta) {
-    if (data === 'nulo'){
+    if (data === "nulo"){
       data = '-';
     }
     return data;
@@ -51,30 +51,19 @@ var columns_conf = [{
     }
     return data;
   }
-}, /*{
-  "data": "data-atualizacao",
-  "title": "Última Atualização Automática",
-  "render": function (data, type, full, meta) {
-    if (data === 'link sem info h5'){
-      data = '';
-    } else if (data === 'não se aplica'){
-        data = '';
-    }
-    return data;
-  }
-},*/ {
+}, {
   "data": "link",
   "title": "Google Scholar",
   "className": "text-center",
   "render": function (data, type, full, meta) {
     if (data === 'nulo'){
-      data = 'Sem Link'
-    } else if (data === 'Induzidos manualmente'){
-        data = 'Induzidos manualmente'
-    } else{
+      data = 'Sem Link';
+    } else if(data === 'Induzidos manualmente'){
+        data = 'Induzidos manualmente';
+    } else {
       data = '<a target="_blank" href="' + data + ' "class="button">Link</a>';
     }
-      return data;
+    return data;
   }
 }];
 
@@ -83,7 +72,7 @@ var columns_peri = [{
   "title": "ISSN",
   "render": function (data, type, full, meta) {
     if (data === 'nulo'){
-      data = '-'
+      data = '-';
     }
     return data;
   }
@@ -98,7 +87,7 @@ var columns_peri = [{
   "type": "html-num",
   "render": function (data, type, full, meta) {
     if (data === 'nulo'){
-      data = '-'
+      data = '-';
     }
     return data;
   }
@@ -108,9 +97,9 @@ var columns_peri = [{
   "className": "text-center",
   "render": function (data, type, full, meta) {
     if (data === 'nulo'){
-      data = '-'
+      data = '-';
     } else if (data != ''){
-      data = 'sim'
+      data = 'sim';
     }
     return data;
   }
@@ -120,26 +109,17 @@ var columns_peri = [{
   "className": "table-cell-bold-center",
   "render": function (data, type, full, meta) {
     if (data === 'nulo'){
-      data = '-'
-    }
-    return data;
-  }
-}, /*{
-  "data": "data-atualizacao",
-  "title": "Última Atualização Automática",
-  "render": function (data, type, full, meta) {
-    if (data === 'nulo'){
       data = '-';
     }
     return data;
-
-},*/ {
+  }
+}, {
   "data": "link_scopus",
   "title": "Scopus",
   "className": "text-center",
   "render": function (data, type, full, meta) {
     if (data === 'nulo'){
-      data = 'Sem Link'
+      data = 'Sem Link';
     } else{
       data = '<a target="_blank" href="' + data + ' "class="button">Link</a>';
     }
@@ -154,38 +134,33 @@ console.log('language: '+ language)
 $(document).ready(function() {
 
   var myVar;
-  function myFunction() {
+  function loading() {
     myVar = setTimeout(showPage, 4000);
   }
   function showPage() {
     document.getElementById("loader").style.display = "none";
   }
 
-  function initializeTabletopObjectConf() {
-    Tabletop.init({
-      key: key_conf,
-      callback: function(data, tabletop) {
-        writeTableConf(data); //call up datatables function
-      },
-      simpleSheet: true,
-      debug: false
-    });
+  function initializeParserObjectConf() {
+    const spreadsheetId = key_conf
+    const parser = new PublicGoogleSheetsParser()
+    parser.parse(spreadsheetId).then((items) => {
+      writeTableConf(items)
+      console.log(items)
+    })
   }
 
-  function initializeTabletopObjectPeri() {
-    Tabletop.init({
-      key: key_peri,
-      callback: function(data, tabletop) {
-        writeTablePeri(data); //call up datatables function
-      },
-      simpleSheet: true,
-      debug: false
-    });
+  function initializeParserObjectPeri() {
+    const spreadsheetId = key_peri
+    const parser = new PublicGoogleSheetsParser()
+    parser.parse(spreadsheetId).then((items) => {
+      writeTablePeri(items)
+    })
   }
 
-  myFunction();
-  initializeTabletopObjectConf();
-  initializeTabletopObjectPeri();
+  loading();
+  initializeParserObjectConf();
+  initializeParserObjectPeri();
 
   function writeTableConf(data) {
     //select main div and put a table there

@@ -13,13 +13,19 @@ var columns = [{
   "title": "Orientador(a)"
 }, {
   "data": "grupo",
-  "title": "Grupo/Laboratório de Pesquisa"
+  "title": "Grupo/Laboratório de Pesquisa",
+  "render": function (data, type, full, meta) {
+    if (data === undefined){
+      data = '-'
+    }
+    return data;
+  }
 }, {
   "data": "email",
   "title": "Contato",
   "render": function (data, type, full, meta) {
-    if (data === ''){
-      data = ''
+    if (data === undefined){
+      data = '-'
     } else{
       data = '<a target="_blank" href="mailto:' + data + ' "class="button">Email</a>';
     }
@@ -29,8 +35,8 @@ var columns = [{
   "data": "lattes",
   "title": "Lattes",
   "render": function (data, type, full, meta) {
-    if (data === ''){
-      data = ''
+    if (data === undefined){
+      data = '-'
     } else{
       data = '<a target="_blank" href="' + data + ' "class="button">Lattes</a>';
     }
@@ -40,18 +46,16 @@ var columns = [{
 
 $(document).ready(function() {
 
-  function initializeTabletopObject() {
-    Tabletop.init({
-      key: key,
-      callback: function(data, tabletop) {
-        writeTable(data); //call up datatables function
-      },
-      simpleSheet: true,
-      debug: false
-    });
+  function initializeParserObjectStudents() {
+    const spreadsheetId = key
+    const parser = new PublicGoogleSheetsParser()
+    parser.parse(spreadsheetId).then((items) => {
+      writeTable(items)
+      console.log(items)
+    })
   }
 
-  initializeTabletopObject();
+  initializeParserObjectStudents();
 
   function writeTable(data) {
     //select main div and put a table there

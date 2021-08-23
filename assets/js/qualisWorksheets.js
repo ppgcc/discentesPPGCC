@@ -28,7 +28,7 @@
       if (data === 'nulo'){
         data = '-';
       } else if (data === 'Relevante') {
-        data = "Relevant"
+        data = "Relevant";
       }
       return data;
     }
@@ -53,29 +53,15 @@
       }
       return data;
     }
-  },/* {
-    "data": "data-atualizacao",
-    "title": "Last Automatic Update",
-    "render": function (data, type, full, meta) {
-      if (data === 'link sem info h5'){
-        data = "link without info h5";
-      } else if (data === 'não se aplica'){
-          data = "not applicable";
-      } else {
-        dt = moment(data, "DD/MM/YYYY");
-        data = dt.format("YYYY-MM-DD");
-      }
-      return data;
-    }
-  },*/ {
+  }, {
     "data": "link",
     "title": "Google Scholar",
     "className": "text-center",
     "render": function (data, type, full, meta) {
       if (data === 'nulo'){
-        data = 'No Link'
+        data = 'No Link';
       } else if (data === 'Induzidos manualmente'){
-        data = 'Manually induced'
+        data = 'Manually induced';
       } else{
         data = '<a target="_blank" href="' + data + ' "class="button">Link</a>';
       }
@@ -88,7 +74,7 @@
     "title": "ISSN",
     "render": function (data, type, full, meta) {
       if (data === 'nulo'){
-        data = '-'
+        data = '-';
       }
       return data;
     }
@@ -103,7 +89,7 @@
     "type": "html-num",
     "render": function (data, type, full, meta) {
       if (data === 'nulo'){
-        data = '-'
+        data = '-';
       }
       return data;
     }
@@ -113,9 +99,9 @@
     "className": "text-center",
     "render": function (data, type, full, meta) {
       if (data === 'nulo'){
-        data = '-'
+        data = '-';
       } else if (data != ''){
-        data = 'yes'
+        data = 'yes';
       }
       return data;
     }
@@ -125,29 +111,17 @@
     "className": "table-cell-bold-center",
     "render": function (data, type, full, meta) {
       if (data === 'nulo'){
-        data = '-'
+        data = '-';
       }
       return data;
     }
-  }, /*{
-    "data": "data-atualizacao",
-    "title": "Last Automatic Update",
-    "render": function (data, type, full, meta) {
-      if (data === 'nulo'){
-        data = '';
-      } else {
-        dt = moment(data, "DD/MM/YYYY");
-        data = dt.format("YYYY-MM-DD");
-      }
-      return data;
-    }
-  },*/ {
+  }, {
     "data": "link_scopus",
     "title": "Scopus",
     "className": "text-center",
     "render": function (data, type, full, meta) {
       if (data === 'nulo'){
-        data = 'No Link'
+        data = 'No Link';
       } else{
         data = '<a target="_blank" href="' + data + ' "class="button">Link</a>';
       }
@@ -162,38 +136,32 @@
   $(document).ready(function() {
 
     var myVar;
-    function myFunction() {
+    function loading() {
       myVar = setTimeout(showPage, 4000);
     }
     function showPage() {
       document.getElementById("loader").style.display = "none";
     }
 
-    function initializeTabletopObjectConf() {
-      Tabletop.init({
-        key: key_conf,
-        callback: function(data, tabletop) {
-          writeTableConf(data); //call up datatables function
-        },
-        simpleSheet: true,
-        debug: false
-      });
+    function initializeParserObjectConf() {
+      const spreadsheetId = key_conf
+      const parser = new PublicGoogleSheetsParser()
+      parser.parse(spreadsheetId).then((items) => {
+        writeTableConf(items)
+      })
     }
-
-    function initializeTabletopObjectPeri() {
-      Tabletop.init({
-        key: key_peri,
-        callback: function(data, tabletop) {
-          writeTablePeri(data); //call up datatables function
-        },
-        simpleSheet: true,
-        debug: false
-      });
+  
+    function initializeParserObjectPeri() {
+      const spreadsheetId = key_peri
+      const parser = new PublicGoogleSheetsParser()
+      parser.parse(spreadsheetId).then((items) => {
+        writeTablePeri(items)
+      })
     }
     
-    myFunction();
-    initializeTabletopObjectConf();
-    initializeTabletopObjectPeri();
+    loading();
+    initializeParserObjectConf();
+    initializeParserObjectPeri();
 
     function writeTableConf(data) {
       //select main div and put a table there

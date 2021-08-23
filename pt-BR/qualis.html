@@ -21,14 +21,14 @@ bodyClass: page-qualis
 <!-- DATATABLES -->
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/datatables/1.10.11/js/jquery.dataTables.min.js"></script>
 
-<!-- TableTop -->
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.4.3/tabletop.min.js"></script>
+<!-- google-sheets-parser -->
+<script src="https://cdn.jsdelivr.net/npm/public-google-sheets-parser@latest"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/assets/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/planilhasQualis.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/qualisWorksheets.js"></script>
 <script>
   $(function() {
       $( "#tabs" ).tabs();
-      alert("Olá Pessoal! Estamos com as consultas fora do ar, devido a uma atualização da Google Sheets API v3 para v4, que eu não tinha previsto. Pretendo corrigir o problema o mais breve possível. Por enquanto, vocês podem fazer as suas consultas diretamente nas planilhas que eu coloquei abaixo. Desculpem pelo transtorno! Olimar T. Borges.")
   });
 </script>
 
@@ -60,8 +60,7 @@ bodyClass: page-qualis
 </div>
 
 
-
-<!-- <div id="tabs">
+<div id="tabs">
   <ul>
       <li><a href="#aba-conferencias"><strong>Conferências</strong></a></li>
       <li><a href="#aba-periodicos"><strong>Periódicos</strong></a></li>
@@ -138,22 +137,6 @@ bodyClass: page-qualis
       </div>
     </div>
   </div>
-</div>
--->
-
-
-
-<div class="col-12 col-md-12 mb-1">
-  <div class="row justify-content-start">
-    <div class="col-12 col-md-12 mb-1">
-      <div class="color-description-alert">
-        <div class="qualis-description"><a target="_blank" href="{{ site.data.qualis.link-planilha-automatizacao}}" class="button">Planilha Conferências</a>
-        <div class="qualis-description"><a target="_blank" href="{{ site.data.qualis.link-planilha-automatizacao-periodicos}}" class="button">Planilha Periódicos</a>
-        </div>
-    </div>
-  </div>
-  </div>
-</div>
 </div>
 
 
