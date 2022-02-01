@@ -1,7 +1,7 @@
 [
   {
 	"title" : "AFONSO HENRIQUE CORREA DE SALES",
-	"image-profile" : "/images/docentes/afonso_henrique.jpg",
+	"image-profile" : "/images/docentes/afonso_henrique.png",
 	"categoria" : "docente",
 	"linha-de-pesquisa" : "Engenharia de Software e Banco de Dados",
 	"grupo-de-pesquisa" : "Grupo de Pesquisa em Desenvolvimento Distribuído de Software (MuNDDoS)",
@@ -9,7 +9,7 @@
 	"email" : "afonso.sales@pucrs.br"
   }, {
 	"title" : "AVELINO FRANCISCO ZORZO",
-	"image-profile" : "/images/docentes/avelino_zorzo_.jpg",
+	"image-profile" : "/images/docentes/avelino_zorzo.png",
 	"categoria" : "docente",
 	"linha-de-pesquisa" : "Processamento Paralelo e Distribuído",
 	"grupo-de-pesquisa" : "Confiabilidade e Segurança de Sistemas (CSS)",
@@ -17,7 +17,7 @@
 	"email" : "avelino.zorzo@pucrs.br"
   }, {
 	"title" : "CESAR AUGUSTO FONTICIELHA DE ROSE",
-	"image-profile" : "/images/docentes/cesar_de_rose.jpg",
+	"image-profile" : "/images/docentes/cesar_de_rose.png",
 	"categoria" : "docente",
 	"linha-de-pesquisa" : "Processamento Paralelo e Distribuído",
 	"grupo-de-pesquisa" : "Grupo de Gerência de Recursos e Virtualização (GGRV)",
@@ -25,7 +25,7 @@
 	"email" : "cesar.derose@pucrs.br"
   }, {
 	"title" : "CESAR AUGUSTO MISSIO MARCON",
-	"image-profile" : "/images/docentes/cesar_augusto_marcon.jpg",
+	"image-profile" : "/images/docentes/cesar_augusto_marcon.png",
 	"categoria" : "docente",
 	"linha-de-pesquisa" : "Sistemas Embarcados e Sistemas Digitais",
 	"url-profile" : "http://www.pucrs.br/pesquisadores/cesar-augusto-missio-marcon/",
@@ -41,7 +41,7 @@
 	"email" : "dalvan.griebler@pucrs.br"
   }, {
 	"title" : "DUNCAN DUBUGRAS ALCOBA RUIZ",
-	"image-profile" : "/images/docentes/duncan_dubugras.jpg",
+	"image-profile" : "/images/docentes/duncan_dubugras.png",
 	"categoria" : "docente",
 	"linha-de-pesquisa" : "Engenharia de Software e Banco de Dados",
 	"grupo-de-pesquisa" : "Grupo de Pesquisa em Inteligência de Negócio e Aprendizado de Máquina (GPIN)",
@@ -50,7 +50,7 @@
 	"email" : "duncan.ruiz@pucrs.br"
   }, {
 	"title" : "FABIANO PASSUELO HESSEL",
-	"image-profile" : "/images/docentes/fabiano_passuelo_hessel.jpg",
+	"image-profile" : "/images/docentes/fabiano_passuelo_hessel.png",
 	"categoria" : "docente",
 	"linha-de-pesquisa" : "Sistemas Embarcados e Sistemas Digitais",
 	"grupo-de-pesquisa" : "Grupo de Sistemas Embarcados (GSE)",
@@ -59,7 +59,7 @@
 	"email" : "fabiano.hessel@pucrs.br"
   }, {
 	"title" : "FELIPE RECH MENEGUZZI",
-	"image-profile" : "/images/docentes/felipe_rech_meneguzzi.jpg",
+	"image-profile" : "/images/docentes/felipe_rech_meneguzzi.png",
 	"categoria" : "docente",
 	"linha-de-pesquisa" : "Inteligência Computacional",
 	"grupo-de-pesquisa" : "Grupo de Sistemas Autônomos (GSA)",
@@ -68,7 +68,7 @@
 	"email" : "felipe.meneguzzi@pucrs.br"
   }, {
 	"title" : "FERNANDO GEHM MORAES",
-	"image-profile" : "/images/docentes/fernando_gehn_moraes.jpg",
+	"image-profile" : "/images/docentes/fernando_gehn_moraes.png",
 	"categoria" : "docente",
 	"linha-de-pesquisa" : "Sistemas Embarcados e Sistemas Digitais",
 	"lab-de-pesquisa" : "Laboratório de Pesquisa Escola Politécnica/TERACOM",
@@ -77,7 +77,7 @@
 	"email" : "fernando.moraes@pucrs.br"
   }, {
 	"title" : "FERNANDO LUIS DOTTI",
-	"image-profile" : "/images/docentes/fernando_dotti.jpg",
+	"image-profile" : "/images/docentes/fernando_dotti.png",
 	"categoria" : "docente",
 	"linha-de-pesquisa" : "Processamento Paralelo e Distribuído",
 	"grupo-de-pesquisa" : "Dependable Distributed Computing",
@@ -85,7 +85,7 @@
 	"email" : "fernando.dotti@pucrs.br"
   }, {
 	"title" : "ISABEL HARB MANSSOUR",
-	"image-profile" : "/images/docentes/isabel_manssour.jpg",
+	"image-profile" : "/images/docentes/isabel_manssour.png",
 	"categoria" : "docente",
 	"linha-de-pesquisa" : "Computação Gráfica, Processamento de Imagens, Realidade Virtual e Interação Humano Computador",
 	"lab-de-pesquisa" : "Laboratório DaVInt (Data Visualization and Interaction Lab)",
@@ -93,7 +93,7 @@
 	"email" : "isabel.manssour@pucrs.br"
   }, {
 	"title" : "LUIZ GUSTAVO LEAO FERNANDES",
-	"image-profile" : "/images/docentes/luiz_gustavo_leao_fernandes.jpg",
+	"image-profile" : "/images/docentes/luiz_gustavo_leao_fernandes.png",
 	"categoria" : "docente",
 	"linha-de-pesquisa" : "Processamento Paralelo e Distribuído",
 	"grupo-de-pesquisa" : "Grupo de Modelagem de Aplicações Paralelas (GMAP)",
@@ -102,7 +102,7 @@
 	"email" : "luiz.fernandes@pucrs.br"
   }, {
 	"title" : "MARCIO SARROGLIA PINHO",
-	"image-profile" : "/images/docentes/marcio_sarroglia_pinho.jpg",
+	"image-profile" : "/images/docentes/marcio_sarroglia_pinho.png",
 	"categoria" : "docente",
 	"linha-de-pesquisa" : "Computação Gráfica, Processamento de Imagens, Realidade Virtual e Interação Humano Computador",
 	"grupo-de-pesquisa" : "Grupo de Realidade Virtual",
@@ -112,7 +112,7 @@
 	"email" : "marcio.pinho@pucrs.br"
   }, {
 	"title" : "MILENE SELBACH SILVEIRA",
-	"image-profile" : "/images/docentes/milene_selbach_silveira.jpg",
+	"image-profile" : "/images/docentes/milene_selbach_silveira.png",
 	"categoria" : "docente",
 	"linha-de-pesquisa" : "Computação Gráfica, Processamento de Imagens, Realidade Virtual e Interação Humano Computador",
 	"grupo-de-pesquisa" : "Hu-S.ER - Human-System Experience Research group",
@@ -120,7 +120,7 @@
 	"email" : "milene.silveira@pucrs.br"
   }, {
 	"title" : "NEY LAERT VILAR CALAZANS",
-	"image-profile" : "/images/docentes/ney_laert_vilar.jpg",
+	"image-profile" : "/images/docentes/ney_laert_vilar.png",
 	"categoria" : "docente",
 	"linha-de-pesquisa" : "Sistemas Embarcados e Sistemas Digitais",
 	"linha-de-pesquisa-2" : "Bioinformática e Computação Bioinspirada",
@@ -130,7 +130,7 @@
 	"email" : "ney.calazans@pucrs.br"
   }, {
 	"title" : "RAFAEL HEITOR BORDINI",
-	"image-profile" : "/images/docentes/rafael_bordini.jpg",
+	"image-profile" : "/images/docentes/rafael_bordini.png",
 	"categoria" : "docente",
 	"linha-de-pesquisa" : "Inteligência Computacional",
 	"grupo-de-pesquisa" : "Sistemas Multiagentes, Robótica e Tecnologias Semânticas (SMART)",
@@ -140,7 +140,7 @@
 	"email" : "rafael.bordini@pucrs.br"
   }, {
 	"title" : "RAFAEL PRIKLADNICKI",
-	"image-profile" : "/images/docentes/rafael_prikladnicki.jpg",
+	"image-profile" : "/images/docentes/rafael_prikladnicki.png",
 	"categoria" : "docente",
 	"linha-de-pesquisa" : "Engenharia de Software e Banco de Dados",
 	"grupo-de-pesquisa" : "Grupo de Pesquisa em Desenvolvimento Distribuído de Software (MuNDDoS)",
@@ -148,7 +148,7 @@
 	"email" : "rafael.prikladnicki@pucrs.br"
   }, {
 	"title" : "RODRIGO COELHO BARROS",
-	"image-profile" : "/images/docentes/rodrigo_coelho_barros.jpg",
+	"image-profile" : "/images/docentes/rodrigo_coelho_barros.png",
 	"categoria" : "docente",
 	"linha-de-pesquisa" : "Engenharia de Software e Banco de Dados",
 	"grupo-de-pesquisa" : "Grupo de Pesquisa em Inteligência de Negócio e Aprendizado de Máquina (GPIN)",
@@ -157,7 +157,7 @@
 	"email" : "rodrigo.barros@pucrs.br"
   }, {
 	"title" : "SABRINA DOS SANTOS MARCZAK",
-	"image-profile" : "/images/docentes/sabrina_marczak.jpg",
+	"image-profile" : "/images/docentes/sabrina_marczak.png",
 	"categoria" : "docente",
 	"linha-de-pesquisa" : "Engenharia de Software e Banco de Dados",
 	"grupo-de-pesquisa" : "Grupo de Pesquisa em Desenvolvimento Distribuído de Software (MuNDDoS)",
@@ -166,7 +166,7 @@
 	"email" : "sabrina.marczak@pucrs.br"
   }, {
 	"title" : "SORAIA RAUPP MUSSE",
-	"image-profile" : "/images/docentes/soraia_musse.jpg",
+	"image-profile" : "/images/docentes/soraia_musse.png",
 	"categoria" : "docente",
 	"linha-de-pesquisa" : "Computação Gráfica, Processamento de Imagens, Realidade Virtual e Interação Humano Computador",
 	"grupo-de-pesquisa" : "Simulação de Humanos Virtuais (SiHuV)",
@@ -176,7 +176,7 @@
 	"email" : "soraia.musse@pucrs.br"
   }, {
 	"title" : "TIAGO COELHO FERRETO",
-	"image-profile" : "/images/docentes/tiago_ferreto.jpg",
+	"image-profile" : "/images/docentes/tiago_ferreto.png",
 	"categoria" : "docente",
 	"linha-de-pesquisa" : "Processamento Paralelo e Distribuído",
 	"grupo-de-pesquisa" : "Grupo de Pesquisa em Redes, Infraestrutura e Computação em Nuvem (GRIN)",
