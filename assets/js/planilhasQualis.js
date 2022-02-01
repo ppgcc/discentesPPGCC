@@ -4,7 +4,7 @@
 //var key =
 //"https://docs.google.com/spreadsheets/d/113QZOTS9JQ1WGfwjwQrOpErUBJTAnaBmdjP0_OjA53c/pubhtml?gid=489792061&single=true";
 var key_conf = "1yvuCa__L7r0EJy6v6Jb17fvu-VdV80PbfAReR9Gy52I";
-var key_peri = "1EBJ8OXGPHU58ukZAUfF9N7Cy8A8mbl-jjUjZL5Cg9xM";
+var key_peri = "10sObNyyL7veHGFbOyizxM8oVsppQoWV-0ALrDr8FxQ0";
 
 //"data" refers to the column name with no spaces and no capitals
 //punctuation or numbers in your column name

@@ -1,6 +1,7 @@
 //Edit 'key' and 'columns' to connect your spreadsheet
 
-var key = "1_dgUcS3U7U56oRvKCfAk5Pfdq5UpK6cxhlOQDyhatVU";
+//var key = "1_dgUcS3U7U56oRvKCfAk5Pfdq5UpK6cxhlOQDyhatVU";
+var key = "16XZUASAErpgIvvSC8AMavNuSU1d4ZaoN";
 
 var columns = [{
   "data": "aluno",
