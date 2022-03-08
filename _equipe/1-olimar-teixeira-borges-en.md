@@ -8,4 +8,4 @@ linkedin: 'https://www.linkedin.com/in/olimarteixeiraborges/'
 language: 'en'
 ---
 
-Support concerning the maintenance of the virtual environments of the PPGCC Students, such as the Students' Website, Linktree, GitHub, Slack, Assistance with References/Homologation, and other related issues that the current students management assigns.
+Volunteer in support in relation to the maintenance of virtual environments, such as this site, Linktree, GitHub, Slack and other related issues.
