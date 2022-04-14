@@ -48,16 +48,15 @@ bodyClass: page-qualis
   </div>
 </div>
 
-<div class="col-12 col-md-3 mb-1">
+<div class="col-12 col-md-12 mb-1">
   <a target="_blank" href="{{ site.data.qualis.link-documento-capes}}" class="button">CAPES DOCUMENT</a>
-</div>
-<div class="col-12 col-md-3 mb-1">
   <a target="_blank" href="{{ site.data.qualis.link-planilha-trabalho}}" class="button">WORKSHEET</a>
 </div>
 
-
 <div class="col-12 col-md-12 mb-1">
-  <div class="color-description-alert">{{ site.data.qualis.warning7 }}</div>
+  <div class="color-description-alert">{{ site.data.qualis.warning6 }} {{ site.data.qualis.warning5 }} 
+    <a target="_blank" href="mailto:{{site.data.contact.email_representante}}" class="button">Olimar Teixeira Borges</a>
+  </div>
 </div>
 
 <div id="tabs">
@@ -87,6 +86,11 @@ bodyClass: page-qualis
       <div class="qualis qualis-summary">
         <div class="qualis-description"><strong>Didn't find any Journal? Fill the form with the information of the Journal that we will add it: </strong>
           <a target="_blank" href="{{ site.data.qualis.link-formulario-novos-periodicos}}" class="button">FORM</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-12 mb-1">
+        <div class="feature-qualis">
+          <div id="dateUpdate" class="button-qualis"></div>
         </div>
       </div>
     </div>
@@ -147,43 +151,30 @@ bodyClass: page-qualis
 <div class="row justify-content-start">
   <div class="col-12 col-md-12 mb-1">
     <div class="qualis qualis-summary">
-      <div class="qualis-description"><strong>Warning 01: </strong>{{ site.data.qualis.warning1 }}</div>
-    </div>
-  </div>
-  <div class="col-12 col-md-12 mb-1">
-    <div class="qualis qualis-summary">
-      <div class="qualis-description"><strong>Warning 02: </strong>{{ site.data.qualis.warning2 }}
+      <div class="qualis-description"><strong>Warning 01: </strong>{{ site.data.qualis.warning1 }}
         <a target="_blank" href="{{ site.data.qualis.link-planilha-automatizacao}}" class="button">CONFERENCES WORKSHEET</a>
       </div>
     </div>
   </div>
   <div class="col-12 col-md-12 mb-1">
     <div class="qualis qualis-summary">
+      <div class="qualis-description"><strong>Warning 02: </strong>{{ site.data.qualis.warning2 }}
+        <a target="_blank" href="{{ site.data.qualis.link-api-scopus}}" class="button">SCOPUS API</a>
+        <a target="_blank" href="{{ site.data.qualis.link-planilha-automatizacao-periodicos}}" class="button">JOURNALS WORKSHEET</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-12 mb-1">
+    <div class="qualis qualis-summary">
       <div class="qualis-description"><strong>Warning 03: </strong>{{ site.data.qualis.warning3 }}
-        <a target="_blank" href="{{ site.data.qualis.exemplo-link-func}}"class="button" >IT WORKS</a>
-        <a target="_blank" href="{{ site.data.qualis.exemplo-link-nao-func}}" class="button">DOES NOT WORK</a>
+        <a target="_blank" href="{{ site.data.qualis.link-script}}" class="button">SCRIPT</a>
       </div>
     </div>
   </div>
   <div class="col-12 col-md-12 mb-1">
     <div class="qualis qualis-summary">
       <div class="qualis-description"><strong>Warning 04: </strong>{{ site.data.qualis.warning4 }}
-        <a target="_blank" href="{{ site.data.qualis.link-script}}" class="button">SCRIPT REPOSITORY</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-12 col-md-12 mb-1">
-    <div class="qualis qualis-summary">
-      <div class="qualis-description"><strong>Warning 05: </strong>{{ site.data.qualis.warning5 }}
-        <a target="_blank" href="{{ site.data.qualis.link-planilha-automatizacao-periodicos}}" class="button">JOURNALS WORKSHEET</a>
-        <a target="_blank" href="{{ site.data.qualis.link-api-scopus}}" class="button">SCOPUS API</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-12 col-md-12 mb-1">
-    <div class="qualis qualis-summary">
-      <div class="qualis-description"><strong>Warning 06: </strong>{{ site.data.qualis.warning6 }}
-        <a target="_blank" href="mailto:{{site.data.contact.email_representante}}" class="button">E-MAIL CONTACT</a>
+        <a target="_blank" href="{{ site.data.qualis.link-formulario-novos-periodicos}}" class="button">FORM</a>
       </div>
     </div>
   </div>

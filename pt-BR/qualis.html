@@ -48,16 +48,15 @@ bodyClass: page-qualis
   </div>
 </div>
 
-<div class="col-12 col-md-3 mb-1">
+<div class="col-12 col-md-12 mb-1">
   <a target="_blank" href="{{ site.data.qualis.link-documento-capes}}" class="button">Documento CAPES</a>
-</div>
-<div class="col-12 col-md-3 mb-1">
   <a target="_blank" href="{{ site.data.qualis.link-planilha-trabalho}}" class="button">Planilha de Trabalho</a>
 </div>
 
-
 <div class="col-12 col-md-12 mb-1">
-  <div class="color-description-alert">{{ site.data.qualis.aviso7 }}</div>
+  <div class="color-description-alert">{{ site.data.qualis.aviso6 }} {{ site.data.qualis.aviso5 }} 
+    <a target="_blank" href="mailto:{{site.data.contact.email_representante}}" class="button">Olimar Teixeira Borges</a>
+  </div>
 </div>
 
 
@@ -88,6 +87,11 @@ bodyClass: page-qualis
       <div class="qualis qualis-summary">
         <div class="qualis-description"><strong>Não encontrou algum Periódico? Preencha o formulário com as informações do Periódico que iremos adicioná-lo: </strong>
           <a target="_blank" href="{{ site.data.qualis.link-formulario-novos-periodicos}}" class="button">FORMULÁRIO</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-12 mb-1">
+        <div class="feature-qualis">
+          <div id="dateUpdate" class="button-qualis"></div>
         </div>
       </div>
     </div>
@@ -147,43 +151,30 @@ bodyClass: page-qualis
 <div class="row justify-content-start">
   <div class="col-12 col-md-12 mb-1">
     <div class="qualis qualis-summary">
-      <div class="qualis-description"><strong>Aviso 01: </strong>{{ site.data.qualis.aviso1 }}</div>
+      <div class="qualis-description"><strong>Aviso 01: </strong>{{ site.data.qualis.aviso1 }}
+        <a target="_blank" href="{{ site.data.qualis.link-planilha-automatizacao}}" class="button">Planilha Conferências</a>
+     </div>
     </div>
   </div>
   <div class="col-12 col-md-12 mb-1">
     <div class="qualis qualis-summary">
       <div class="qualis-description"><strong>Aviso 02: </strong>{{ site.data.qualis.aviso2 }}
-        <a target="_blank" href="{{ site.data.qualis.link-planilha-automatizacao}}" class="button">Planilha Conferências</a>
+        <a target="_blank" href="{{ site.data.qualis.link-api-scopus}}" class="button">SCOPUS API</a>
+        <a target="_blank" href="{{ site.data.qualis.link-planilha-automatizacao-periodicos}}" class="button">Planilha Periódicos</a> 
       </div>
     </div>
   </div>
   <div class="col-12 col-md-12 mb-1">
     <div class="qualis qualis-summary">
       <div class="qualis-description"><strong>Aviso 03: </strong>{{ site.data.qualis.aviso3 }}
-        <a target="_blank" href="{{ site.data.qualis.exemplo-link-func}}"class="button" >Funciona</a>
-        <a target="_blank" href="{{ site.data.qualis.exemplo-link-nao-func}}" class="button">Não funciona</a>
+        <a target="_blank" href="{{ site.data.qualis.link-script}}" class="button">SCRIPT</a>
       </div>
     </div>
   </div>
   <div class="col-12 col-md-12 mb-1">
     <div class="qualis qualis-summary">
       <div class="qualis-description"><strong>Aviso 04: </strong>{{ site.data.qualis.aviso4 }}
-        <a target="_blank" href="{{ site.data.qualis.link-script}}" class="button">Repositório Script</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-12 col-md-12 mb-1">
-    <div class="qualis qualis-summary">
-      <div class="qualis-description"><strong>Aviso 05: </strong>{{ site.data.qualis.aviso5 }}
-        <a target="_blank" href="{{ site.data.qualis.link-planilha-automatizacao-periodicos}}" class="button">Planilha Periódicos</a>
-        <a target="_blank" href="{{ site.data.qualis.link-api-scopus}}" class="button">SCOPUS API</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-12 col-md-12 mb-1">
-    <div class="qualis qualis-summary">
-      <div class="qualis-description"><strong>Aviso 06: </strong>{{ site.data.qualis.aviso6 }}
-        <a target="_blank" href="mailto:{{site.data.contact.email_representante}}" class="button">E-mail contato</a>
+        <a target="_blank" href="{{ site.data.qualis.link-formulario-novos-periodicos}}" class="button">FORMULÁRIO</a>
       </div>
     </div>
   </div>

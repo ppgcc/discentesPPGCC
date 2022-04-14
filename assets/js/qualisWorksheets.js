@@ -156,12 +156,17 @@
       const parser = new PublicGoogleSheetsParser()
       parser.parse(spreadsheetId).then((items) => {
         writeTablePeri(items)
+        writeDate(items[0]['data-atualizacao'])
       })
     }
     
     loading();
     initializeParserObjectConf();
     initializeParserObjectPeri();
+
+    function writeDate(data) {
+      document.getElementById("dateUpdate").innerHTML = "Last update: "+data;
+    }
 
     function writeTableConf(data) {
       //select main div and put a table there

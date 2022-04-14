@@ -127,9 +127,8 @@ var columns_peri = [{
   }
 }];
 
-var language = document.querySelector('#tabs')
 
-console.log('language: '+ language)
+var language = document.querySelector('#tabs')
 
 $(document).ready(function() {
 
@@ -146,7 +145,7 @@ $(document).ready(function() {
     const parser = new PublicGoogleSheetsParser()
     parser.parse(spreadsheetId).then((items) => {
       writeTableConf(items)
-      console.log(items)
+      //console.log(items)
     })
   }
 
@@ -155,12 +154,17 @@ $(document).ready(function() {
     const parser = new PublicGoogleSheetsParser()
     parser.parse(spreadsheetId).then((items) => {
       writeTablePeri(items)
+      writeDate(items[0]['data-atualizacao'])
     })
   }
 
   loading();
   initializeParserObjectConf();
   initializeParserObjectPeri();
+
+  function writeDate(data) {
+    document.getElementById("dateUpdate").innerHTML = "Última atualização: "+data;
+  }
 
   function writeTableConf(data) {
     //select main div and put a table there
