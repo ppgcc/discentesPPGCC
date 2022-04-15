@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: ppgcc.github.io
+Token: 7abf37ea954d29dbe8974c9a9f1e54ff5fac67de5d4aa4768ed9705a73c2d103
