@@ -30,3 +30,5 @@ sass:
 
 plugins:
   - jekyll-environment-variables
+
+include: [".well-known"]
