@@ -1,7 +1,12 @@
-baseurl: '/discentesPPGCC'
+author: Olimar T. Borges
+email: olimarbjunior@gmail.com
+baseurl: ''
+url: "https://ppgcc.github.io/"
+github_username: olimarborges
 exclude: ['README.md']
 permalink: pretty
 title: 'Discentes PPGCC/PUCRS'
+include: [".well-known"]
 
 collections:
   discentes:
@@ -31,4 +36,3 @@ sass:
 plugins:
   - jekyll-environment-variables
 
-include: [".well-known"]
