@@ -1,6 +1,6 @@
 author: Olimar T. Borges
 email: olimarbjunior@gmail.com
-baseurl: ''
+baseurl: '/discentesPPGCC'
 url: "https://ppgcc.github.io/"
 github_username: olimarborges
 exclude: ['README.md']
