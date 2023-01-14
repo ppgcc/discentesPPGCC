@@ -13,55 +13,16 @@ var columns_conf = [{
   "data": "sigla",
   "title": "Siglas"
 }, {
-  "data": "conferencia",
-  "title": "Conferências",
+  "data": "evento",
+  "title": "Eventos",
   "width": "50%"
 }, {
-  "data": "categoria",
-  "title": "Categoria Infográfico",
-  "className": "text-center"
-}, {
-  "data": "CE_Indicou",
-  "title": "Comissão Especial Indicou",
-  "className": "text-center",
-  "render": function (data, type, full, meta) {
-    if (data === 'nulo' || data === undefined){
-        data = '-';
-    }
-    return data;
-  }
-},{
-  "data": "h5",
-  "title": "H5",
-  "className": "text-center",
-  "type": "html-num",
-  "render": function (data, type, full, meta) {
-    if (data === "nulo"){
-      data = '-';
-    }
-    return data;
-  }
-}, {
   "data": "Qualis_Final",
-  "title": "Estrato CAPES (calculado)",
+  "title": "Estrato CAPES",
   "className": "table-cell-bold-center",
   "render": function (data, type, full, meta) {
     if (data === 'nulo'){
       data = '-';
-    }
-    return data;
-  }
-}, {
-  "data": "link",
-  "title": "Google Scholar",
-  "className": "text-center",
-  "render": function (data, type, full, meta) {
-    if (data === 'nulo'){
-      data = 'Sem Link';
-    } else if(data === 'Induzidos manualmente'){
-        data = 'Induzidos manualmente';
-    } else {
-      data = '<a target="_blank" href="' + data + ' "class="button">Link</a>';
     }
     return data;
   }
@@ -169,12 +130,12 @@ $(document).ready(function() {
   function writeTableConf(data) {
     //select main div and put a table there
     //use bootstrap css to customize table style: http://getbootstrap.com/css/#tables
-    $('#planilha-conferencias').html(
-      '<table id="tableConferencias" class="table table-striped table-bordered" style="width:100%">'
+    $('#planilha-eventos').html(
+      '<table id="tableEventos" class="table table-striped table-bordered" style="width:100%">'
     );
 
     //initialize the DataTable object and put settings in
-    $("#tableConferencias").DataTable({
+    $("#tableEventos").DataTable({
       "autoWidth": false,
       "data": data,
       "columns": columns_conf,

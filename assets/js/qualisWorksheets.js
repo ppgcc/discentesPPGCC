@@ -13,59 +13,18 @@
     "data": "sigla",
     "title": "Acronyms"
   }, {
-    "data": "conferencia",
-    "title": "Conferences",
+    "data": "evento",
+    "title": "Events",
     "width": "50%"
   }, {
-    "data": "categoria",
-    "title": "Infographic Category",
-    "className": "text-center"
-  }, {
-    "data": "CE_Indicou",
-    "title": "Special Commission Indicated",
-    "className": "text-center",
-    "render": function (data, type, full, meta) {
-      if (data === 'nulo'){
-        data = '-';
-      } else if (data === 'Relevante') {
-        data = "Relevant";
-      }
-      return data;
-    }
-  }, {
-    "data": "h5",
-    "title": "H5",
-    "className": "text-center",
-    "type": "html-num",
-    "render": function (data, type, full, meta) {
-      if (data === 'nulo'){
-        data = '-';
-      }
-      return data;
-    }
-  }, {
     "data": "Qualis_Final",
-    "title": "CAPES Stratum (calculated)",
+    "title": "CAPES Stratum",
     "className": "table-cell-bold-center",
     "render": function (data, type, full, meta) {
       if (data === 'nulo'){
         data = '-';
       }
       return data;
-    }
-  }, {
-    "data": "link",
-    "title": "Google Scholar",
-    "className": "text-center",
-    "render": function (data, type, full, meta) {
-      if (data === 'nulo'){
-        data = 'No Link';
-      } else if (data === 'Induzidos manualmente'){
-        data = 'Manually induced';
-      } else{
-        data = '<a target="_blank" href="' + data + ' "class="button">Link</a>';
-      }
-        return data;
     }
   }];
 
@@ -171,12 +130,12 @@
     function writeTableConf(data) {
       //select main div and put a table there
       //use bootstrap css to customize table style: http://getbootstrap.com/css/#tables
-      $('#planilha-conferencias').html(
-        '<table id="tableConferencias" class="table table-striped table-bordered" style="width:100%">'
+      $('#planilha-eventos').html(
+        '<table id="tableEventos" class="table table-striped table-bordered" style="width:100%">'
       );
 
       //initialize the DataTable object and put settings in
-      $("#tableConferencias").DataTable({
+      $("#tableEventos").DataTable({
         "autoWidth": false,
         "data": data,
         "columns": columns_conf,
