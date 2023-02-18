@@ -1,31 +1,32 @@
 aviso1: "Os resultados referentes aos EVENTOS/CONFERÊNCIAS apresentados nesta página, foram baseados no Relatório da Comissão de Qualis Eventos da Avaliação Quadrienal 2017-2020 (Área de Avaliação: Computação)."
-aviso2: "Para a tabela dos PERIÓDICOS foi realizado uma automatização via script Python, que busca o valor de Percentil (por meio de uma API) os links dos Periódicos na SCOPUS e aplica a regra conforme descrito no Infográfico Periódicos. Este script atualiza uma planilha do Google Sheets, que automaticamente é replicada na consulta que consta na aba Periódicos desta página. Nesta planilha constam os links utilizados, as datas das atualizações e os logs referente às tentativas de busca automática. Para as regras de cálculo de H5 dos PERIÓDICOS, foi levado em consideração o 'Documento CAPES – Periódicos'."
+aviso2: "Para a tabela dos PERIÓDICOS foi realizado uma automatização via script Python, que busca o valor de Percentil (por meio de uma API) os links dos Periódicos na SCOPUS e aplica a regra conforme descrito no Infográfico Periódicos. Este script atualiza uma planilha do Google Sheets, que automaticamente é replicada na consulta que consta na aba Periódicos desta página. Nesta planilha constam os links utilizados, as datas das atualizações e os logs referente às tentativas de busca automática. Para as regras de cálculo de H5 dos PERIÓDICOS, foram levados em consideração o 'Relatório (Ciência da Computação 2019)' e a 'Metodologia (Quadriênio 2017-2020)'."
 aviso3: "O código do script Python utilizado para este processo está disponibilizado para consulta pública no GitHub, como também para receber feedback de melhorias no código. Algumas informações do script referente às credenciais foram omitidas, devido à segurança de acesso à minha conta do Google."
 aviso4: "Para solicitar a inserção de novos Periódicos, preencha o Formulário disponibilizado na aba Periódicos, seguindo as observações que constam na descrição do próprio formulário, que farei a inserção."
 aviso5: "Qualquer inconsistência encontrada ou feedback, entre em contato:"
-aviso6: "Os valores do Qualis para os Eventos Científicos estão atualizados conforme Quadrienal 2017-2020. Para os Periódicos, poderá haver diferença entre os valores de percentis da Scopus e da Web of Science, mas quando isso ocorrer, considere sempre o maior (melhor) Qualis."
+aviso6: "Os valores do Qualis para os Eventos Científicos estão atualizados conforme a Quadrienal 2017-2020. Para os Periódicos, poderá haver diferença entre os valores de percentis da Scopus (CiteScore), Web of Science (Clarivate) e índices h do Google Scholar (h5 ou h10). Considere sempre o maior (melhor) Qualis."
 aviso7: ""
 
 warning1: "The results referring to the EVENTS/CONFERENCES presented on this page were based on the Report of the Qualis Events Commission of the `Quadrienal 2017-2020` Assessment (Area of Assessment: Computing)."
-warning2: "For the JOURNALS table, automation was performed via Python script, which searches the Percentile value (through an API) for the links of the Journals in SCOPUS and applies the rule as described in the Journals Infographic. This script updates a Google Sheets spreadsheet, which is automatically replicated in the query on the Journals tab on this page. This worksheet contains the links used, the dates of the updates, and the logs referring to the automatic search attempts. For the H5 calculation rules of Journals, the 'CAPES Document - Journals' was considered."
+warning2: "For the JOURNALS table, automation was performed via Python script, which searches the Percentile value (through an API) for the links of the Journals in SCOPUS and applies the rule as described in the Journals Infographic. This script updates a Google Sheets spreadsheet, which is automatically replicated in the query on the Journals tab on this page. This worksheet contains the links used, the dates of the updates, and the logs referring to the automatic search attempts. For the H5 calculation rules of Journals, the 'Report (Computer Science 2019)' and 'Methodology (Quadrenium 2017-2020)' were considered."
 warning3: "The Python script code used for this process is available for public consultation on GitHub, as well as to receive feedback on code improvements. Some information in the script regarding credentials has been omitted due to the security of access to my Google account."
 warning4: "To request the insertion of new Periodicals, fill in the new Form available on the Journals tab, following the observations in the description of the form itself, which I will insert."
 warning5: "Any inconsistency found or feedback, please contact me:"
-warning6: "Qualis values ​​for Scientific Events are updated according to the 'Quadrienal 2017-2020'. For Journals, there may be a difference between the percentile values ​​of Scopus and the Web of Science, but always consider the highest (better) Qualis when this occurs."
+warning6: "Qualis values for Scientific Events are updated according to the 2017-2020 Quadrennial. For Journals, there may be a difference between the percentile values of Scopus (CiteScore), Web of Science (Clarivate), and Google Scholar h-indexes (h5 or h10). Always consider the biggest (better) Qualis."
 warning7: ""
 
 link-planilha-automatizacao: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTZsntDnttAWGHA8NZRvdvK5A_FgOAQ_tPMzP7UUf-CHwF_3PHMj_TImyXN2Q_Tmcqm2MqVknpHPoT2/pubhtml?gid=0&single=true"
 link-planilha-automatizacao-periodicos: "https://docs.google.com/spreadsheets/d/10sObNyyL7veHGFbOyizxM8oVsppQoWV-0ALrDr8FxQ0/edit?usp=sharing"
 
 link-documento-capes: "https://www.gov.br/capes/pt-br/centrais-de-conteudo/documentos/avaliacao/09012022_RELATORIOQUALISEVENTOS20172020COMPUTACAO.PDF"
-link-doc-capes-periodicos: "https://www.gov.br/capes/pt-br/centrais-de-conteudo/documentos/avaliacao/qualis_periodico_eventos_cientifico_Ciencia_Computacao.pdf"
+link-doc-capes-periodicos: "https://www.gov.br/capes/pt-br/acesso-a-informacao/acoes-e-programas/avaliacao/avaliacao-quadrienal/metodologia-do-qualis-referencia-quadrienio-2017-2020"
 link-repositorio: "https://github.com/ppgcc/discentesPPGCC"
 link-script: "https://github.com/ppgcc/calculaQualis"
 link-api-scopus: "https://dev.elsevier.com/scopus.html"
 
 info-periodicos-link_1: "https://www.scopus.com/sources.uri?zone=TopNavBar&origin=searchbasic"
 info-periodicos-link_2: "https://jcr-clarivate.ez94.periodicos.capes.gov.br/JCRLandingPageAction.action?Init=Yes&SrcApp=IC2LS&SID=H3-Dx2FNmGje9UwFDxxKKBPYXH3l1Svrh4Gt51-18x2d9HZyarGEx2BnoVa0lgrsEC0Qx3Dx3D43KLtzmzBnyd4w7shaeSDwx3Dx3D-WwpRYkX4Gz8e7T4uNl5SUQx3Dx3D-wBEj1mx2B0mykql8H4kstFLwx3Dx3D"
-info-periodicos-link_3: "https://www.gov.br/capes/pt-br/centrais-de-conteudo/documentos/avaliacao/qualis_periodico_eventos_cientifico_Ciencia_Computacao.pdf"
+info-periodicos-link_3: "https://www.gov.br/capes/pt-br/acesso-a-informacao/acoes-e-programas/avaliacao/avaliacao-quadrienal/metodologia-do-qualis-referencia-quadrienio-2017-2020"
+info-periodicos-link_4: "https://www.gov.br/capes/pt-br/centrais-de-conteudo/documentos/avaliacao/qualis_periodico_eventos_cientifico_Ciencia_Computacao.pdf"
 
 link-img-info-periodicos: "/images/infograficos/INFOGRAFICO-QualisPeriodicos.png"
 
