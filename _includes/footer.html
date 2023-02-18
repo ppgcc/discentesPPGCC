@@ -1,3 +1,20 @@
+<div id="cookie-consent-popup" class="cookie-consent-popup">
+  <p>Nós usamos cookies para garantir que você obtenha a melhor experiência em nosso site. Ao continuar a usar nosso site, você concorda com nossa política de cookies.</p>
+  <button id="cookie-consent-button" class="cookie-consent-button">Entendi</button>
+  <button id="consent-button" class="cookie-consent-button">Política de Cookies</button>
+</div>      
+
+<div id="popup-overlay">
+  <div id="popup-box">
+    <h2>Política de Cookies</h2>
+    <p>{{ site.data.cookies.cookies-msg1 }}</p>
+    <p>{{ site.data.cookies.cookies-msg2 }}</p>
+    <p>{{ site.data.cookies.cookies-msg3 }}</p>
+    <button id="close-button" class="cookie-consent-button">Fechar</button>
+  </div>
+</div>
+
+
 <div class="footer-strip">
   <div class="container">
     <div class="row">
@@ -17,3 +34,4 @@
     </div>
   </div>
 </div>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/cookies.js"></script>
