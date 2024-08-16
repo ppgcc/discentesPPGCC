@@ -93,28 +93,28 @@ var language = document.querySelector('#tabs')
 
 $(document).ready(function() {
 
-  // Obtém o modal
-  var modal = document.getElementById("disclaimerModal");
+  // // Obtém o modal
+  // var modal = document.getElementById("disclaimerModal");
 
-  // Obtém o elemento que fecha o modal
-  var closeButton = document.getElementsByClassName("close-button")[0];
+  // // Obtém o elemento que fecha o modal
+  // var closeButton = document.getElementsByClassName("close-button")[0];
 
-  // Exibe o modal quando a página carrega
-  window.onload = function() {
-    modal.style.display = "block";
-  }
+  // // Exibe o modal quando a página carrega
+  // window.onload = function() {
+  //   modal.style.display = "block";
+  // }
 
-  // Fecha o modal quando o usuário clica no botão de fechar (x)
-  closeButton.onclick = function() {
-    modal.style.display = "none";
-  }
+  // // Fecha o modal quando o usuário clica no botão de fechar (x)
+  // closeButton.onclick = function() {
+  //   modal.style.display = "none";
+  // }
 
-  // Também fecha o modal se o usuário clicar fora dele
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
+  // // Também fecha o modal se o usuário clicar fora dele
+  // window.onclick = function(event) {
+  //   if (event.target == modal) {
+  //     modal.style.display = "none";
+  //   }
+  // }
 
   var myVar;
   function loading() {
