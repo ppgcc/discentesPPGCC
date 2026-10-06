@@ -1,15 +1,66 @@
 ---
+title: Qualis
+layout: default-en
+bodyClass: page-qualis
 ---
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Redirecting to Qualis CC Finder...</title>
-    <meta http-equiv="refresh" content="0; url=https://qualis.pages.dev/">
-    <link rel="canonical" href="https://qualis.pages.dev/">
-    <script>window.location.replace("https://qualis.pages.dev/")</script>
-  </head>
-  <body>
-    <p>Redirecting to <a href="https://qualis.pages.dev/">qualis.pages.dev</a>...</p>
-  </body>
-</html>
+<noscript><meta http-equiv="refresh" content="5; url=https://qualis.pages.dev/"></noscript>
+
+<div class="container">
+  <div class="qualis-redirect">
+    <div class="qualis-summary qualis-redirect-card">
+      <div class="qualis-redirect-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></div>
+      <h1 class="qualis-redirect-title">You are leaving the PPGCC Students website</h1>
+      <p class="qualis-redirect-text">
+        You will be redirected to <strong>Qualis CC Finder</strong>
+        (<a href="https://qualis.pages.dev/">qualis.pages.dev</a>), an external website.
+      </p>
+      <p class="qualis-redirect-text qualis-redirect-disclaimer">
+        That website is not maintained by PPGCC/PUCRS and is not affiliated with this page.
+      </p>
+
+      <p id="qualis-redirect-status" class="qualis-redirect-status" aria-live="polite">
+        Redirecting in <strong id="qualis-redirect-seconds">5</strong> s…
+      </p>
+      <div class="qualis-redirect-progress" aria-hidden="true">
+        <div id="qualis-redirect-bar" class="qualis-redirect-bar"></div>
+      </div>
+
+      <div class="qualis-redirect-actions">
+        <a href="https://qualis.pages.dev/" class="button">Go now</a>
+        <button type="button" id="qualis-redirect-cancel" class="qualis-redirect-cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var URL = 'https://qualis.pages.dev/';
+    var SECONDS = 5;
+    var remaining = SECONDS;
+    var secondsEl = document.getElementById('qualis-redirect-seconds');
+    var statusEl = document.getElementById('qualis-redirect-status');
+    var barEl = document.getElementById('qualis-redirect-bar');
+    var cancelEl = document.getElementById('qualis-redirect-cancel');
+
+    barEl.style.animationDuration = SECONDS + 's';
+    secondsEl.textContent = remaining;
+
+    var timer = setInterval(function () {
+      remaining -= 1;
+      if (remaining <= 0) {
+        clearInterval(timer);
+        window.location.href = URL;
+        return;
+      }
+      secondsEl.textContent = remaining;
+    }, 1000);
+
+    cancelEl.addEventListener('click', function () {
+      clearInterval(timer);
+      barEl.classList.add('is-cancelled');
+      statusEl.textContent = 'Redirect cancelled. Use the button below whenever you want to open Qualis.';
+      cancelEl.style.display = 'none';
+    });
+  })();
+</script>
